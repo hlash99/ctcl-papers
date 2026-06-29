@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CTCL Literature Tracker · hlash99</title>
+<style>
+  :root{--bg:#0f1115;--surface:#171a21;--surface2:#1e222b;--line:#272c36;--ink:#e9ecf1;--muted:#9aa3af;--accent:#6ea8fe;--new:#3ad29f;--pre:#e0a458;}
+  @media (prefers-color-scheme: light){
+    :root{--bg:#f6f7f9;--surface:#ffffff;--surface2:#f0f2f5;--line:#e3e6ea;--ink:#1a1d21;--muted:#5f6772;--accent:#185FA5;--new:#13855f;--pre:#9a6411;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:900px;margin:0 auto;padding:40px 20px 90px}
+  .crumb{font-size:13px;color:var(--muted);margin-bottom:8px}
+  h1{font-size:28px;margin:0 0 4px;font-weight:700;letter-spacing:-.5px}
+  .sub{color:var(--muted);margin:0;font-size:14.5px}
+  .kpis{display:flex;gap:26px;flex-wrap:wrap;margin:18px 0 4px}
+  .kpi .v{font-size:22px;font-weight:700;line-height:1.1}
+  .kpi .l{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:26px 0 6px}
+  input[type=search]{flex:1;min-width:180px;background:var(--surface);border:1px solid var(--line);
+    border-radius:10px;padding:9px 12px;color:var(--ink);font-size:14px;outline:none}
+  input[type=search]:focus{border-color:var(--accent)}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  .seg button{background:var(--surface);color:var(--muted);border:0;padding:8px 13px;font-size:12.5px;cursor:pointer}
+  .seg button.on{background:var(--accent);color:#fff}
+  .count{font-size:12.5px;color:var(--muted);margin:14px 0 4px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+  .card h3{margin:0 0 6px;font-size:16.5px;font-weight:650;line-height:1.35}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted);margin-bottom:9px}
+  .meta .j{color:var(--ink);font-weight:600}
+  .badge{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:20px;padding:2px 8px;border:1px solid}
+  .badge.new{color:var(--new);border-color:var(--new)}
+  .badge.pre{color:var(--pre);border-color:var(--pre)}
+  .summary{font-size:14.5px;margin:0 0 8px}
+  .src{font-size:11px;color:var(--muted);margin-top:2px}
+  details{margin-top:6px}
+  summary{cursor:pointer;font-size:12.5px;color:var(--accent);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";color:var(--muted)}
+  details[open] summary::before{content:"▾ "}
+  .abstract{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.55}
+  .authors{font-size:12px;color:var(--muted);margin-top:8px;font-style:italic}
+  footer{margin-top:46px;color:var(--muted);font-size:12px;text-align:center;line-height:1.7}
+  .err{color:var(--pre);font-size:14px}
+  @media (max-width:560px){.wrap{padding:26px 14px 70px}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="crumb"><a href="https://hlash99.github.io/">← hlash99 dashboard</a></div>
+  <h1>CTCL Literature Tracker</h1>
+  <p class="sub" id="sub">Latest papers on cutaneous T-cell lymphoma — auto-collected &amp; summarized.</p>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Filter by title, journal, author, keyword…" autocomplete="off">
+    <div class="seg" id="filter">
+      <button data-f="all" class="on">All</button>
+      <button data-f="new">New</button>
+      <button data-f="peer">Peer-reviewed</button>
+      <button data-f="preprint">Preprints</button>
+    </div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div id="list"><p class="sub" style="margin-top:30px">Loading papers…</p></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fmtDate(d){ if(!d) return ""; const [y,m,da]=d.split("-").map(Number);
+  return MON[(m||1)-1] + (da?(" "+da):"") + " " + y; }
+
+let PAPERS = [], FILTER = "all", LATEST_RUN = null;
+
+function matchesFilter(p){
+  if(FILTER==="new") return p.first_seen===LATEST_RUN;
+  if(FILTER==="peer") return !p.is_preprint;
+  if(FILTER==="preprint") return p.is_preprint;
+  return true;
+}
+function matchesQuery(p,q){
+  if(!q) return true;
+  return (p.title+" "+p.journal+" "+p.authors+" "+(p.summary||"")+" "+(p.abstract||""))
+    .toLowerCase().includes(q);
+}
+
+function render(){
+  const q = $("#q").value.trim().toLowerCase();
+  const rows = PAPERS.filter(p => matchesFilter(p) && matchesQuery(p,q));
+  $("#count").textContent = rows.length + " of " + PAPERS.length + " papers";
+  if(!rows.length){ $("#list").innerHTML = '<p class="sub" style="margin-top:24px">No papers match.</p>'; return; }
+  $("#list").innerHTML = rows.map(p => {
+    const isNew = p.first_seen===LATEST_RUN;
+    const badges =
+      (isNew ? '<span class="badge new">New</span>' : '') +
+      (p.is_preprint ? '<span class="badge pre">Preprint</span>' : '');
+    const src = p.summary_by==="claude" ? "AI summary" :
+                p.summary_by==="abstract" ? "Abstract excerpt" : "";
+    return `<div class="card">
+      <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
+      <div class="meta">
+        ${p.journal ? '<span class="j">'+esc(p.journal)+'</span>' : ''}
+        ${p.date ? '<span>· '+fmtDate(p.date)+'</span>' : ''}
+        ${badges}
+      </div>
+      ${p.summary ? '<p class="summary">'+esc(p.summary)+'</p>' : ''}
+      ${src ? '<div class="src">'+src+'</div>' : ''}
+      ${p.abstract ? '<details><summary>Abstract</summary><div class="abstract">'+esc(p.abstract)+'</div></details>' : ''}
+      ${p.authors ? '<div class="authors">'+esc(p.authors)+'</div>' : ''}
+    </div>`;
+  }).join("");
+}
+
+fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
+  PAPERS = d.papers || [];
+  if(d.description) $("#sub").textContent = d.description;
+  LATEST_RUN = PAPERS.reduce((m,p) => (p.first_seen>m ? p.first_seen : m), "");
+  const newCount = PAPERS.filter(p => p.first_seen===LATEST_RUN).length;
+  const preCount = PAPERS.filter(p => p.is_preprint).length;
+  $("#kpis").innerHTML =
+    `<div class="kpi"><div class="v">${PAPERS.length}</div><div class="l">Papers tracked</div></div>
+     <div class="kpi"><div class="v">${newCount}</div><div class="l">New this run</div></div>
+     <div class="kpi"><div class="v">${preCount}</div><div class="l">Preprints</div></div>`;
+  const updated = d.updated ? new Date(d.updated).toLocaleString() : "—";
+  $("#foot").innerHTML =
+    `Source: ${esc(d.source||"Europe PMC")} · query: ${esc(d.query_human||"CTCL")}<br>` +
+    `Updated ${esc(updated)} · refreshed weekly by GitHub Actions · ` +
+    `<a href="https://hlash99.github.io/">hlash99 dashboard</a>`;
+  render();
+}).catch(e => {
+  $("#list").innerHTML = '<p class="err">Could not load data.json — '+esc(String(e))+'</p>';
+});
+
+$("#q").addEventListener("input", render);
+$("#filter").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  FILTER = b.dataset.f;
+  [...$("#filter").children].forEach(x => x.classList.toggle("on", x===b));
+  render();
+});
+</script>
+</body>
+</html>

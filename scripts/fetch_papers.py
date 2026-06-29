@@ -1,0 +1,237 @@
+#!/usr/bin/env python3
+"""Server-side refresh for the CTCL literature tracker.
+
+Polls Europe PMC (PubMed/MEDLINE + preprints) for the latest cutaneous T-cell
+lymphoma papers, merges any not-yet-seen ones into ``data.json`` (newest first),
+and writes a short plain-language summary of each new paper.
+
+Summaries: if ``ANTHROPIC_API_KEY`` is set, each new paper is summarized with
+Claude (model ``CTCL_SUMMARY_MODEL``, default ``claude-opus-4-8``). Without a
+key — or if a call fails — it falls back to a trimmed slice of the abstract so
+the page always renders. Existing papers are never re-summarized, so a weekly
+run only spends tokens on what's genuinely new.
+
+Resilient by design: a network/API failure leaves the last-good ``data.json``
+untouched (no commit) rather than wiping it.
+
+Run locally:  python3 scripts/fetch_papers.py
+In CI:        .github/workflows/refresh.yml
+"""
+import html
+import json
+import os
+import re
+import sys
+from datetime import datetime, timezone
+
+import requests
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA = os.path.join(ROOT, "data.json")
+
+EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+
+# Title / keyword / MeSH focused so we get CTCL-*centric* papers, not every
+# paper that mentions CTCL once in passing. Covers the disease and its two main
+# subtypes (mycosis fungoides, Sézary syndrome).
+QUERY = (
+    'TITLE:"cutaneous T-cell lymphoma" OR TITLE:"mycosis fungoides" '
+    'OR TITLE:"Sezary syndrome" OR TITLE:"Sézary syndrome" OR TITLE:"CTCL" '
+    'OR KW:"mycosis fungoides" OR KW:"Sezary syndrome" '
+    'OR MESH:"Lymphoma, T-Cell, Cutaneous"'
+)
+QUERY_HUMAN = "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)"
+
+PAGE_SIZE = 50      # newest candidates pulled per run
+KEEP_MAX = 400      # cap on stored papers
+SUMMARY_MODEL = os.environ.get("CTCL_SUMMARY_MODEL", "claude-opus-4-8")
+UA = ("ctcl-tracker/1.0 "
+      "(+https://github.com/hlash99/ctcl-papers; hassan.lash@gmail.com)")
+
+SUMMARY_SYSTEM = (
+    "You summarize biomedical journal abstracts about cutaneous T-cell lymphoma "
+    "(CTCL) for an educated layperson who is closely tracking the disease. Write "
+    "2-3 plain-language sentences covering what the study examined and its key "
+    "finding or takeaway. Briefly gloss any technical term. No preamble, no "
+    "markdown, no citations — respond with only the summary text."
+)
+
+
+def clean(s):
+    """Unescape entities, drop inline markup tags, collapse whitespace.
+
+    Order matters: unescape first so entity-encoded tags (``&lt;sub&gt;``)
+    become real tags that the tag-strip then removes.
+    """
+    s = html.unescape(s or "")
+    s = re.sub(r"<[^>]+>", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+# Europe PMC structured abstracts glue a leading section label onto the text
+# ("AbstractCutaneous…", "Background and purposeRadiotherapy…"). Strip a leading
+# "Abstract" so the fallback excerpt reads cleanly; AI summaries are unaffected.
+def clean_abstract(s):
+    s = clean(s)
+    return re.sub(r"^Abstract[:.\s]*(?=[A-Z0-9])", "", s).strip()
+
+
+def trim(text, words=55):
+    parts = (text or "").split()
+    if len(parts) <= words:
+        return text
+    return " ".join(parts[:words]).rstrip(".,;: ") + " …"
+
+
+def paper_url(r):
+    pmid, doi = r.get("pmid"), r.get("doi")
+    if pmid:
+        return f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+    if doi:
+        return f"https://doi.org/{doi}"
+    return f"https://europepmc.org/article/{r.get('source')}/{r.get('id')}"
+
+
+def fetch_candidates():
+    params = {
+        "query": QUERY,
+        "format": "json",
+        "pageSize": str(PAGE_SIZE),
+        "sort": "P_PDATE_D desc",
+        "resultType": "core",
+    }
+    r = requests.get(EPMC, params=params, headers={"User-Agent": UA}, timeout=60)
+    r.raise_for_status()
+    return r.json().get("resultList", {}).get("result", [])
+
+
+def make_client():
+    """Return an Anthropic client if a key is set and the SDK is importable."""
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        return None
+    try:
+        import anthropic
+    except ImportError:
+        print("anthropic SDK not installed — using abstract fallback", file=sys.stderr)
+        return None
+    return anthropic.Anthropic()
+
+
+def summarize(client, title, abstract):
+    msg = client.messages.create(
+        model=SUMMARY_MODEL,
+        max_tokens=400,
+        system=SUMMARY_SYSTEM,
+        messages=[{"role": "user",
+                   "content": f"Title: {title}\n\nAbstract: {abstract}"}],
+    )
+    return "".join(b.text for b in msg.content if b.type == "text").strip()
+
+
+def record_from(r, summary, summary_by, today):
+    date = r.get("firstPublicationDate") or ""
+    return {
+        "id": f"{r.get('source')}:{r.get('id')}",
+        "pmid": r.get("pmid"),
+        "doi": r.get("doi"),
+        "title": clean(r.get("title")),
+        "authors": clean(r.get("authorString")),
+        "journal": clean(((r.get("journalInfo") or {}).get("journal") or {}).get("title")),
+        "date": date,
+        "year": int(date[:4]) if date[:4].isdigit() else None,
+        "is_preprint": r.get("source") == "PPR",
+        "url": paper_url(r),
+        "abstract": clean_abstract(r.get("abstractText")),
+        "summary": summary,
+        "summary_by": summary_by,   # "claude" | "abstract" | "none"
+        "first_seen": today,
+    }
+
+
+def load_data():
+    if os.path.exists(DATA):
+        with open(DATA) as f:
+            return json.load(f)
+    return {"papers": []}
+
+
+def sort_key(p):
+    return (p.get("date") or "", p.get("first_seen") or "")
+
+
+def main():
+    data = load_data()
+    papers = data.get("papers", [])
+    seen_id = {p["id"] for p in papers}
+    seen_pmid = {p.get("pmid") for p in papers if p.get("pmid")}
+    seen_doi = {(p.get("doi") or "").lower() for p in papers if p.get("doi")}
+
+    try:
+        candidates = fetch_candidates()
+    except Exception as e:
+        print(f"fetch failed ({e.__class__.__name__}: {e}) — keeping last-good",
+              file=sys.stderr)
+        return 0
+
+    client = make_client()
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    new = []
+    for r in candidates:
+        rid = f"{r.get('source')}:{r.get('id')}"
+        pmid = r.get("pmid")
+        doi = (r.get("doi") or "").lower()
+        if rid in seen_id or (pmid and pmid in seen_pmid) or (doi and doi in seen_doi):
+            continue
+        title = clean(r.get("title"))
+        abstract = clean_abstract(r.get("abstractText"))
+        # Start every paper on the abstract-excerpt fallback; the upgrade pass
+        # below promotes it to a Claude summary when a key is available.
+        summary, by = (trim(abstract), "abstract") if abstract else ("", "none")
+        new.append(record_from(r, summary, by, today))
+        seen_id.add(rid)
+        if pmid:
+            seen_pmid.add(pmid)
+        if doi:
+            seen_doi.add(doi)
+
+    papers = sorted(new + papers, key=sort_key, reverse=True)[:KEEP_MAX]
+
+    # Upgrade abstract-excerpt summaries to plain-language Claude summaries when
+    # ANTHROPIC_API_KEY is set. Self-healing: the first keyed run backfills the
+    # whole backlog, and once a paper is "claude" it's skipped — so a weekly run
+    # only ever spends tokens on genuinely new (or previously-failed) papers.
+    if client:
+        upgraded = 0
+        for p in papers:
+            if p.get("summary_by") == "claude" or not p.get("abstract"):
+                continue
+            try:
+                p["summary"] = summarize(client, p["title"], p["abstract"])
+                p["summary_by"] = "claude"
+                upgraded += 1
+            except Exception as e:
+                print(f"summary failed for {p['id']} ({e.__class__.__name__}) — kept abstract",
+                      file=sys.stderr)
+        print(f"claude summaries written this run: {upgraded}")
+
+    data["title"] = "CTCL Literature Tracker"
+    data["description"] = (
+        "Latest peer-reviewed papers and preprints on cutaneous T-cell lymphoma, "
+        "auto-collected and summarized."
+    )
+    data["query_human"] = QUERY_HUMAN
+    data["source"] = "Europe PMC (PubMed / MEDLINE + preprints)"
+    data["stats"] = {"total": len(papers), "new_this_run": len(new)}
+    data["updated"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    data["papers"] = papers
+
+    with open(DATA, "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"candidates={len(candidates)} new={len(new)} total={len(papers)} "
+          f"summaries={'claude' if client else 'abstract'}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
