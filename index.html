@@ -28,6 +28,23 @@
   .seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
   .seg button{background:var(--surface);color:var(--muted);border:0;padding:8px 13px;font-size:12.5px;cursor:pointer}
   .seg button.on{background:var(--accent);color:#fff}
+  /* plain-language takeaways */
+  .tldr-btn{display:flex;align-items:center;gap:9px;width:100%;margin:20px 0 0;
+    background:linear-gradient(135deg,rgba(62,201,196,.12),rgba(62,201,196,.04));
+    border:1px solid var(--accent);color:var(--ink);border-radius:12px;padding:13px 16px;
+    font-size:14.5px;font-weight:600;cursor:pointer;text-align:left;transition:background .15s}
+  .tldr-btn:hover{background:linear-gradient(135deg,rgba(62,201,196,.2),rgba(62,201,196,.07))}
+  .tldr-ic{font-size:17px;flex:none}
+  .tldr-chev{margin-left:auto;color:var(--muted);transition:transform .2s}
+  .tldr-btn[aria-expanded="true"] .tldr-chev{transform:rotate(180deg)}
+  .tldr-panel{border:1px solid var(--line);border-top:none;border-radius:0 0 12px 12px;
+    background:var(--surface);padding:6px 20px 16px;margin-bottom:6px}
+  .tldr-panel ul{margin:10px 0 0;padding:0;list-style:none}
+  .tldr-panel li{position:relative;padding:8px 0 8px 24px;font-size:14px;line-height:1.55;
+    border-bottom:1px solid var(--line)}
+  .tldr-panel li:last-child{border-bottom:none}
+  .tldr-panel li::before{content:"→";position:absolute;left:2px;color:var(--accent);font-weight:700}
+  .tldr-cap{font-size:11.5px;color:var(--muted);margin-top:12px;line-height:1.5}
   .count{font-size:12.5px;color:var(--muted);margin:14px 0 4px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
   .card h3{margin:0 0 6px;font-size:16.5px;font-weight:650;line-height:1.35}
@@ -57,6 +74,12 @@
   <p class="sub" id="sub">Latest papers on cutaneous T-cell lymphoma — auto-collected &amp; summarized.</p>
 
   <div class="kpis" id="kpis"></div>
+
+  <button id="tldrBtn" class="tldr-btn" style="display:none" aria-expanded="false">
+    <span class="tldr-ic">✨</span> The big picture — plain-language takeaways
+    <span class="tldr-chev">▾</span>
+  </button>
+  <div id="tldrPanel" class="tldr-panel" hidden></div>
 
   <div class="toolbar">
     <input type="search" id="q" placeholder="Filter by title, journal, author, keyword…" autocomplete="off">
@@ -125,6 +148,7 @@ function render(){
 fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
   PAPERS = d.papers || [];
   if(d.description) $("#sub").textContent = d.description;
+  renderTldr(d.overview);
   LATEST_RUN = PAPERS.reduce((m,p) => (p.first_seen>m ? p.first_seen : m), "");
   const newCount = PAPERS.filter(p => p.first_seen===LATEST_RUN).length;
   const preCount = PAPERS.filter(p => p.is_preprint).length;
@@ -141,6 +165,27 @@ fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
 }).catch(e => {
   $("#list").innerHTML = '<p class="err">Could not load data.json — '+esc(String(e))+'</p>';
 });
+
+/* ── plain-language "big picture" takeaways ── */
+function renderTldr(ov){
+  const btn=$("#tldrBtn"), panel=$("#tldrPanel");
+  if(!ov || !Array.isArray(ov.bullets) || !ov.bullets.length){ btn.style.display="none"; return; }
+  panel.innerHTML = "<ul>"+ov.bullets.map(b=>`<li>${esc(b)}</li>`).join("")+"</ul>"+
+    `<div class="tldr-cap">Plain-language synthesis of the ${ov.n_papers||PAPERS.length} most recent tracked papers${
+      ov.generated?" · updated "+fmtDate(ov.generated):""} · AI-generated, not medical advice.</div>`;
+  btn.style.display="flex";
+  // open by default on first visit; remember the user's choice thereafter
+  let open; try{open=localStorage.getItem("ctclTldr");}catch(e){}
+  setTldr(open===null||open===undefined ? true : open==="1");
+  btn.onclick=()=>{ const willOpen=panel.hidden; setTldr(willOpen);
+    try{localStorage.setItem("ctclTldr", willOpen?"1":"0");}catch(e){} };
+}
+function setTldr(open){
+  $("#tldrPanel").hidden=!open;
+  const btn=$("#tldrBtn");
+  btn.setAttribute("aria-expanded", open?"true":"false");
+  btn.style.borderRadius = open ? "12px 12px 0 0" : "12px";
+}
 
 $("#q").addEventListener("input", render);
 $("#filter").addEventListener("click", e => {

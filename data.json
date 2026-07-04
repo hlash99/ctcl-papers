@@ -809,5 +809,17 @@
     "total": 50,
     "new_this_run": 50
   },
-  "updated": "2026-06-29T14:52:19Z"
+  "updated": "2026-06-29T14:52:19Z",
+  "overview": {
+    "bullets": [
+      "Most of the recent research is a search for new treatments for advanced, hard-to-treat CTCL — where standard options run out — including precision \"antibody-drug\" therapies that home in on the cancer cell's unique T-cell fingerprint, repurposed natural plant compounds, and light-activated skin creams.",
+      "A recurring theme is how easily CTCL is mistaken for common benign rashes like eczema, so several teams are building better diagnostic tests — such as a \"clonality score\" that checks whether the skin's T-cells are all copies of one rogue cell — to catch it earlier and avoid misdiagnosis.",
+      "A specific caution is emerging around dupilumab (a widely used eczema drug): CTCL is sometimes being found during treatment, and an expert group has issued guidance on when to suspect lymphoma instead of eczema — though the drug has not been proven to cause it.",
+      "For treatments that already work, the trend is \"gentler is enough\": lower-dose targeted radiation controlled skin lesions about as well as stronger doses with fewer side effects, and whole-skin electron radiation was shown safe to combine with pill or IV therapies.",
+      "New single-cell mapping is revealing how the cancer evolves and dodges therapy over time, which — together with better survival-prediction tools built from large patient databases — aims to personalize who needs aggressive treatment versus careful monitoring."
+    ],
+    "generated": "2026-07-04",
+    "n_papers": 50,
+    "by": "claude"
+  }
 }

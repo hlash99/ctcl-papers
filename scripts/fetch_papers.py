@@ -56,6 +56,42 @@ SUMMARY_SYSTEM = (
     "markdown, no citations — respond with only the summary text."
 )
 
+# Rolling "big picture" briefing across the whole recent corpus — regenerated
+# whenever new papers arrive, written for a patient / family member, not a doctor.
+OVERVIEW_SYSTEM = (
+    "You write a plain-language 'big picture' briefing on recent cutaneous T-cell "
+    "lymphoma (CTCL) research for a smart, non-medical reader following the field "
+    "closely — a patient or a family member, NOT a doctor. Given a list of recent "
+    "papers (titles + short summaries), synthesize the MOST IMPORTANT cross-cutting "
+    "themes: emerging treatments, diagnostic advances, shifts in understanding, and "
+    "practical cautions. Rules: AT MOST 5 bullets; each a single plain-English "
+    "sentence; no jargon (briefly gloss any unavoidable term); group related findings "
+    "rather than listing papers one by one; lead with what matters most to a patient. "
+    "Respond with ONLY a JSON array of bullet strings, nothing else."
+)
+
+
+def build_overview(client, papers, k=18):
+    """Return <=5 plain-language takeaway bullets synthesized across recent papers."""
+    recent = sorted(papers, key=sort_key, reverse=True)[:k]
+    lines = []
+    for p in recent:
+        blurb = p.get("summary") or p.get("abstract") or ""
+        lines.append(f"- {p.get('title','')} ({p.get('journal','')}, "
+                     f"{(p.get('date') or '')[:7]}): {blurb[:400]}")
+    msg = client.messages.create(
+        model=SUMMARY_MODEL, max_tokens=800, system=OVERVIEW_SYSTEM,
+        messages=[{"role": "user", "content": "Recent CTCL papers:\n\n" + "\n".join(lines)}],
+    )
+    text = "".join(b.text for b in msg.content if b.type == "text").strip()
+    text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
+    try:
+        bullets = [str(b).strip() for b in json.loads(text) if str(b).strip()]
+    except Exception:
+        bullets = [re.sub(r"^[-*•\d.\s]+", "", ln).strip()
+                   for ln in text.splitlines() if ln.strip()]
+    return bullets[:5]
+
 
 def clean(s):
     """Unescape entities, drop inline markup tags, collapse whitespace.
@@ -213,6 +249,23 @@ def main():
                 print(f"summary failed for {p['id']} ({e.__class__.__name__}) — kept abstract",
                       file=sys.stderr)
         print(f"claude summaries written this run: {upgraded}")
+
+    # Rolling plain-language overview — regenerate when new papers landed this run
+    # (or none stored yet). Needs a key; without one, any prior overview is kept.
+    if client and (new or not data.get("overview")):
+        try:
+            bullets = build_overview(client, papers)
+            if bullets:
+                data["overview"] = {
+                    "bullets": bullets,
+                    "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                    "n_papers": len(papers),
+                    "by": "claude",
+                }
+                print(f"overview regenerated: {len(bullets)} bullets")
+        except Exception as e:
+            print(f"overview failed ({e.__class__.__name__}: {e}) — keeping previous",
+                  file=sys.stderr)
 
     data["title"] = "CTCL Literature Tracker"
     data["description"] = (
