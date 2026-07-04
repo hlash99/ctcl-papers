@@ -130,7 +130,7 @@ function render(){
     const badges =
       (isNew ? '<span class="badge new">New</span>' : '') +
       (p.is_preprint ? '<span class="badge pre">Preprint</span>' : '');
-    const src = p.summary_by==="claude" ? "AI summary" :
+    const src = (p.summary_by==="claude"||p.summary_by==="groq") ? "AI summary" :
                 p.summary_by==="abstract" ? "Abstract excerpt" : "";
     return `<div class="card">
       <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>

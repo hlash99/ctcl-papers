@@ -1,10 +1,10 @@
 name: refresh
 
 # Weekly server-side poll of Europe PMC for the latest CTCL papers. Runs even
-# when no one's computer is on, summarizes new papers with Claude (if the
-# ANTHROPIC_API_KEY secret is set — otherwise an abstract excerpt is used), and
-# commits data.json only when something changed. Switch to daily by changing the
-# cron to '17 13 * * *'.
+# when no one's computer is on, writes plain-language summaries + the takeaways
+# using whichever key is set — GROQ_API_KEY (free open-weights Llama, no card)
+# or ANTHROPIC_API_KEY (preferred if both); with neither, an abstract excerpt is
+# used. Commits data.json only when something changed. Switch to daily via cron.
 on:
   schedule:
     - cron: '17 13 * * 1'   # Mondays 13:17 UTC (~06:17 PT)
@@ -32,6 +32,7 @@ jobs:
       - name: Refresh data.json
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python scripts/fetch_papers.py
       - name: Commit if changed
         run: |

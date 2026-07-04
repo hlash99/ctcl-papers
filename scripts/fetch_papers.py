@@ -5,11 +5,12 @@ Polls Europe PMC (PubMed/MEDLINE + preprints) for the latest cutaneous T-cell
 lymphoma papers, merges any not-yet-seen ones into ``data.json`` (newest first),
 and writes a short plain-language summary of each new paper.
 
-Summaries: if ``ANTHROPIC_API_KEY`` is set, each new paper is summarized with
-Claude (model ``CTCL_SUMMARY_MODEL``, default ``claude-opus-4-8``). Without a
-key — or if a call fails — it falls back to a trimmed slice of the abstract so
-the page always renders. Existing papers are never re-summarized, so a weekly
-run only spends tokens on what's genuinely new.
+Summaries use whichever key is set: ``ANTHROPIC_API_KEY`` (Claude, preferred) or
+``GROQ_API_KEY`` (Groq's free OpenAI-compatible API serving open-weights Llama
+models — ``CTCL_GROQ_MODEL``, default ``llama-3.3-70b-versatile``). Without a key
+— or if a call fails — it falls back to a trimmed slice of the abstract so the
+page always renders. Existing papers are never re-summarized, so a weekly run
+only spends on what's genuinely new.
 
 Resilient by design: a network/API failure leaves the last-good ``data.json``
 untouched (no commit) rather than wiping it.
@@ -45,6 +46,9 @@ QUERY_HUMAN = "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrom
 PAGE_SIZE = 50      # newest candidates pulled per run
 KEEP_MAX = 400      # cap on stored papers
 SUMMARY_MODEL = os.environ.get("CTCL_SUMMARY_MODEL", "claude-opus-4-8")
+# Groq serves open-weights Llama models on a free, no-card OpenAI-compatible API.
+GROQ_MODEL = os.environ.get("CTCL_GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 UA = ("ctcl-tracker/1.0 "
       "(+https://github.com/hlash99/ctcl-papers; hassan.lash@gmail.com)")
 
@@ -71,7 +75,7 @@ OVERVIEW_SYSTEM = (
 )
 
 
-def build_overview(client, papers, k=18):
+def build_overview(complete, papers, k=18):
     """Return <=5 plain-language takeaway bullets synthesized across recent papers."""
     recent = sorted(papers, key=sort_key, reverse=True)[:k]
     lines = []
@@ -79,11 +83,7 @@ def build_overview(client, papers, k=18):
         blurb = p.get("summary") or p.get("abstract") or ""
         lines.append(f"- {p.get('title','')} ({p.get('journal','')}, "
                      f"{(p.get('date') or '')[:7]}): {blurb[:400]}")
-    msg = client.messages.create(
-        model=SUMMARY_MODEL, max_tokens=800, system=OVERVIEW_SYSTEM,
-        messages=[{"role": "user", "content": "Recent CTCL papers:\n\n" + "\n".join(lines)}],
-    )
-    text = "".join(b.text for b in msg.content if b.type == "text").strip()
+    text = complete(OVERVIEW_SYSTEM, "Recent CTCL papers:\n\n" + "\n".join(lines), 800)
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
     try:
         bullets = [str(b).strip() for b in json.loads(text) if str(b).strip()]
@@ -141,27 +141,44 @@ def fetch_candidates():
     return r.json().get("resultList", {}).get("result", [])
 
 
-def make_client():
-    """Return an Anthropic client if a key is set and the SDK is importable."""
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        return None
-    try:
-        import anthropic
-    except ImportError:
-        print("anthropic SDK not installed — using abstract fallback", file=sys.stderr)
-        return None
-    return anthropic.Anthropic()
+def make_llm():
+    """Pick a summarization backend by whichever key is set, else None.
 
+    Prefers Anthropic (ANTHROPIC_API_KEY + SDK); otherwise Groq's free
+    OpenAI-compatible endpoint (GROQ_API_KEY), which serves open-weights Llama
+    models. Returns (name, complete) where complete(system, user, max_tokens)
+    -> str; None means no key configured (page keeps abstract excerpts).
+    """
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        try:
+            import anthropic
+            client = anthropic.Anthropic()
 
-def summarize(client, title, abstract):
-    msg = client.messages.create(
-        model=SUMMARY_MODEL,
-        max_tokens=400,
-        system=SUMMARY_SYSTEM,
-        messages=[{"role": "user",
-                   "content": f"Title: {title}\n\nAbstract: {abstract}"}],
-    )
-    return "".join(b.text for b in msg.content if b.type == "text").strip()
+            def complete(system, user, max_tokens):
+                m = client.messages.create(model=SUMMARY_MODEL, max_tokens=max_tokens,
+                                           system=system,
+                                           messages=[{"role": "user", "content": user}])
+                return "".join(b.text for b in m.content if b.type == "text").strip()
+            return ("claude", complete)
+        except ImportError:
+            print("anthropic SDK not installed — trying Groq", file=sys.stderr)
+
+    if os.environ.get("GROQ_API_KEY"):
+        key = os.environ["GROQ_API_KEY"]
+
+        def complete(system, user, max_tokens):
+            r = requests.post(GROQ_URL, timeout=90,
+                              headers={"Authorization": "Bearer " + key,
+                                       "Content-Type": "application/json"},
+                              json={"model": GROQ_MODEL, "max_tokens": max_tokens,
+                                    "temperature": 0.3,
+                                    "messages": [{"role": "system", "content": system},
+                                                 {"role": "user", "content": user}]})
+            r.raise_for_status()
+            return (r.json()["choices"][0]["message"]["content"] or "").strip()
+        return ("groq", complete)
+
+    return None
 
 
 def record_from(r, summary, summary_by, today):
@@ -209,7 +226,9 @@ def main():
               file=sys.stderr)
         return 0
 
-    client = make_client()
+    llm = make_llm()
+    backend = llm[0] if llm else None
+    complete = llm[1] if llm else None
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     new = []
     for r in candidates:
@@ -221,7 +240,7 @@ def main():
         title = clean(r.get("title"))
         abstract = clean_abstract(r.get("abstractText"))
         # Start every paper on the abstract-excerpt fallback; the upgrade pass
-        # below promotes it to a Claude summary when a key is available.
+        # below promotes it to a real LLM summary when a key is available.
         summary, by = (trim(abstract), "abstract") if abstract else ("", "none")
         new.append(record_from(r, summary, by, today))
         seen_id.add(rid)
@@ -232,35 +251,36 @@ def main():
 
     papers = sorted(new + papers, key=sort_key, reverse=True)[:KEEP_MAX]
 
-    # Upgrade abstract-excerpt summaries to plain-language Claude summaries when
-    # ANTHROPIC_API_KEY is set. Self-healing: the first keyed run backfills the
-    # whole backlog, and once a paper is "claude" it's skipped — so a weekly run
-    # only ever spends tokens on genuinely new (or previously-failed) papers.
-    if client:
+    # Upgrade abstract-excerpt summaries to plain-language LLM summaries when a
+    # key (Anthropic or Groq) is set. Self-healing: the first keyed run backfills
+    # the whole backlog, and any paper already summarized by an LLM is skipped —
+    # so a weekly run only spends on genuinely new (or previously-failed) papers.
+    if complete:
         upgraded = 0
         for p in papers:
-            if p.get("summary_by") == "claude" or not p.get("abstract"):
+            if p.get("summary_by") in ("claude", "groq") or not p.get("abstract"):
                 continue
             try:
-                p["summary"] = summarize(client, p["title"], p["abstract"])
-                p["summary_by"] = "claude"
+                p["summary"] = complete(SUMMARY_SYSTEM,
+                                        f"Title: {p['title']}\n\nAbstract: {p['abstract']}", 400)
+                p["summary_by"] = backend
                 upgraded += 1
             except Exception as e:
                 print(f"summary failed for {p['id']} ({e.__class__.__name__}) — kept abstract",
                       file=sys.stderr)
-        print(f"claude summaries written this run: {upgraded}")
+        print(f"{backend} summaries written this run: {upgraded}")
 
     # Rolling plain-language overview — regenerate when new papers landed this run
     # (or none stored yet). Needs a key; without one, any prior overview is kept.
-    if client and (new or not data.get("overview")):
+    if complete and (new or not data.get("overview")):
         try:
-            bullets = build_overview(client, papers)
+            bullets = build_overview(complete, papers)
             if bullets:
                 data["overview"] = {
                     "bullets": bullets,
                     "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                     "n_papers": len(papers),
-                    "by": "claude",
+                    "by": backend,
                 }
                 print(f"overview regenerated: {len(bullets)} bullets")
         except Exception as e:
