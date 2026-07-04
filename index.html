@@ -45,6 +45,8 @@
   .tldr-panel li:last-child{border-bottom:none}
   .tldr-panel li::before{content:"→";position:absolute;left:2px;color:var(--accent);font-weight:700}
   .tldr-cap{font-size:11.5px;color:var(--muted);margin-top:12px;line-height:1.5}
+  .tldr-act{color:var(--accent);cursor:pointer;text-decoration:none}
+  .tldr-act:hover{text-decoration:underline}
   .count{font-size:12.5px;color:var(--muted);margin:14px 0 4px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
   .card h3{margin:0 0 6px;font-size:16.5px;font-weight:650;line-height:1.35}
@@ -166,15 +168,33 @@ fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
   $("#list").innerHTML = '<p class="err">Could not load data.json — '+esc(String(e))+'</p>';
 });
 
-/* ── plain-language "big picture" takeaways ── */
-function renderTldr(ov){
+/* ── plain-language "big picture" takeaways ──
+   The server regenerates the bullets weekly IF an ANTHROPIC_API_KEY secret is
+   set on the repo. Until then (or to refresh on demand), paste a key via the
+   "AI key" link and the browser calls Claude directly to re-synthesize them —
+   the result is cached in this browser and shown in place of the seeded set. */
+let SERVER_OV=null;
+function currentOverview(server){
+  let cache=null; try{cache=JSON.parse(localStorage.getItem("ctclOverviewCache")||"null");}catch(e){}
+  // prefer a browser-regenerated overview when it covers at least as many papers
+  if(cache && cache.bullets && cache.bullets.length && (!server || (cache.n_papers||0)>=(server.n_papers||0)))
+    return Object.assign({by:"your key"}, cache);
+  return server;
+}
+function renderTldr(server){
+  if(server) SERVER_OV=server;
   const btn=$("#tldrBtn"), panel=$("#tldrPanel");
+  const ov=currentOverview(SERVER_OV);
   if(!ov || !Array.isArray(ov.bullets) || !ov.bullets.length){ btn.style.display="none"; return; }
+  const keySet=!!localStorage.getItem("anthropic_key");
+  const nNew=Math.max(0, PAPERS.length-(ov.n_papers||0));
   panel.innerHTML = "<ul>"+ov.bullets.map(b=>`<li>${esc(b)}</li>`).join("")+"</ul>"+
-    `<div class="tldr-cap">Plain-language synthesis of the ${ov.n_papers||PAPERS.length} most recent tracked papers${
-      ov.generated?" · updated "+fmtDate(ov.generated):""} · AI-generated, not medical advice.</div>`;
+    `<div class="tldr-cap">Synthesis of the ${ov.n_papers||PAPERS.length} most recent papers${
+      ov.generated?" · "+fmtDate(ov.generated):""}${ov.by?" · "+esc(ov.by):""} · AI-generated, not medical advice.`+
+    (nNew?` <b style="color:var(--accent)">${nNew} new since this summary.</b>`:"")+
+    ` · <a class="tldr-act" onclick="regenTakeaways()">↻ regenerate</a>`+
+    ` · <a class="tldr-act" onclick="manageAiKey()">⚙ AI key${keySet?" ✓":""}</a></div>`;
   btn.style.display="flex";
-  // open by default on first visit; remember the user's choice thereafter
   let open; try{open=localStorage.getItem("ctclTldr");}catch(e){}
   setTldr(open===null||open===undefined ? true : open==="1");
   btn.onclick=()=>{ const willOpen=panel.hidden; setTldr(willOpen);
@@ -185,6 +205,59 @@ function setTldr(open){
   const btn=$("#tldrBtn");
   btn.setAttribute("aria-expanded", open?"true":"false");
   btn.style.borderRadius = open ? "12px 12px 0 0" : "12px";
+}
+
+const OVERVIEW_SYSTEM =
+  "You write a plain-language 'big picture' briefing on recent cutaneous T-cell "+
+  "lymphoma (CTCL) research for a smart, non-medical reader following the field "+
+  "closely — a patient or a family member, NOT a doctor. Given a list of recent "+
+  "papers (titles + short summaries), synthesize the MOST IMPORTANT cross-cutting "+
+  "themes: emerging treatments, diagnostic advances, shifts in understanding, and "+
+  "practical cautions. Rules: AT MOST 5 bullets; each a single plain-English "+
+  "sentence; no jargon (briefly gloss any unavoidable term); group related "+
+  "findings rather than listing papers one by one; lead with what matters most to "+
+  "a patient. Respond with ONLY a JSON array of bullet strings, nothing else.";
+
+async function callClaudeOverview(){
+  const key=localStorage.getItem("anthropic_key");
+  const recent=PAPERS.slice().sort((a,b)=>
+    ((b.date||"")+(b.first_seen||"")).localeCompare((a.date||"")+(a.first_seen||""))).slice(0,18);
+  const lines=recent.map(p=>`- ${p.title} (${p.journal||""}, ${(p.date||"").slice(0,7)}): `+
+    (p.summary||p.abstract||"").slice(0,400)).join("\n");
+  const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",
+    headers:{"content-type":"application/json","x-api-key":key,
+      "anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+    body:JSON.stringify({model:"claude-opus-4-8",max_tokens:1024,system:OVERVIEW_SYSTEM,
+      messages:[{role:"user",content:"Recent CTCL papers:\n\n"+lines}]})});
+  const j=await r.json();
+  if(j.error) throw new Error(j.error.message||("HTTP "+r.status));
+  let text=(j.content||[]).filter(c=>c.type==="text").map(c=>c.text).join("").trim();
+  text=text.replace(/^```(?:json)?/,"").replace(/```$/,"").trim();
+  let bullets; try{bullets=JSON.parse(text);}
+  catch(e){bullets=text.split("\n").map(l=>l.replace(/^[-*•\d.\s]+/,"").trim()).filter(Boolean);}
+  return bullets.map(b=>String(b).trim()).filter(Boolean).slice(0,5);
+}
+function manageAiKey(){
+  const cur=localStorage.getItem("anthropic_key");
+  if(cur && !confirm("An Anthropic API key is already stored in this browser.\nOK = replace it · Cancel = keep it.")) return;
+  const v=prompt("Paste an Anthropic API key (sk-ant-…) to regenerate the takeaways from THIS browser.\n"+
+    "Stored only in this browser's localStorage; used only for your own request to Anthropic.\n"+
+    "Note: a browser-stored key can incur usage cost if leaked — clear it when done. Leave blank to clear.");
+  if(v===null) return;
+  if(v.trim()==="") localStorage.removeItem("anthropic_key"); else localStorage.setItem("anthropic_key", v.trim());
+  renderTldr();
+}
+async function regenTakeaways(){
+  if(!localStorage.getItem("anthropic_key")){ manageAiKey(); return; }
+  const cap=$("#tldrPanel").querySelector(".tldr-cap");
+  if(cap) cap.innerHTML='<span style="color:var(--muted)">Regenerating from the latest papers…</span>';
+  try{
+    const bullets=await callClaudeOverview();
+    if(!bullets.length) throw new Error("no bullets returned");
+    localStorage.setItem("ctclOverviewCache", JSON.stringify(
+      {bullets, generated:new Date().toISOString().slice(0,10), n_papers:PAPERS.length}));
+    renderTldr();
+  }catch(e){ if(cap) cap.innerHTML='<span class="err">Regenerate failed: '+esc(e.message||String(e))+'</span>'; }
 }
 
 $("#q").addEventListener("input", render);
