@@ -23,6 +23,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 
 import requests
@@ -162,15 +163,31 @@ def fetch_candidates():
     return r.json().get("resultList", {}).get("result", [])
 
 
+class RateLimited(RuntimeError):
+    def __init__(self, msg, retry_after):
+        super().__init__(msg)
+        self.retry_after = retry_after
+
+
 def _oai_post(url, key, model, system, user, max_tokens, extra):
     """One OpenAI-compatible chat call. Raises with status+body on non-200 so
-    failures (a decommissioned model, auth, rate limit) are diagnosable."""
+    failures (a decommissioned model, auth, rate limit) are diagnosable; a 429
+    raises RateLimited carrying the server's suggested wait so the caller can
+    back off instead of hammering."""
     h = {"Authorization": "Bearer " + key, "Content-Type": "application/json"}
     h.update(extra or {})
     r = requests.post(url, headers=h, timeout=90,
                       json={"model": model, "max_tokens": max_tokens, "temperature": 0.3,
                             "messages": [{"role": "system", "content": system},
                                          {"role": "user", "content": user}]})
+    if r.status_code == 429:
+        wait = r.headers.get("retry-after")
+        try:
+            wait = float(wait)
+        except (TypeError, ValueError):   # else parse "try again in 4.51s" from the body
+            m = re.search(r"in ([\d.]+)s", r.text)
+            wait = float(m.group(1)) if m else 5.0
+        raise RateLimited(f"{model}@{url.split('/')[2]} -> 429", wait)
     if r.status_code != 200:
         raise RuntimeError(f"{model}@{url.split('/')[2]} -> {r.status_code} {r.text[:160]}")
     return (r.json()["choices"][0]["message"]["content"] or "").strip()
@@ -216,18 +233,28 @@ def make_llm():
 
     def complete(system, user, max_tokens):
         global LAST_PROVIDER
-        n, errs = len(cands), []
-        for off in range(n):
-            idx = (state["i"] + off) % n
-            name, url, model, extra, key = cands[idx]
-            try:
-                out = _oai_post(url, key, model, system, user, max_tokens, extra)
-                if out:
-                    state["i"], LAST_PROVIDER = idx, name
-                    return out
-                errs.append(f"{name}/{model}: empty response")
-            except Exception as e:
-                errs.append(str(e))
+        n = len(cands)
+        for attempt in range(6):          # sweep all candidates; back off on rate limits
+            errs, waits = [], []
+            for off in range(n):
+                idx = (state["i"] + off) % n
+                name, url, model, extra, key = cands[idx]
+                try:
+                    out = _oai_post(url, key, model, system, user, max_tokens, extra)
+                    if out:
+                        state["i"], LAST_PROVIDER = idx, name
+                        return out
+                    errs.append(f"{name}/{model}: empty response")
+                except RateLimited as e:
+                    waits.append(e.retry_after)
+                    errs.append(str(e))
+                except Exception as e:
+                    errs.append(str(e))
+            # every candidate was rate-limited → wait what the server asked (capped) and retry
+            if waits and len(waits) == n and attempt < 5:
+                time.sleep(min(max(waits), 30) + 0.5)
+                continue
+            break
         raise RuntimeError("all open-LLM candidates failed — " + " | ".join(errs[:4]))
     return ("openllm", complete)
 
@@ -279,6 +306,7 @@ def main():
 
     llm = make_llm()
     complete = llm[1] if llm else None
+    backend_is_open = bool(llm) and llm[0] == "openllm"   # pace only the free open-LLM tiers
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     new = []
     for r in candidates:
@@ -305,8 +333,9 @@ def main():
     # key (Anthropic or Groq) is set. Self-healing: the first keyed run backfills
     # the whole backlog, and any paper already summarized by an LLM is skipped —
     # so a weekly run only spends on genuinely new (or previously-failed) papers.
+    upgraded = 0
     if complete:
-        upgraded, fails = 0, 0
+        fails = 0
         for p in papers:
             if p.get("summary_by") not in (None, "", "abstract", "none") or not p.get("abstract"):
                 continue
@@ -315,6 +344,8 @@ def main():
                                         f"Title: {p['title']}\n\nAbstract: {p['abstract']}", 400)
                 p["summary_by"] = LAST_PROVIDER or "ai"
                 upgraded += 1
+                if backend_is_open:
+                    time.sleep(2)   # smooth the open-LLM free-tier tokens-per-minute cap
             except Exception as e:
                 fails += 1
                 if fails <= 3:   # surface the real HTTP status/body a few times, not 50×
@@ -322,9 +353,10 @@ def main():
         print(f"{LAST_PROVIDER or 'no-provider'} summaries written this run: {upgraded}"
               + (f" ({fails} failed)" if fails else ""))
 
-    # Rolling plain-language overview — regenerate when new papers landed this run
-    # (or none stored yet). Needs a key; without one, any prior overview is kept.
-    if complete and (new or not data.get("overview")):
+    # Rolling plain-language overview — regenerate when new papers arrived, any
+    # summaries were (re)written this run (e.g. the first keyed run replacing the
+    # seed), or none is stored. Needs a key; without one, the prior one is kept.
+    if complete and (new or upgraded or not data.get("overview")):
         try:
             bullets = build_overview(complete, papers)
             if bullets:
@@ -354,7 +386,7 @@ def main():
         json.dump(data, f, indent=2, ensure_ascii=False)
 
     print(f"candidates={len(candidates)} new={len(new)} total={len(papers)} "
-          f"summaries={'claude' if client else 'abstract'}")
+          f"summaries={LAST_PROVIDER or 'abstract'}")
     return 0
 
 
