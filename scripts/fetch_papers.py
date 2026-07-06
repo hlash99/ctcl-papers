@@ -70,6 +70,19 @@ OPENLLM_PROVIDERS = [
      "url": "https://api.cerebras.ai/v1/chat/completions",
      "models": ["llama-3.3-70b", "llama3.1-8b"], "headers": {}},
 ]
+
+
+def model_body(model):
+    """Reasoning-suppression request fields, keyed by model family (the right
+    field differs per model): gpt-oss takes reasoning_effort (NOT reasoning_format);
+    Qwen3 takes reasoning_format:hidden; plain Llamas need nothing. strip_reasoning()
+    is the backstop for anything that still leaks."""
+    m = model.lower()
+    if "gpt-oss" in m:
+        return {"reasoning_effort": "low"}
+    if "qwen3" in m or "qwen-3" in m:
+        return {"reasoning_format": "hidden"}
+    return {}
 LAST_PROVIDER = None   # which provider actually served the most recent call
 UA = ("ctcl-tracker/1.0 "
       "(+https://github.com/hlash99/ctcl-papers; hassan.lash@gmail.com)")
@@ -105,7 +118,7 @@ def build_overview(complete, papers, k=18):
         blurb = p.get("summary") or p.get("abstract") or ""
         lines.append(f"- {p.get('title','')} ({p.get('journal','')}, "
                      f"{(p.get('date') or '')[:7]}): {blurb[:400]}")
-    text = complete(OVERVIEW_SYSTEM, "Recent CTCL papers:\n\n" + "\n".join(lines), 800)
+    text = complete(OVERVIEW_SYSTEM, "Recent CTCL papers:\n\n" + "\n".join(lines), 1500)
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
     try:
         bullets = [str(b).strip() for b in json.loads(text) if str(b).strip()]
@@ -169,17 +182,48 @@ class RateLimited(RuntimeError):
         self.retry_after = retry_after
 
 
-def _oai_post(url, key, model, system, user, max_tokens, extra):
+def strip_reasoning(text):
+    """Remove chain-of-thought that reasoning models (gpt-oss, qwen, deepseek)
+    sometimes emit inline in the answer: <think>...</think> blocks and OpenAI
+    'harmony' channel markers (…analysis… assistantfinal <answer>). Provider-
+    agnostic backstop for when reasoning_format:hidden isn't honored."""
+    if not text:
+        return text
+    t = text
+    # unclosed <think> (truncated before the model produced an answer): everything
+    # from the tag onward is chain-of-thought that never closed → drop it (leaves
+    # "" when the tag is at the very start, so the caller keeps the abstract).
+    if re.search(r"<think>", t, flags=re.I) and not re.search(r"</think>", t, flags=re.I):
+        t = re.split(r"<think>", t, flags=re.I)[0]
+    if re.search(r"</think>", t, flags=re.I):        # keep only what follows the reasoning
+        t = re.split(r"</think>", t, flags=re.I)[-1]
+    t = re.sub(r"<think>.*?</think>", "", t, flags=re.S | re.I)
+    t = re.sub(r"</?think>", "", t, flags=re.I)
+    m = re.search(r"(?:assistantfinal|<\|channel\|>\s*final[^>]*<\|message\|>)\s*", t, flags=re.I)
+    if m:                                            # take text after the final-answer marker
+        t = t[m.end():]
+    t = re.sub(r"<\|[^|]*\|>", "", t)                # drop any leftover harmony tags
+    return t.strip()
+
+
+def looks_reasoning(s):
+    """True if text still carries reasoning-model chain-of-thought markers —
+    used to detect and heal summaries stored before strip_reasoning existed."""
+    return bool(re.search(r"<\s*/?\s*think|assistantfinal|<\|channel\|>", s or "", re.I))
+
+
+def _oai_post(url, key, model, system, user, max_tokens, extra, body=None):
     """One OpenAI-compatible chat call. Raises with status+body on non-200 so
     failures (a decommissioned model, auth, rate limit) are diagnosable; a 429
     raises RateLimited carrying the server's suggested wait so the caller can
     back off instead of hammering."""
     h = {"Authorization": "Bearer " + key, "Content-Type": "application/json"}
     h.update(extra or {})
-    r = requests.post(url, headers=h, timeout=90,
-                      json={"model": model, "max_tokens": max_tokens, "temperature": 0.3,
-                            "messages": [{"role": "system", "content": system},
-                                         {"role": "user", "content": user}]})
+    payload = {"model": model, "max_tokens": max_tokens, "temperature": 0.3,
+               "messages": [{"role": "system", "content": system},
+                            {"role": "user", "content": user}]}
+    payload.update(body or {})
+    r = requests.post(url, headers=h, timeout=90, json=payload)
     if r.status_code == 429:
         wait = r.headers.get("retry-after")
         try:
@@ -190,7 +234,7 @@ def _oai_post(url, key, model, system, user, max_tokens, extra):
         raise RateLimited(f"{model}@{url.split('/')[2]} -> 429", wait)
     if r.status_code != 200:
         raise RuntimeError(f"{model}@{url.split('/')[2]} -> {r.status_code} {r.text[:160]}")
-    return (r.json()["choices"][0]["message"]["content"] or "").strip()
+    return strip_reasoning((r.json()["choices"][0]["message"]["content"] or "").strip())
 
 
 def make_llm():
@@ -225,7 +269,8 @@ def make_llm():
             ov = os.environ["CTCL_GROQ_MODEL"]
             models = [ov] + [m for m in models if m != ov]
         for m in models:
-            cands.append((prov["name"], prov["url"], m, prov.get("headers") or {}, key))
+            cands.append((prov["name"], prov["url"], m, prov.get("headers") or {},
+                          model_body(m), key))
     if not cands:
         return None
 
@@ -238,9 +283,9 @@ def make_llm():
             errs, waits = [], []
             for off in range(n):
                 idx = (state["i"] + off) % n
-                name, url, model, extra, key = cands[idx]
+                name, url, model, extra, body, key = cands[idx]
                 try:
-                    out = _oai_post(url, key, model, system, user, max_tokens, extra)
+                    out = _oai_post(url, key, model, system, user, max_tokens, extra, body)
                     if out:
                         state["i"], LAST_PROVIDER = idx, name
                         return out
@@ -329,10 +374,21 @@ def main():
 
     papers = sorted(new + papers, key=sort_key, reverse=True)[:KEEP_MAX]
 
+    # Self-heal any stored summary that leaked a reasoning model's chain-of-thought
+    # (older runs before strip_reasoning): reset it to the abstract excerpt so the
+    # upgrade pass below re-generates it cleanly — and if that fails, it stays a
+    # clean excerpt rather than showing raw <think> text.
+    healed = 0
+    for p in papers:
+        if p.get("summary_by") not in (None, "", "abstract", "none") and looks_reasoning(p.get("summary")):
+            p["summary"] = trim(p["abstract"]) if p.get("abstract") else ""
+            p["summary_by"] = "abstract" if p.get("abstract") else "none"
+            healed += 1
+
     # Upgrade abstract-excerpt summaries to plain-language LLM summaries when a
-    # key (Anthropic or Groq) is set. Self-healing: the first keyed run backfills
-    # the whole backlog, and any paper already summarized by an LLM is skipped —
-    # so a weekly run only spends on genuinely new (or previously-failed) papers.
+    # key is set. Self-healing: the first keyed run backfills the whole backlog,
+    # and any paper already summarized (and clean) is skipped — so a weekly run
+    # only spends on genuinely new (or previously-failed/healed) papers.
     upgraded = 0
     if complete:
         fails = 0
@@ -340,10 +396,12 @@ def main():
             if p.get("summary_by") not in (None, "", "abstract", "none") or not p.get("abstract"):
                 continue
             try:
-                p["summary"] = complete(SUMMARY_SYSTEM,
-                                        f"Title: {p['title']}\n\nAbstract: {p['abstract']}", 400)
-                p["summary_by"] = LAST_PROVIDER or "ai"
-                upgraded += 1
+                out = complete(SUMMARY_SYSTEM,
+                               f"Title: {p['title']}\n\nAbstract: {p['abstract']}", 500)
+                if len(out) >= 20:                 # don't overwrite the excerpt with an empty/truncated reply
+                    p["summary"] = out
+                    p["summary_by"] = LAST_PROVIDER or "ai"
+                    upgraded += 1
                 if backend_is_open:
                     time.sleep(2)   # smooth the open-LLM free-tier tokens-per-minute cap
             except Exception as e:
@@ -351,12 +409,14 @@ def main():
                 if fails <= 3:   # surface the real HTTP status/body a few times, not 50×
                     print(f"summary failed for {p['id']}: {e} — kept abstract", file=sys.stderr)
         print(f"{LAST_PROVIDER or 'no-provider'} summaries written this run: {upgraded}"
+              + (f" ({healed} healed)" if healed else "")
               + (f" ({fails} failed)" if fails else ""))
 
     # Rolling plain-language overview — regenerate when new papers arrived, any
-    # summaries were (re)written this run (e.g. the first keyed run replacing the
-    # seed), or none is stored. Needs a key; without one, the prior one is kept.
-    if complete and (new or upgraded or not data.get("overview")):
+    # summaries were (re)written this run, the stored overview itself leaked
+    # reasoning, or none is stored. Needs a key; without one, the prior one is kept.
+    overview_bad = looks_reasoning(" ".join((data.get("overview") or {}).get("bullets", [])))
+    if complete and (new or upgraded or overview_bad or not data.get("overview")):
         try:
             bullets = build_overview(complete, papers)
             if bullets:
