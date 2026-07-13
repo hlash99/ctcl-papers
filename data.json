@@ -273,6 +273,22 @@
       "first_seen": "2026-06-29"
     },
     {
+      "id": "MED:41795941",
+      "pmid": "41795941",
+      "doi": "10.1111/all.70292",
+      "title": "Staphylococcus aureus Augments Epithelial Skin Barrier Damage Through T Cell Activation in Cutaneous T Cell Lymphoma.",
+      "authors": "Gluud M, Pallesen EM, Zeng Z, Namini MRJ, Vadivel CK, Gjerdrum LMR, Yan L, Ahmad S, Lindahl LM, Bzorek M, Kamstrup MR, Dey S, Ostrowski SR, Sørensen E, Rantakari P, Bonefeld CM, Geisler C, Woetmann A, Lahesmaa R, Iversen L, Wolf P, Litman T, Buus TB, Ødum N.",
+      "journal": "Allergy",
+      "date": "2026-03-08",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41795941/",
+      "abstract": "BackgroundSkin barrier dysfunction is central to inflammation and susceptibility to infection in atopic dermatitis (AD). Cutaneous T-cell lymphoma (CTCL) shares clinical similarities with AD and is also associated with a high prevalence of Staphylococcus aureus (S. aureus) colonisation. However, the mechanisms driving skin barrier damage in CTCL and the contribution of bacteria remain poorly understood.MethodsWe investigate how the interplay between S. aureus (and staphylococcal enterotoxins (SEs)) and primary malignant- and non-malignant T cells affects keratinocyte expression of skin barrier proteins; in vitro, in an EL4 murine lymphoma model of bacteria-driven tumour progression, and in CTCL patient lesions colonised with SE-producing S. aureus before and after bacterial eradication by antibiotic treatment.ResultsS. aureus and SEs activate malignant and non-malignant T cells to release barrier-repressing cytokines, including IL-4, IL-13, IL-22, and OSM, and JAK-dependent downregulation of filaggrin and loricrin in keratinocytes. In the EL4 model, bacteria-colonised tumour-bearing mice show significant filaggrin loss in tumour-adjacent epidermis, whereas antibiotic-treated mice maintain near-normal expression. Clinically, antibiotic eradication of SE-producing S. aureus partially restores filaggrin and loricrin expression in three of four patients, paralleling reduced inflammatory signalling.ConclusionsSE-producing S. aureus promotes skin barrier impairment in CTCL through cytokine-driven, JAK-dependent repression of structural proteins in keratinocytes. These findings identify microbial-immune crosstalk as a contributor to CTCL skin pathology and provide mechanistic rationale for strategies targeting S. aureus colonisation as adjunctive therapy in CTCL.",
+      "summary": "The study showed that Staphylococcus aureus bacteria, especially those that make toxins, can trigger both cancerous and normal T‑cells in cutaneous T‑cell lymphoma to release inflammatory signals that suppress key skin‑barrier proteins (filaggrin and loricrin). In mouse models and in patients, removing these bacteria with antibiotics partly restored the missing proteins and reduced inflammation, suggesting that targeting S. aureus colonisation could help improve skin barrier function in CTCL.",
+      "summary_by": "groq",
+      "first_seen": "2026-07-13"
+    },
+    {
       "id": "MED:41876351",
       "pmid": "41876351",
       "doi": "10.1016/j.clml.2026.02.012",
@@ -838,20 +854,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 52,
-    "new_this_run": 0
+    "total": 53,
+    "new_this_run": 1
   },
-  "updated": "2026-07-06T16:30:55Z",
+  "updated": "2026-07-13T15:57:07Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the Vβ2 antibody‑drug, mogamulizumab, and experimental molecules such as IQDMA—are showing strong cancer‑killing activity while sparing most normal immune cells, offering hope for better control of advanced disease.",
-      "Less‑intensive skin‑directed therapies, such as low‑dose radiation and light‑activated topical treatments (e.g., hypericin), work well for early lesions and cause few side effects, though they may need repeat treatment to keep the cancer from returning.",
-      "Advanced lab tests that measure a simple protein (TRBC1) or use a “clonality score” are becoming more reliable at telling true lymphoma apart from harmless skin inflammation, helping doctors diagnose the disease earlier and avoid misdiagnosis.",
-      "Large‑scale data tools (like a survival calculator built from national cancer registries) and multi‑omics studies are revealing which patients are at higher risk of progression and why some cancers become resistant, guiding more personalized treatment choices.",
-      "Patients should be aware that some medicines (e.g., certain antibiotics or dupilumab for eczema) can mimic lymphoma, and that combining systemic drugs with total‑skin electron therapy appears safe but still requires close monitoring for side effects."
+      "New targeted drugs—like the Vβ2 antibody‑drug, the approved mogamulizumab, and experimental agents such as IQDMA, hypericin light therapy, and plant‑derived compounds—are showing higher response rates and fewer side effects, giving patients more options beyond traditional chemotherapy.",
+      "Simpler, more accurate tests (e.g., the TRBC1 clonality score) and awareness of mimicking conditions (drug‑induced pseudolymphoma, eczema treated with dupilumab) are helping doctors diagnose CTCL earlier and avoid mis‑diagnosis.",
+      "Low‑dose, lesion‑focused radiation can shrink tumors with minimal irritation, but higher doses may be needed for longer‑lasting control, so treatment plans are being personalized.",
+      "Large‑scale data tools, such as a survival‑prediction calculator based on age, stage and treatment, let patients and doctors better understand prognosis and plan care.",
+      "Research shows that skin‑colonizing bacteria like Staphylococcus aureus can worsen the disease, suggesting that managing infections may improve skin barrier health and symptoms."
     ],
-    "generated": "2026-07-06",
-    "n_papers": 52,
+    "generated": "2026-07-13",
+    "n_papers": 53,
     "by": "groq"
   }
 }
