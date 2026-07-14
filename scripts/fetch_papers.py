@@ -57,7 +57,7 @@ SUMMARY_MODEL = os.environ.get("CTCL_SUMMARY_MODEL", "claude-opus-4-8")
 OPENLLM_PROVIDERS = [
     {"name": "groq", "key": "GROQ_API_KEY",
      "url": "https://api.groq.com/openai/v1/chat/completions",
-     "models": ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3-32b"],
+     "models": ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.3-70b-versatile"],
      "headers": {}},
     {"name": "openrouter", "key": "OPENROUTER_API_KEY",
      "url": "https://openrouter.ai/api/v1/chat/completions",
