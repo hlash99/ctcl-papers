@@ -785,6 +785,22 @@
       "first_seen": "2026-06-29"
     },
     {
+      "id": "MED:40900230",
+      "pmid": "40900230",
+      "doi": "10.1007/s00428-025-04244-w",
+      "title": "Skin manifestations uncover underlying Follicular helper T-cell lymphoma, angioimmunoblastic-type in an immunosuppressed patient.",
+      "authors": "García ML, Manso R, Castro JT, Pascual LP, Cillán SR, Morillo D, Hernaez JCC, Climent F, Requena L, Pinilla SMR, de la Pinta FJD.",
+      "journal": "Virchows Archiv : an international journal of pathology",
+      "date": "2025-09-03",
+      "year": 2025,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40900230/",
+      "abstract": "In the context of immunosuppression, most lymphoproliferative disorders are of B-cell origin and associated with Epstein-Barr virus (EBV). Follicular Helper T-cell Lymphoma, Angioimmunoblastic type (AITL) is the most frequently encountered T-cell lymphoma subtype. We present a challenging AITL case, initially misinterpreted as a polymorphic EBV + B-cell lymphoma, in a 62-year-old woman with a history of rheumatoid arthritis treated with multiple immunosuppressive agents. Over several years, she developed varied cutaneous manifestations with distinct histopathological infiltration patterns, prompting a diagnostic reassessment. Molecular studies demonstrated T-cell clonality, and RHOA and TET2 mutations, supporting the diagnosis of AITL with associated EBV + B-cell expansion. Notably, the presence of epidermotropic EBV + B-cell infiltrates masked the underlying T-cell neoplasm. This case underscores the importance of integrating histopathological, clinical, and molecular data, and highlights the diagnostic and biological complexity of AITL, particularly when it arises in the setting of immune dysregulation and exhibits features overlapping with EBV-driven B-cell proliferations.",
+      "summary": "The report describes a 62‑year‑old woman on strong immune‑suppressing drugs who developed a range of skin rashes that were first thought to be an EBV‑driven B‑cell lymphoma, but deeper testing showed she actually had a T‑cell lymphoma called angioimmunoblastic T‑cell lymphoma (AITL). Genetic analysis revealed mutations (RHOA and TET2) and a clonal T‑cell population, confirming the T‑cell cancer even though EBV‑infected B‑cells in the skin were hiding it. The case highlights that in immunosuppressed patients, skin lesions can mask an underlying T‑cell lymphoma and that combining tissue, clinical, and molecular clues is essential for accurate diagnosis.",
+      "summary_by": "groq",
+      "first_seen": "2026-07-20"
+    },
+    {
       "id": "MED:40859654",
       "pmid": "40859654",
       "doi": "10.4274/tjh.galenos.2025.2025.0193",
@@ -854,20 +870,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 53,
+    "total": 54,
     "new_this_run": 1
   },
-  "updated": "2026-07-13T15:57:07Z",
+  "updated": "2026-07-20T15:21:19Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the Vβ2 antibody‑drug, the approved mogamulizumab, and experimental agents such as IQDMA, hypericin light therapy, and plant‑derived compounds—are showing higher response rates and fewer side effects, giving patients more options beyond traditional chemotherapy.",
-      "Simpler, more accurate tests (e.g., the TRBC1 clonality score) and awareness of mimicking conditions (drug‑induced pseudolymphoma, eczema treated with dupilumab) are helping doctors diagnose CTCL earlier and avoid mis‑diagnosis.",
-      "Low‑dose, lesion‑focused radiation can shrink tumors with minimal irritation, but higher doses may be needed for longer‑lasting control, so treatment plans are being personalized.",
-      "Large‑scale data tools, such as a survival‑prediction calculator based on age, stage and treatment, let patients and doctors better understand prognosis and plan care.",
-      "Research shows that skin‑colonizing bacteria like Staphylococcus aureus can worsen the disease, suggesting that managing infections may improve skin barrier health and symptoms."
+      "New targeted drugs—like the Vβ2 antibody‑drug, the approved mogamulizumab, and experimental agents such as IQDMA and topical hypericin—are showing higher response rates and fewer side‑effects, giving patients more options beyond traditional chemotherapy.",
+      "Simpler, more accurate tests (e.g., the TRBC1 clonality score) are helping doctors tell true CTCL apart from harmless skin rashes or drug‑induced mimics, which means quicker, more confident diagnoses.",
+      "Low‑dose, lesion‑focused radiation works well at first and causes little irritation, but higher doses still give longer‑lasting control, so treatment plans are being personalized to balance effectiveness and comfort.",
+      "Research shows that skin bacteria like Staphylococcus aureus can worsen the disease by damaging the skin barrier, suggesting that managing infections may improve symptoms and response to therapy.",
+      "Patient‑focused tools—such as easy‑to‑read education guides and survival‑prediction calculators—are being developed to help families understand the disease, plan care, and set realistic expectations."
     ],
-    "generated": "2026-07-13",
-    "n_papers": 53,
+    "generated": "2026-07-20",
+    "n_papers": 54,
     "by": "groq"
   }
 }
