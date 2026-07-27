@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42085604",
+      "pmid": "42085604",
+      "doi": "10.1182/bloodadvances.2025017533",
+      "title": "LyP vs advanced-stage CTCLs: single-cell profiling reveals markers of self-limited vs aggressive disease behavior.",
+      "authors": "Meledathu S, Chennareddy S, Naidu MP, Meehan SA, Adalsteinsson JA, Alkon N, Cohenour ER, Christensen G, Port LR, Fleischli A, Burnett A, Rindler K, Jonak C, Brunner PM.",
+      "journal": "Blood advances",
+      "date": "2026-07-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42085604/",
+      "abstract": "Cutaneous T-cell lymphomas (CTCL) encompass a broad spectrum from highly indolent to aggressive systemic disease, but underlying mechanisms remain only poorly understood. Using single-cell RNA sequencing, we profiled samples from patients with self-limited, spontaneously regressing lymphomatoid papulosis (LyP) lesions of CD4+, CD8+, or T-cell receptor γδ (TCR-γδ)+ clonal phenotypes and compared the results with samples from patients with advanced-stage CTCL (aCTCL) variants, namely CD4+ mycosis fungoides (MF), CD8+ primary cutaneous aggressive epidermotropic CD8+ cytotoxic T-cell lymphoma, and TCR-γδ+ MF, that all led to a documented lethal disease outcome. Within T cells, transcriptomic differences between LyP and the aCTCL group were primarily found among malignant clones, with only relatively minor differences within the polyclonal T-cell infiltrates. When compared with all aCTCL diagnoses, LyP top clones consistently exhibited a hyperactivated cytotoxic phenotype, characterized by the enrichment of tumor necrosis factor α (TNF-α), interleukin-2 (IL-2)/STAT5, interferon gamma, hypoxia, and complement activation pathways, irrespective of their CD4, CD8, or TCR-γδ lineage. In line, LyP lesions contained SPP1+ macrophages expressing M1-associated markers (IL1B, TNF, and IRF1), consistent with a cytotoxic, type 1-skewed immune microenvironment, that were largely absent across aCTCL diagnoses. LyP samples further expressed markers of vascular dysfunction and stress (C2CD4B, IL6, and CEBPD), corroborated by the morphological signs of lymphocytic vasculitis and necrosis in a subset of patients. Along with a signal of an insufficient coping response to hypoxia, these stromal reactions might be critical contributors to spontaneous lesion regression in LyP. Collectively, this study reveals mediators associated with the self-limited behavior of LyP lesions, which might be relevant for future immunomodulatory treatment strategies in CTCL.",
+      "summary": "The researchers used single‑cell RNA sequencing to compare the immune cells in self‑healing skin lesions of lymphomatoid papulosis (LyP) with those in aggressive, lethal forms of cutaneous T‑cell lymphoma. They found that the malignant T‑cell clones in LyP are unusually “hyper‑activated,” producing high levels of inflammatory signals (like TNF‑α, IL‑2, and interferon‑γ) and attracting a type of immune‑stimulating macrophage that is largely missing in the aggressive cancers. These intense immune and vascular stress responses appear to drive the spontaneous regression of LyP lesions, suggesting new targets for treating more severe CTCL.",
+      "summary_by": "groq",
+      "first_seen": "2026-07-27"
+    },
+    {
       "id": "MED:42270088",
       "pmid": "42270088",
       "doi": "10.1542/peds.2025-071949",
@@ -31,6 +47,22 @@
       "summary": "Researchers created an antibody‑drug conjugate (a toxin‑linked antibody) that homes in on a specific version of the T‑cell receptor called Vβ2, which is shared by the malignant T cells in many cutaneous T‑cell lymphoma patients. In cell cultures, mouse tumors, and samples from patients, this Vβ2‑targeted drug killed the cancer cells while leaving most normal T cells untouched. The work suggests a new, more precise way to treat advanced CTCL by exploiting the tumor’s unique receptor.",
       "summary_by": "groq",
       "first_seen": "2026-06-29"
+    },
+    {
+      "id": "MED:42259007",
+      "pmid": "42259007",
+      "doi": "10.1016/j.humimm.2026.111772",
+      "title": "Challenges of chimerism analysis using Next-Generation Sequencing in a patient with complex chromosomal alterations.",
+      "authors": "Li X, Qama E, Ramesh KH, Krishnamurthy K, Azad AK, Naeem C, Paroder M, Wang Y, Goldfinger M, Cooper D, Goldstein DY, Colovai AI.",
+      "journal": "Human immunology",
+      "date": "2026-06-08",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42259007/",
+      "abstract": "The impact of chromosomal abnormalities on chimerism analysis by next generation sequencing (NGS) has not been explored. Here we report a case of cutaneous T-cell lymphoma (CTCL)/ Sézary syndrome with unusual chimerism findings caused by genotypic abnormalities of the leukemic cells. Cytogenetics analysis indicated a near-triploid karyotype with multiple numerical and structural abnormalities in the leukemic cells. Allogeneic stem cell transplantation was considered. Chimerism testing was performed using NGS-based One Lambda Devyser Chimerism assay. In pre-transplant samples containing leukemic cells, chimerism analysis indicated out-of-range variant allele frequencies (VAF) at 9 out of 11 heterozygous DNA markers. In contrast, a pre-transplant sample with no detectable leukemic cells showed normal allele ratios. After transplantation, the absence of circulating leukemic cells allowed accurate assessment of donor chimerism. However, the possibility that leukemia recurrence may impact the accuracy of chimerism results has to be considered in follow-up testing.",
+      "summary": "The study looked at how complex chromosome changes in a patient’s Sézary syndrome (a type of cutaneous T‑cell lymphoma) can confuse DNA‑based tests that measure how much of the blood comes from the donor after a stem‑cell transplant. They found that the abnormal leukemia cells gave misleading “chimerism” results, but once the disease was cleared the test worked correctly, highlighting that disease recurrence can skew these measurements.",
+      "summary_by": "groq",
+      "first_seen": "2026-07-27"
     },
     {
       "id": "MED:42183626",
@@ -870,20 +902,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 54,
-    "new_this_run": 1
+    "total": 56,
+    "new_this_run": 2
   },
-  "updated": "2026-07-20T15:21:19Z",
+  "updated": "2026-07-27T15:50:36Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the Vβ2 antibody‑drug, the approved mogamulizumab, and experimental agents such as IQDMA and topical hypericin—are showing higher response rates and fewer side‑effects, giving patients more options beyond traditional chemotherapy.",
-      "Simpler, more accurate tests (e.g., the TRBC1 clonality score) are helping doctors tell true CTCL apart from harmless skin rashes or drug‑induced mimics, which means quicker, more confident diagnoses.",
-      "Low‑dose, lesion‑focused radiation works well at first and causes little irritation, but higher doses still give longer‑lasting control, so treatment plans are being personalized to balance effectiveness and comfort.",
-      "Research shows that skin bacteria like Staphylococcus aureus can worsen the disease by damaging the skin barrier, suggesting that managing infections may improve symptoms and response to therapy.",
-      "Patient‑focused tools—such as easy‑to‑read education guides and survival‑prediction calculators—are being developed to help families understand the disease, plan care, and set realistic expectations."
+      "New targeted drugs—like antibody‑drug combos that home in on a cancer‑specific T‑cell receptor and the approved antibody mogamulizumab—are showing higher response rates, especially for blood‑based disease, while keeping many normal immune cells safe.",
+      "Less‑intense radiation (two low‑dose treatments) can shrink skin lesions with few side effects, but higher doses may be needed to keep the cancer from returning.",
+      "Advanced lab tests that look at single cells or multiple DNA/RNA signals are getting better at telling aggressive disease from harmless skin inflammation and can predict who will do worse, helping doctors choose the right treatment early.",
+      "Some common medicines (like the antibiotic trimethoprim‑sulfamethoxazole) and even natural plant compounds can mimic or affect the lymphoma, so doctors need to be sure a rash is truly cancer before changing therapy.",
+      "Educational tools and simple scoring systems (such as a protein‑staining score) are being developed to help patients understand their disease and for doctors to diagnose it more accurately, though larger studies are still needed."
     ],
-    "generated": "2026-07-20",
-    "n_papers": 54,
+    "generated": "2026-07-27",
+    "n_papers": 56,
     "by": "groq"
   }
 }
