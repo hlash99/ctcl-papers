@@ -65,6 +65,22 @@
       "first_seen": "2026-07-27"
     },
     {
+      "id": "MED:42219153",
+      "pmid": "42219153",
+      "doi": "10.1111/pde.70285",
+      "title": "Safety of Dupilumab and Risk of Cutaneous T-Cell Lymphoma in Pediatric Patients With Atopic Dermatitis: A Data-Driven Guide to Counseling Patients and Families.",
+      "authors": "Buethe MG, Sy T, Eichenfield LF.",
+      "journal": "Pediatric dermatology",
+      "date": "2026-05-31",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42219153/",
+      "abstract": "Recent publications reporting increased cutaneous T-cell lymphoma (CTCL) risk with dupilumab in atopic dermatitis (AD) have sparked debate, amplified by media coverage linking dupilumab to lymphoma. These concerns have reached pediatric populations, where we observe increasing parental hesitancy about initiating dupilumab for their children. This hesitancy is particularly acute given that dupilumab was only approved for infants aged 6 months and older in 2022-the first cohort now approaching 3-4 years of exposure. Parents understandably question the long-term effects of decades of IL-4/IL-13 blockade initiated during critical immune development periods. The diagnostic overlap between AD and mycosis fungoides (the most common CTCL) complicates assessment. We examine evidence regarding dupilumab safety and CTCL risk specifically in pediatric patients, incorporating recently presented long-term open-label extension data, and provide recommendations for monitoring, distinguishing AD from CTCL, and counseling families navigating this complex topic.",
+      "summary": "The authors reviewed data on the biologic drug dupilumab, which blocks the immune signals IL‑4 and IL‑13, to see whether it raises the risk of cutaneous T‑cell lymphoma—a rare skin cancer that can look like severe eczema—in children with atopic dermatitis. They found no convincing evidence that dupilumab increases lymphoma risk in pediatric patients, but they stress the importance of careful monitoring and distinguishing true eczema from early signs of lymphoma. The paper offers practical guidance for doctors and families on how to watch for warning signs while using the medication.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-03"
+    },
+    {
       "id": "MED:42183626",
       "pmid": "42183626",
       "doi": "10.2340/1651-226x.2026.45728",
@@ -271,6 +287,22 @@
       "summary": "The study tested IQDMA, a drug that blocks key proteins (PAK2 and its partner CDC42) that help skin T‑cell lymphoma cells grow. In mice, IQDMA cut tumor size by about 90 %—better than standard PUVA therapy—and it prevented the growth‑promoting protein STAT5 from moving into the cell nucleus where it would normally activate cancer genes. This shows a new way to target the disease by disrupting the CDC42‑PAK‑STAT pathway, a strategy that",
       "summary_by": "groq",
       "first_seen": "2026-06-29"
+    },
+    {
+      "id": "MED:41821352",
+      "pmid": "41821352",
+      "doi": "10.1111/jdv.70407",
+      "title": "Cutaneous T-cell lymphomas and dupilumab for atopic dermatitis: A systematic review and expert consensus.",
+      "authors": "Amatore F, Neildez M, de Masson A, Battistella M, Tauber M, Ingen-Housz-Oro S, Droitcourt C, Staumont-Sallé D, Beylot-Barry M.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-03-12",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41821352/",
+      "abstract": "IntroductionDupilumab, a standard treatment for atopic dermatitis (AD), has been associated with cutaneous T-cell lymphomas (CTCL), particularly mycosis fungoides (MF) and Sézary syndrome (SS). Nevertheless, the available data remain heterogeneous.ObjectivesTo characterize the clinical features, timeline and outcomes of dupilumab-related CTCL emergence in order to develop consensus-based recommendations for dupilumab use in CTCL-related settings.MethodsA systematic review was conducted involving 51 studies reporting cases of CTCL in patients treated with dupilumab, followed by a modified delphi process to generate expert consensus recommendations.ResultsData were obtained from 547 patients (mean age: 58 years; SD: 11.5; range: 10-85). New or worsening skin lesions were reported after dupilumab initiation, occurring at a mean of 8.9 months (SD 5.1; range 0.5-27 months). These were diagnosed as MF in 72% of cases, SS in 11% and other CTCL subtypes in 19%, of which 53% were at an early stage (stage ≤IIA). Dupilumab was discontinued in 75% of cases, and 62% received CTCL-directed treatment. Clinical remission was achieved in 44 of the 63 patients with available follow-up. The expert panel reached broad consensus, agreeing that dupilumab may unmask or exacerbate pre-existing CTCL and should be avoided in cases of MF/SS and mogamulizumab-induced rashes. They emphasized the importance of diagnostic vigilance, providing recommendations for skin biopsy, histology and clonality testing before and during treatment, particularly for patients with AD onset after the age of 40 or with atypical features. Dupilumab should be discontinued once CTCL confirmed, and methotrexate or phototherapy considered as alternatives. Cyclosporine and JAK inhibitors are considered unsuitable, and switching to other Th2-targeting biologics is discouraged due to insufficient data.ConclusionsDupilumab may unmask or exacerbate CTCL, particularly MF and SS. The consensus-based recommendations offer practical guidance for the safe management of patients.",
+      "summary": "Researchers reviewed reports of people who developed cutaneous T‑cell lymphoma (a skin cancer called mycosis fungoides or Sézary syndrome) while being treated with dupilumab for eczema. They found that new or worsening skin lesions typically appeared about nine months after starting dupilumab, and the drug often revealed or worsened previously hidden lymphoma, especially in patients over 40 or with atypical eczema features. Experts now recommend careful skin biopsies before and during dupilumab use, stopping the drug if lymphoma is diagnosed, and switching to treatments like methotrexate or phototherapy rather than other similar biologics.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-03"
     },
     {
       "id": "MED:41951332",
@@ -902,20 +934,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 56,
+    "total": 58,
     "new_this_run": 2
   },
-  "updated": "2026-07-27T15:50:36Z",
+  "updated": "2026-08-03T15:52:09Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like antibody‑drug combos that home in on a cancer‑specific T‑cell receptor and the approved antibody mogamulizumab—are showing higher response rates, especially for blood‑based disease, while keeping many normal immune cells safe.",
-      "Less‑intense radiation (two low‑dose treatments) can shrink skin lesions with few side effects, but higher doses may be needed to keep the cancer from returning.",
-      "Advanced lab tests that look at single cells or multiple DNA/RNA signals are getting better at telling aggressive disease from harmless skin inflammation and can predict who will do worse, helping doctors choose the right treatment early.",
-      "Some common medicines (like the antibiotic trimethoprim‑sulfamethoxazole) and even natural plant compounds can mimic or affect the lymphoma, so doctors need to be sure a rash is truly cancer before changing therapy.",
-      "Educational tools and simple scoring systems (such as a protein‑staining score) are being developed to help patients understand their disease and for doctors to diagnose it more accurately, though larger studies are still needed."
+      "New targeted drugs—like an antibody‑drug combo that seeks a specific T‑cell receptor, the approved mogamulizumab antibody, and experimental agents such as IQDMA and light‑activated hypericin—are showing higher response rates and fewer side effects, giving patients more effective options beyond traditional chemotherapy.",
+      "Advanced lab tests that look at single cells or use a simple protein stain (TRBC1) can now tell doctors more accurately whether a skin rash is harmless inflammation, a self‑healing condition (LyP), or an aggressive lymphoma, leading to earlier and more precise treatment.",
+      "Low‑dose, lesion‑focused radiation can shrink tumors with minimal irritation, but it may let the spots return sooner, so patients should discuss the balance between convenience and long‑term control with their doctor.",
+      "The popular eczema drug dupilumab does not appear to raise lymphoma risk in children, but doctors still need to rule out true lymphoma before starting it, because it can mask warning signs.",
+      "Patient‑focused education tools are being refined to be easy to read and understand, helping families navigate the disease and treatment choices, even though larger studies are still needed to prove they improve quality of life."
     ],
-    "generated": "2026-07-27",
-    "n_papers": 56,
+    "generated": "2026-08-03",
+    "n_papers": 58,
     "by": "groq"
   }
 }
