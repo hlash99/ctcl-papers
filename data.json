@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42384055",
+      "pmid": "42384055",
+      "doi": "10.1007/s00105-026-05719-w",
+      "title": "[Erythroderma: etiology, diagnosis, and management-an overview].",
+      "authors": "Sonnenschein T, Hansen M, Magnolo N.",
+      "journal": "Dermatologie (Heidelberg, Germany)",
+      "date": "2026-07-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42384055/",
+      "abstract": "Erythroderma is a rare dermatological reaction pattern characterized by generalized erythema with scaling and systemic symptoms. It represents the maximal manifestation of various inflammatory, infectious, or malignant diseases and requires rapid diagnostic evaluation and initiation of therapy. In adults, inflammatory dermatoses as well as drug reactions represent the most common underlying causes. Malignant disorders, most notably cutaneous T‑cell lymphomas, must be considered in the differential diagnosis. Diagnostic evaluation is based on medical history, clinical examination, and additional laboratory and histopathological investigations. In unclear cases, repeated skin biopsies are needed. In most cases, hospital admission is warranted to enable definitive diagnosis and treatment. Early identification of the underlying cause and therapy are crucial for prognosis and clinical outcome.",
+      "summary": "Erythroderma is a severe, widespread skin redness with scaling that can signal many underlying problems, including infections, drug reactions, or cancers like cutaneous T‑cell lymphoma (CTCL). The review stresses that quickly gathering a detailed history, doing thorough exams, lab tests, and skin biopsies—sometimes repeatedly—is essential to pinpoint the cause, often requiring hospital admission. Early diagnosis and treatment of the underlying disease, especially if it’s CTCL, are critical for a better outcome.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-10"
+    },
+    {
       "id": "MED:42085604",
       "pmid": "42085604",
       "doi": "10.1182/bloodadvances.2025017533",
@@ -47,6 +63,22 @@
       "summary": "Researchers created an antibody‑drug conjugate (a toxin‑linked antibody) that homes in on a specific version of the T‑cell receptor called Vβ2, which is shared by the malignant T cells in many cutaneous T‑cell lymphoma patients. In cell cultures, mouse tumors, and samples from patients, this Vβ2‑targeted drug killed the cancer cells while leaving most normal T cells untouched. The work suggests a new, more precise way to treat advanced CTCL by exploiting the tumor’s unique receptor.",
       "summary_by": "groq",
       "first_seen": "2026-06-29"
+    },
+    {
+      "id": "MED:42274451",
+      "pmid": "42274451",
+      "doi": "10.1016/j.jid.2026.03.035",
+      "title": "Pathogenesis of cutaneous T-cell lymphoma: Malignant inflammation, immune reprogramming, and microenvironmental drivers.",
+      "authors": "Calvão J, Iselin C, Wasmayr J, Furtmüller C, Zeng Z, Vadivel CK, Gluud M, Bataiosu-Zimmer E, Buus TB, Ødum N, Gonçalo M, Guenova E.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-06-10",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42274451/",
+      "abstract": "Cutaneous T-cell lymphomas, namely mycosis fungoides and Sézary syndrome, arise through a complex interplay of genetic alterations, epigenetic deregulation, immune imbalance, and tumor-microenvironment interactions. A progressive T helper 1-to-T helper 2 shift and chemokine-directed trafficking promote immune evasion and sustained malignant T-cell activity, whereas emerging data show subclonal diversity enabling adaptation to microenvironmental and therapeutic pressures. Skin-resident immune cells further shape disease behavior, and Staphylococcus aureus superantigens act as microenvironmental amplifiers that enhance malignant signaling and contribute to treatment resistance. A deeper understanding of how these molecular, immunological, and microbiome factors converge is essential to develop more precise, biomarker-informed therapeutic strategies.",
+      "summary": "The paper explains that cutaneous T‑cell lymphoma (the skin cancers mycosis fungoides and Sézary syndrome) develops because genetic changes in the cancer cells combine with a shift in the immune system from a “TH1” type (which normally attacks tumors) to a “TH2” type (which is less effective), allowing the malignant cells to hide and grow. It also shows that skin‑resident immune cells and bacteria such as Staphylococcus aureus release signals that further boost the cancer’s activity and make it harder to treat. Understanding how these genetic, immune, and microbial factors interact could help create more targeted, personalized therapies.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-10"
     },
     {
       "id": "MED:42259007",
@@ -175,6 +207,22 @@
       "summary": "Researchers pooled results from clinical trials and real‑world studies to see how well the antibody drug mogamulizumab works in cutaneous T‑cell lymphoma, a skin cancer that includes mycosis fungoides and Sézary syndrome. About 41% of patients overall had their disease shrink, with a higher response in Sézary syndrome (≈53%) and especially in the blood component of the disease (≈83%), while serious side effects occurred in roughly 19% of patients. This suggests mogamulizumab is most effective for the blood‑based form of the disease and for Sézary syndrome.",
       "summary_by": "groq",
       "first_seen": "2026-07-05"
+    },
+    {
+      "id": "MED:42011981",
+      "pmid": "42011981",
+      "doi": "10.1111/cup.70123",
+      "title": "Cutaneous Manifestation of Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: A Clue to A Gastrointestinal Malignancy.",
+      "authors": "Cheo FF, Farishta A, Garcia BM, Ai WZ, Ganapathi K, Pincus LB.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-04-21",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42011981/",
+      "abstract": "We present a rare case of cutaneous involvement of monomorphic epitheliotropic intestinal T-cell lymphoma (MEITL). A 68-year-old man first presented with multiple purpuric patches which extended from his axilla to his groin. Biopsies demonstrated a dermal-based infiltrate of predominantly medium-sized atypical CD8+/CD56+/TCR-δ-/EBER- T-lymphocytes with slight epidermotropism associated with extravasated red cells. A diagnosis of primary cutaneous cytotoxic T-cell lymphoma was rendered after presumably excluding systemic lymphoma by staging PET/CT scan and bone marrow biopsy. One year later, he developed purpuric patches and ulcerations of the tongue and 3 months after that, jejunal perforation. Both tongue biopsy and small bowel resection revealed a similar infiltrate of epitheliotropic CD8+/CD56+/TCR-δ-/EBER- cytotoxic T-cells. Supportive histopathologic features and the absence of gluten-sensitive enteropathy eventually led to the diagnosis of MEITL in the jejunal resection. In retrospect, his initial cutaneous and oral lesions were a mucocutaneous manifestation of MEITL as well, and systemic involvement was not detected on conventional staging. Cutaneous involvement in MEITL is exceedingly uncommon, and this case underscores the importance of including MEITL in the differential diagnosis of skin biopsies of mostly dermal-based lymphomas with only slight epidermotropism with a CD8+/CD56+/TCRδ-/EBER- phenotype. Early endoscopic evaluation may facilitate diagnosis of occult intestinal disease.",
+      "summary": "The report describes a 68‑year‑old man whose skin rash and later tongue ulcers turned out to be the first sign of a rare intestinal T‑cell cancer called monomorphic epitheliotropic intestinal T‑cell lymphoma (MEITL). Although initial scans showed no systemic disease, biopsies of the skin, mouth and later the small intestine revealed the same CD8‑positive, CD56‑positive cytotoxic T‑cell pattern, confirming that the skin lesions were an early clue to the hidden gut tumor. The authors suggest that doctors consider MEITL when they see similar skin biopsies and that early endoscopic checks can catch the hidden intestinal cancer sooner.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-10"
     },
     {
       "id": "MED:42014023",
@@ -934,20 +982,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 58,
-    "new_this_run": 2
+    "total": 61,
+    "new_this_run": 3
   },
-  "updated": "2026-08-03T15:52:09Z",
+  "updated": "2026-08-10T14:32:21Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like an antibody‑drug combo that seeks a specific T‑cell receptor, the approved mogamulizumab antibody, and experimental agents such as IQDMA and light‑activated hypericin—are showing higher response rates and fewer side effects, giving patients more effective options beyond traditional chemotherapy.",
-      "Advanced lab tests that look at single cells or use a simple protein stain (TRBC1) can now tell doctors more accurately whether a skin rash is harmless inflammation, a self‑healing condition (LyP), or an aggressive lymphoma, leading to earlier and more precise treatment.",
-      "Low‑dose, lesion‑focused radiation can shrink tumors with minimal irritation, but it may let the spots return sooner, so patients should discuss the balance between convenience and long‑term control with their doctor.",
-      "The popular eczema drug dupilumab does not appear to raise lymphoma risk in children, but doctors still need to rule out true lymphoma before starting it, because it can mask warning signs.",
-      "Patient‑focused education tools are being refined to be easy to read and understand, helping families navigate the disease and treatment choices, even though larger studies are still needed to prove they improve quality of life."
+      "New targeted drugs like a Vβ2‑directed antibody‑drug conjugate and the approved antibody mogamulizumab are showing promise in shrinking tumors while sparing most normal immune cells, offering hope for better control of the disease.",
+      "Simple lab tests such as a TRBC1 staining score can now tell doctors more reliably whether a skin rash is true lymphoma or just inflammation, reducing the need for multiple invasive biopsies.",
+      "Research shows the cancer’s environment shifts from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) immune state, helping the malignant cells hide and grow, which explains why some patients progress despite treatment.",
+      "Low‑dose, lesion‑focused radiation works quickly with few side effects but may let tumors return sooner, so doctors balance convenience against the risk of relapse.",
+      "Certain drugs (e.g., trimethoprim‑sulfamethoxazole) can mimic lymphoma on skin tests, and while dupilumab appears safe for eczema, it should be avoided until lymphoma is definitively ruled out, underscoring the need for careful monitoring and repeat skin checks."
     ],
-    "generated": "2026-08-03",
-    "n_papers": 58,
+    "generated": "2026-08-10",
+    "n_papers": 61,
     "by": "groq"
   }
 }
