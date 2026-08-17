@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42587213",
+      "pmid": "42587213",
+      "doi": "10.1007/s12308-026-00706-5",
+      "title": "Morphologic mimicry of cutaneous T-cell lymphoma as classic Hodgkin lymphoma-a case report.",
+      "authors": "Lunt J, Burns R, Schammel CM, Knight J.",
+      "journal": "Journal of hematopathology",
+      "date": "2026-08-12",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42587213/",
+      "abstract": "BackgroundCutaneous T-cell lymphoma (CTCL) and classic Hodgkin lymphoma (cHL) are distinct lymphoid neoplasms with differing cells of origin and immunophenotypes. Morphological overlap between these entities can pose significant diagnostic challenges, particularly in patients with a concurrent or prior lymphoma diagnosis.Case presentationA 67-year-old male with a history of cHL and mycosis fungoides/lymphomatoid papulosis presented with new PET-positive right groin lymphadenopathy. Biopsy revealed atypical cells morphologically consistent with Hodgkin/Reed-Sternberg cells. However, clonal T-cell receptor beta gene rearrangement and immunophenotypic findings were inconsistent with cHL, and integration of these results with the patient's clinical history led to a final diagnosis of nodal involvement by CTCL.ConclusionCTCL can morphologically mimic cHL, representing a significant diagnostic pitfall. This case underscores the critical role of immunophenotyping, molecular studies, and clinical context in accurately diagnosing complex hematolymphoid neoplasms.",
+      "summary": "A 67‑year‑old man who previously had both classic Hodgkin lymphoma and a type of skin T‑cell cancer (mycosis fungoides) developed a swollen lymph node that looked under the microscope like Hodgkin lymphoma. However, DNA tests showing a T‑cell gene rearrangement and special staining patterns revealed that the node was actually spread by his cutaneous T‑cell lymphoma, not a new Hodgkin cancer. The case highlights that skin‑derived T‑cell lymphomas can masquerade as Hodgkin lymphoma, so detailed molecular and immunologic testing is essential for correct diagnosis.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-17"
+    },
+    {
       "id": "MED:42384055",
       "pmid": "42384055",
       "doi": "10.1007/s00105-026-05719-w",
@@ -982,20 +998,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 61,
-    "new_this_run": 3
+    "total": 62,
+    "new_this_run": 1
   },
-  "updated": "2026-08-10T14:32:21Z",
+  "updated": "2026-08-17T13:53:23Z",
   "overview": {
     "bullets": [
-      "New targeted drugs like a Vβ2‑directed antibody‑drug conjugate and the approved antibody mogamulizumab are showing promise in shrinking tumors while sparing most normal immune cells, offering hope for better control of the disease.",
-      "Simple lab tests such as a TRBC1 staining score can now tell doctors more reliably whether a skin rash is true lymphoma or just inflammation, reducing the need for multiple invasive biopsies.",
-      "Research shows the cancer’s environment shifts from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) immune state, helping the malignant cells hide and grow, which explains why some patients progress despite treatment.",
-      "Low‑dose, lesion‑focused radiation works quickly with few side effects but may let tumors return sooner, so doctors balance convenience against the risk of relapse.",
-      "Certain drugs (e.g., trimethoprim‑sulfamethoxazole) can mimic lymphoma on skin tests, and while dupilumab appears safe for eczema, it should be avoided until lymphoma is definitively ruled out, underscoring the need for careful monitoring and repeat skin checks."
+      "New lab tests that look for a single‑type T‑cell marker (TRBC1) or use detailed DNA/RNA profiling can tell doctors faster and more accurately whether a rash is true CTCL or a harmless look‑alike, which means quicker, more appropriate treatment.",
+      "Targeted medicines are expanding: drugs like mogamulizumab and a novel antibody‑drug that seeks a specific T‑cell receptor (Vβ2) can shrink tumors in many patients, while low‑dose focused radiation can control individual lesions with fewer side‑effects, though higher doses may keep the cancer from returning.",
+      "Researchers now see CTCL as a disease where the immune system flips from a tumor‑fighting mode (TH1) to a less effective one (TH2), letting cancer cells hide and grow; this shift, plus changes in skin microbes, helps explain why the disease can flare or resist therapy.",
+      "Even common drugs can mimic CTCL, and rare conditions can look like other illnesses (e.g., a skin rash that seemed like eczema or a growth disorder), so doctors stress repeat biopsies and careful history to avoid misdiagnosis.",
+      "Overall survival calculators built from large cancer registries give patients a clearer picture of their prognosis based on age, stage and treatment, helping families plan and discuss realistic expectations."
     ],
-    "generated": "2026-08-10",
-    "n_papers": 61,
+    "generated": "2026-08-17",
+    "n_papers": 62,
     "by": "groq"
   }
 }
