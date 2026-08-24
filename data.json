@@ -17,6 +17,22 @@
       "first_seen": "2026-08-17"
     },
     {
+      "id": "MED:42605024",
+      "pmid": "42605024",
+      "doi": "10.1002/cnr2.70641",
+      "title": "Safety and Effectiveness of Denileukin Diftitox-cxdl in Patients With Relapsed/Refractory Peripheral T-Cell Lymphoma and Cutaneous T-Cell Lymphoma: An All-Case Post-Marketing Study in Japan.",
+      "authors": "Jo T, Matsumoto K, Ishii M, Izutsu K.",
+      "journal": "Cancer reports (Hoboken, N.J.)",
+      "date": "2026-08-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42605024/",
+      "abstract": "IntroductionDenileukin diftitox (DD)-cxdl, a fusion protein comprising diphtheria toxin fragments and human interleukin-2, is a treatment for peripheral T-cell lymphoma (PTCL) and cutaneous T-cell lymphoma (CTCL). Previous trials have enrolled a limited number of patients, and there is a need to evaluate DD-cxdl in a more diverse population, including those with different ages and treatment histories.MethodsThis observational post-marketing study (19 May 2021 to 1 February 2024) was conducted in over 200 institutions in Japan to evaluate the safety and effectiveness of DD-cxdl in patients with relapsed or refractory PTCL and CTCL (NCT05137847; jRCT2031220196). Patient characteristics, status of drug administration, adverse events (AEs), adverse drug reactions (ADRs), and effectiveness were assessed. Capillary leak syndrome was specified as an AE of special interest.ResultsData from 104 patients were analyzed (PTCL: 85; CTCL: 19), including 57 male patients (54.8%). The median age was 74 (range: 20-88) years. The median number of prior chemotherapy lines was 3.5 (1.0-10.0), and approximately half (55.8%) of the patients discontinued treatment during cycle 1. Most patients experienced AEs (94.2%) and ADRs (84.6%), and the most common serious ADR was capillary leak syndrome (22.1%). Effectiveness could be assessed in 80/104 patients. The overall objective response rate was 16.3% (95% confidence interval: 8.9, 26.2), and in patients with PTCL and CTCL it was 15.4% (7.6, 26.5) and 20.0% (4.3, 48.1), respectively. Four patients (6.2%) with PTCL achieved a complete response.ConclusionsThis is the first observational study to evaluate the safety and effectiveness of DD-cxdl in Japanese patients with relapsed or refractory PTCL and CTCL in daily clinical practice. No new safety concerns were identified. Clinicians should remain aware of the risk of capillary leak syndrome.Trail registrationClinicalTrials.gov identifier: NCT05137847 and Japan Registry of Clinical Trials identifier: jRCT2031220196.",
+      "summary": "The study looked at how safe and effective denileukin diftitox—a drug that combines a toxin with an immune‑system signal—was for Japanese patients whose cutaneous T‑cell lymphoma (CTCL) or other peripheral T‑cell lymphomas had come back or not responded to prior treatments. In real‑world practice, about one‑in‑six patients showed a measurable tumor shrinkage, with a slightly higher response rate in CTCL (20 %) than in other T‑cell lymphomas, but most patients experienced side effects, the most serious being capillary leak syndrome in roughly one‑quarter of cases. No new safety problems were found, though doctors need to watch closely for that particular complication.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-24"
+    },
+    {
       "id": "MED:42384055",
       "pmid": "42384055",
       "doi": "10.1007/s00105-026-05719-w",
@@ -127,6 +143,22 @@
       "summary": "The authors reviewed data on the biologic drug dupilumab, which blocks the immune signals IL‑4 and IL‑13, to see whether it raises the risk of cutaneous T‑cell lymphoma—a rare skin cancer that can look like severe eczema—in children with atopic dermatitis. They found no convincing evidence that dupilumab increases lymphoma risk in pediatric patients, but they stress the importance of careful monitoring and distinguishing true eczema from early signs of lymphoma. The paper offers practical guidance for doctors and families on how to watch for warning signs while using the medication.",
       "summary_by": "groq",
       "first_seen": "2026-08-03"
+    },
+    {
+      "id": "MED:42210690",
+      "pmid": "42210690",
+      "doi": "10.1097/pas.0000000000002572",
+      "title": "TRBC1 Immunohistochemistry Utilization in Formalin-fixed Paraffin-embedded Tissue as an Adjunct to T-cell Clonality Testing in the Assessment of Cutaneous Lymphoproliferative Disorders.",
+      "authors": "Grand DG, Cloutier JM, Palmer-DeClara SR, Karrs JX, Yan S, Momtahen S, Jobbagy S, Trepanowski N, Carter JB, Lansigan F, LeBlanc RE.",
+      "journal": "The American journal of surgical pathology",
+      "date": "2026-05-29",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42210690/",
+      "abstract": "T-cell receptor β chain constant region 1 (TRBC1) immunohistochemistry (IHC) has emerged as a novel tool for identifying T-cell clonality in skin biopsies. Its performance in routine formalin-fixed, paraffin-embedded (FFPE) skin specimens across the spectrum of cutaneous T-cell lymphoma (CTCL), however, remains an area of active investigation. We evaluated TRBC1 IHC in 36 cases of cutaneous T-cell lymphoproliferative disorders and 31 polyclonal controls. TRBC1 was assessed relative to CD3 by blinded consensus interpretation followed by semiquantitative estimation of TRBC1-positive cells as a percentage of CD3-positive T-cells. Results were compared with molecular clonality test data, and subtype-specific analyses were performed. Overall concordance of TRBC1 consensus interpretation with clonality testing was 79% (sensitivity 64%, specificity 97%, positive predictive value 96%, negative predictive value 70%). Sensitivity was higher (72%) when analysis was restricted to cases of mycosis fungoides (MF) and controls, but sensitivity decreased (50%) when assessment was restricted to only the intraepithelial T-cells. Sensitivity was also lower (56%) with the assessment of non-MF CTCL. Thresholds of ≤20% or ≥80% and ≤30% or ≥70% TRBC1-positive cells permitted optimal discrimination between monoclonality and polyclonality. As anticipated, lymphoproliferative disorders composed of T-cells that did not express a β chain, including those composed of TCR-ɣ/δ T-cells, lacked TRBC1 expression. Overall, TRBC1 IHC demonstrated modest utility as an adjunctive marker of T-cell clonality in FFPE skin biopsies, with greatest diagnostic value in MF when evaluation is not restricted to intraepithelial lymphocytes.",
+      "summary": "The study tested whether a new staining method (TRBC1 immunohistochemistry) can help spot clonal T‑cell populations in routine skin biopsy slides from patients with cutaneous T‑cell lymphoma. It found that the test correctly identified clonal disease about three‑quarters of the time, working best for the common form called mycosis fungoides, but was less reliable when only the surface‑layer lymphocytes were examined. Thus, TRBC1 staining can be a useful additional tool, especially for mycosis fungoides, but it should not replace standard molecular tests.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-24"
     },
     {
       "id": "MED:42183626",
@@ -998,20 +1030,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 62,
-    "new_this_run": 1
+    "total": 64,
+    "new_this_run": 2
   },
-  "updated": "2026-08-17T13:53:23Z",
+  "updated": "2026-08-24T14:03:04Z",
   "overview": {
     "bullets": [
-      "New lab tests that look for a single‑type T‑cell marker (TRBC1) or use detailed DNA/RNA profiling can tell doctors faster and more accurately whether a rash is true CTCL or a harmless look‑alike, which means quicker, more appropriate treatment.",
-      "Targeted medicines are expanding: drugs like mogamulizumab and a novel antibody‑drug that seeks a specific T‑cell receptor (Vβ2) can shrink tumors in many patients, while low‑dose focused radiation can control individual lesions with fewer side‑effects, though higher doses may keep the cancer from returning.",
-      "Researchers now see CTCL as a disease where the immune system flips from a tumor‑fighting mode (TH1) to a less effective one (TH2), letting cancer cells hide and grow; this shift, plus changes in skin microbes, helps explain why the disease can flare or resist therapy.",
-      "Even common drugs can mimic CTCL, and rare conditions can look like other illnesses (e.g., a skin rash that seemed like eczema or a growth disorder), so doctors stress repeat biopsies and careful history to avoid misdiagnosis.",
-      "Overall survival calculators built from large cancer registries give patients a clearer picture of their prognosis based on age, stage and treatment, helping families plan and discuss realistic expectations."
+      "New targeted drugs—like the toxin‑linked antibody denileukin diftitox, the skin‑homing antibody mogamulizumab, and experimental Vβ2‑directed antibody‑drug conjugates—are showing meaningful tumor shrinkage in many patients, offering more options beyond traditional chemotherapy.",
+      "Modern lab tests that stain for the protein TRBC1 or use DNA sequencing can spot the cancer’s unique T‑cell fingerprint in skin biopsies, helping doctors tell true CTCL apart from harmless inflammation or drug‑triggered rashes.",
+      "Researchers now see CTCL as a disease where the cancer cells hijack the immune system, shifting it from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) mode and using nearby skin microbes and immune cells to grow and hide.",
+      "Low‑dose, focused radiation can clear individual skin lesions with few side effects, but the tumors are more likely to return, so doctors must balance convenience with long‑term control.",
+      "Because CTCL can masquerade as other conditions—like severe eczema, drug‑induced skin reactions, or even growth disorders—getting a thorough history, repeat biopsies, and careful monitoring of new drugs (e.g., antibiotics, dupilumab) is essential to avoid misdiagnosis."
     ],
-    "generated": "2026-08-17",
-    "n_papers": 62,
+    "generated": "2026-08-24",
+    "n_papers": 64,
     "by": "groq"
   }
 }
