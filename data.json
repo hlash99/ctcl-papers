@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42665902",
+      "pmid": "42665902",
+      "doi": "10.1002/acm2.70774",
+      "title": "Clinical in-vivo dosimetry for total skin electron therapy using gafchromic™ EBT4 film.",
+      "authors": "Zhang Z, Lu L, Videtic GMM, Sheen C, Xia P, Qi P.",
+      "journal": "Journal of applied clinical medical physics",
+      "date": "2026-09-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42665902/",
+      "abstract": "BackgroundTotal skin electron therapy (TSET) is a standard treatment for cutaneous T-cell lymphoma. Due to the complex patient positioning and irregular body contours, robust in-vivo dosimetry (IVD) is essential to verify dose uniformity. While thermoluminescent dosimeters (TLDs) are traditional standard, their utility is hindered by labor-intensive, manual processing.PurposesThis study evaluates the clinical implementation of a Gafchromic™ EBT4 film-based IVD system integrated with a bespoke, open-source analysis platform for automated batch-processing. To address the inherent orientation dependence and loss of film orientation frequently encountered when preparing small-format IVD films with a manual paper cutter, we developed an orthogonal dual-scan protocol. By averaging pixel values from two perpendicular scans for both calibration and clinical measurement, this protocol effectively mitigates orientation-dependent uncertainties and ensures dosimetric robustness.MethodsThe film-based IVD system was clinically assessed in five TSET treatments and compared to six treatments utilizing TLD-based IVD. Dosimetric accuracy was evaluated by comparing normalized fractional doses to the prescription. Statistical analysis was performed using the Mann-Whitney U test with the Benjamini-Hochberg procedure to control the false discovery rate across 20 anatomical sites. Workflow efficiency was quantified by the total time required for data readout and analysis per patient.ResultsThe EBT4 film-based IVD demonstrated dosimetric accuracy comparable to the TLDs, with mean fractional doses of 102.7% ± 9.6% and 100.4% ± 9.7%, respectively (p = 0.25). Clinical implementation of the film-based approach significantly enhanced efficiency, reducing the total processing time from approximately 50 min to 15 min per treatment.ConclusionsThe proposed EBT4 film-based IVD system, supported by open-source software and an orthogonal dual-scan protocol, offers a robust, cost-effective, and time-efficient alternative to traditional TLDs. This approach streamlines the clinical workflow without compromising dosimetric accuracy, making it a viable solution for TSET and broader radiotherapy IVD applications.",
+      "summary": "The researchers tested a new way to check the radiation dose delivered during total‑skin electron therapy for cutaneous T‑cell lymphoma, using a special thin film (Gafchromic EBT4) and automated software instead of the traditional crystal‑based dosimeters. They found the film method gave dose measurements just as accurate as the old technique but cut the time needed for analysis from about 50 minutes to 15 minutes per patient, making the process faster and easier.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-31"
+    },
+    {
       "id": "MED:42587213",
       "pmid": "42587213",
       "doi": "10.1007/s12308-026-00706-5",
@@ -177,6 +193,22 @@
       "first_seen": "2026-06-29"
     },
     {
+      "id": "MED:42166117",
+      "pmid": "42166117",
+      "doi": "10.23736/s2784-8671.26.08555-5",
+      "title": "Primary cutaneous lymphomas in children: a single-center retrospective analysis and narrative review of the literature.",
+      "authors": "Rapparini L, Ricci M, Zengarini C, Guglielmo A, Baruffaldi G, LA Placa M, Neri I, Pileri A.",
+      "journal": "Italian journal of dermatology and venereology",
+      "date": "2026-05-21",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42166117/",
+      "abstract": "BackgroundPrimary cutaneous lymphomas (PCLs) are uncommon in children, with mycosis fungoides (MF), lymphomatoid papulosis (LyP), and primary cutaneous small/medium CD4+ T-cell lymphoproliferative disorder (PCSM-TCLPD) representing the most frequent entities. Due to their rarity, available data derive mainly from case reports and small series, and diagnostic delays are frequent. This study aimed to describe the clinical, histopathological, and therapeutic features of pediatric PCLs in a single Italian referral centre and compare them with the literature evidence.MethodsWe conducted a single-center, retrospective observational study including patients aged ≤16 years with a histologically confirmed diagnosis of PCLs, followed for at least six months at the Dermatology Unit of the University Hospital of Bologna between 2002 and 2024. Clinical, histological, therapeutic, and follow-up data were collected and analyzed.ResultsAmong 354 PCL patients, 10 pediatric cases were identified: six MF, three LyP, and one PCSM-TCLPD. The mean age at diagnosis was 9.1 years. MF cases were mostly early-stage (IA, 5/6), with folliculotropic (67%), hypopigmented (50%), and classic (50%) variants; all were treated with topical corticosteroids and/or PUVA, with good long-term outcomes (67% complete remission). LyP patients presented at younger ages (mean 5.7 years) with type A (N.=2) and D (N.=1) subtypes; all achieved complete remission despite recurrences, one requiring methotrexate. The single PCSM-TCLPD case was cured with surgical excision. After a mean follow-up of 8.2 years, all patients were alive, most disease-free.ConclusionsPediatric PCLs are rare but generally indolent, with an excellent prognosis. However, their clinical heterogeneity and diagnostic delay highlight the importance of early biopsy, integrated clinicopathological assessment, and long-term follow-up. Multicenter studies are needed to establish tailored treatment algorithms for children.",
+      "summary": "The study looked at ten children (average age 9) who were diagnosed with three types of skin‑based lymphomas—mycosis fungoides, lymphomatoid papulosis, and a small‑medium CD4+ T‑cell disorder—by reviewing records from an Italian hospital over the past two decades. All cases were low‑grade (slow‑growing) and responded well to simple skin‑directed treatments such as topical steroids, light therapy (PUVA), or surgery, with most children achieving complete remission and remaining disease‑free after many years of follow‑up. The authors stress that, despite the rarity and varied appearance of these cancers in kids, early biopsy and coordinated pathology‑clinical review are key to prompt diagnosis and excellent outcomes.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-31"
+    },
+    {
       "id": "MED:42134534",
       "pmid": "42134534",
       "doi": "10.1016/j.jid.2026.03.045",
@@ -255,6 +287,22 @@
       "summary": "Researchers pooled results from clinical trials and real‑world studies to see how well the antibody drug mogamulizumab works in cutaneous T‑cell lymphoma, a skin cancer that includes mycosis fungoides and Sézary syndrome. About 41% of patients overall had their disease shrink, with a higher response in Sézary syndrome (≈53%) and especially in the blood component of the disease (≈83%), while serious side effects occurred in roughly 19% of patients. This suggests mogamulizumab is most effective for the blood‑based form of the disease and for Sézary syndrome.",
       "summary_by": "groq",
       "first_seen": "2026-07-05"
+    },
+    {
+      "id": "MED:42055866",
+      "pmid": "42055866",
+      "doi": "10.1016/j.blre.2026.101393",
+      "title": "Primary cutaneous T-cell lymphoma (mycosis fungoides and Sézary syndrome): A practical compartment-based review.",
+      "authors": "Mozas P, Combalia A, Antelo G, López-Oreja I, Castrejón de Anta N, Monge-Escartín I, Moreno-Alonso D, Gil-Lianes J, Juncosa M, Salas MQ, Charry P, Albero R, García-Herrera A, López Guillermo A, Estrach T.",
+      "journal": "Blood reviews",
+      "date": "2026-04-24",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42055866/",
+      "abstract": "Primary cutaneous lymphomas are a heterogeneous group of lymphoid neoplasms with predominant skin involvement, among which mycosis fungoides (MF) and Sézary syndrome (SS) are the most frequent and clinically challenging entities. This narrative review provides a multidisciplinary, compartment-oriented approach to the diagnosis, staging and management of MF/SS. We summarize the therapeutic principles across the disease continuum, from early-stage, skin-directed management to advanced-stage systemic therapy, including oral retinoids, methotrexate, extracorporeal photopheresis, mogamulizumab, brentuximab vedotin, chemotherapy and allogeneic stem-cell transplantation. We also address large-cell transformation, response assessment, follow-up strategies, and practical issues surrounding treatment maintenance, spacing and discontinuation in a chronic, relapsing disease. Finally, we highlight the importance of supportive care, particularly pruritus control and palliative integration when no further effective options remain, and provide pragmatic algorithms to facilitate real-world clinical decision-making.",
+      "summary": "The review outlines a step‑by‑step, “compartment‑based” way to diagnose, stage and treat the two main skin‑based T‑cell cancers—mycosis fungoides and Sézary syndrome—starting with simple skin‑directed therapies for early disease and moving to systemic drugs (like oral retinoids, methotrexate, a light‑based blood treatment, targeted antibodies, chemotherapy and stem‑cell transplant) for advanced cases. It also discusses how to recognize when the cancer transforms into a more aggressive form, how to measure response, and how to manage chronic symptoms such as itching, offering practical algorithms for real‑world treatment decisions.",
+      "summary_by": "groq",
+      "first_seen": "2026-08-31"
     },
     {
       "id": "MED:42011981",
@@ -1030,20 +1078,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 64,
-    "new_this_run": 2
+    "total": 67,
+    "new_this_run": 3
   },
-  "updated": "2026-08-24T14:03:04Z",
+  "updated": "2026-08-31T19:30:29Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the toxin‑linked antibody denileukin diftitox, the skin‑homing antibody mogamulizumab, and experimental Vβ2‑directed antibody‑drug conjugates—are showing meaningful tumor shrinkage in many patients, offering more options beyond traditional chemotherapy.",
-      "Modern lab tests that stain for the protein TRBC1 or use DNA sequencing can spot the cancer’s unique T‑cell fingerprint in skin biopsies, helping doctors tell true CTCL apart from harmless inflammation or drug‑triggered rashes.",
-      "Researchers now see CTCL as a disease where the cancer cells hijack the immune system, shifting it from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) mode and using nearby skin microbes and immune cells to grow and hide.",
-      "Low‑dose, focused radiation can clear individual skin lesions with few side effects, but the tumors are more likely to return, so doctors must balance convenience with long‑term control.",
-      "Because CTCL can masquerade as other conditions—like severe eczema, drug‑induced skin reactions, or even growth disorders—getting a thorough history, repeat biopsies, and careful monitoring of new drugs (e.g., antibiotics, dupilumab) is essential to avoid misdiagnosis."
+      "New targeted drugs—like the antibody mogamulizumab, a toxin‑linked antibody (denileukin diftitox), and a novel Vβ2‑directed antibody‑drug conjugate—are showing meaningful tumor shrinkage in many patients, especially those with blood‑based disease, while low‑dose radiation can control skin lesions with fewer side effects but may need repeat treatment.",
+      "Advanced lab tests, such as TRBC1 staining and detailed DNA sequencing, are now able to spot the cancer‑specific T‑cell clone more reliably and earlier, helping doctors distinguish true CTCL from other skin problems or mimicking cancers.",
+      "Research shows CTCL grows because the immune environment in the skin flips from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) state, and certain genetic changes (e.g., in CCR4 or STAT3) let the cancer hide and resist therapy.",
+      "CTCL can look like many other conditions—including Hodgkin lymphoma, severe eczema, drug reactions, or even hormonal disorders in children—so thorough history, repeat biopsies, and careful interpretation of lab results are essential to avoid misdiagnosis.",
+      "While newer biologic drugs such as dupilumab appear safe and do not increase lymphoma risk in kids, ongoing monitoring remains important, and patients should be aware that some diagnostic tests (like chimerism after stem‑cell transplant) can be confused by the disease itself."
     ],
-    "generated": "2026-08-24",
-    "n_papers": 64,
+    "generated": "2026-08-31",
+    "n_papers": 67,
     "by": "groq"
   }
 }
