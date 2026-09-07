@@ -49,6 +49,22 @@
       "first_seen": "2026-08-24"
     },
     {
+      "id": "MED:42479920",
+      "pmid": "42479920",
+      "doi": "10.1111/cup.70176",
+      "title": "Primary Cutaneous Follicular Helper T-Cell Lymphoma: A Clinicopathological Study of Six Cases and Review of the Literature.",
+      "authors": "Xie J, Li Z, Zhou X, Zheng Y, Zhang Y, Xu Y, Qin C, Li X.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-07-21",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42479920/",
+      "abstract": "BackgroundPrimary cutaneous follicular helper T-cell lymphoma (pcTFH-L) is a rare, poorly characterized entity. We present six new cases to elucidate its clinicopathological features.MethodsWe retrospectively analyzed the clinical, histomorphological, and immunohistochemical features (TFH markers: PD-1, CXCL13, BCL-6, CD10, ICOS), EBV status, and T-cell receptor clonality of six pcTFH-L cases, comparing findings with 48 previously reported cases.ResultsThe cohort (five males, one female; median age 66.5 years, range 42-75 years) presented with localized skin lesions without B symptoms or lymphadenopathy. All cases showed dermal/subcutaneous infiltration by atypical lymphocytes without epidermotropism (nodular pattern in 4 cases, diffuse pattern in 2 cases). Prominent high endothelial venules (HEVs) were exhibited in 4/6 cases. Neoplastic cells in all cases expressed CD4 and at least three TFH markers, with PD-1 (6/6), ICOS (6/6), and CXCL13 (6/6) being the most sensitive. CD21-positive follicular dendritic cell (FDC) networks were observed in 4 of 6 cases. Epstein-Barr virus-encoded RNA (EBER) was positive in 4 of 6 cases, and clonal T-cell receptor (TCR) gene rearrangements were detected in all 6 cases tested. Treatments varied from none to combination chemotherapy, with outcomes ranging from stable disease to complete remission; one patient died of heart failure, and another died at 20 months despite treatment.ConclusionsThis case series reinforces pcTFH-L as a distinct cutaneous lymphoma with a characteristic immunophenotype and microenvironment. The consistent expression of multiple TFH markers, particularly PD-1, ICOS, and CXCL13, is essential for accurate diagnosis and differentiation from other cutaneous T-cell lymphoproliferative disorders. The clinical course appears heterogeneous, with some cases showing indolent behavior while others may have more aggressive outcomes.",
+      "summary": "Researchers examined six patients with a rare skin lymphoma that originates from follicular helper T cells, describing the tumors’ appearance under the microscope and confirming they consistently expressed several hallmark proteins (PD‑1, ICOS, CXCL13) that help identify this disease. They found that the cancer usually stays limited to the skin, but its behavior varies—some patients did well with treatment while others had aggressive disease and poor outcomes. This work clarifies how to recognize this lymphoma and underscores that its clinical course can be unpredictable.",
+      "summary_by": "groq",
+      "first_seen": "2026-09-07"
+    },
+    {
       "id": "MED:42384055",
       "pmid": "42384055",
       "doi": "10.1007/s00105-026-05719-w",
@@ -1078,20 +1094,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 67,
-    "new_this_run": 3
+    "total": 68,
+    "new_this_run": 1
   },
-  "updated": "2026-08-31T19:30:29Z",
+  "updated": "2026-09-07T18:15:21Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the antibody mogamulizumab, a toxin‑linked antibody (denileukin diftitox), and a novel Vβ2‑directed antibody‑drug conjugate—are showing meaningful tumor shrinkage in many patients, especially those with blood‑based disease, while low‑dose radiation can control skin lesions with fewer side effects but may need repeat treatment.",
-      "Advanced lab tests, such as TRBC1 staining and detailed DNA sequencing, are now able to spot the cancer‑specific T‑cell clone more reliably and earlier, helping doctors distinguish true CTCL from other skin problems or mimicking cancers.",
-      "Research shows CTCL grows because the immune environment in the skin flips from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) state, and certain genetic changes (e.g., in CCR4 or STAT3) let the cancer hide and resist therapy.",
-      "CTCL can look like many other conditions—including Hodgkin lymphoma, severe eczema, drug reactions, or even hormonal disorders in children—so thorough history, repeat biopsies, and careful interpretation of lab results are essential to avoid misdiagnosis.",
-      "While newer biologic drugs such as dupilumab appear safe and do not increase lymphoma risk in kids, ongoing monitoring remains important, and patients should be aware that some diagnostic tests (like chimerism after stem‑cell transplant) can be confused by the disease itself."
+      "New targeted drugs—like the toxin‑linked antibody against a common T‑cell receptor (Vβ2) and the engineered toxin denileukin diftitox—are showing real tumor shrinkage in patients whose disease has returned, offering hope beyond traditional chemotherapy.",
+      "Advanced lab tests, especially the TRBC1 staining and sophisticated DNA sequencing, are becoming reliable ways to confirm a CTCL diagnosis and to track how the cancer evolves, which can prevent misdiagnoses such as mistaking it for Hodgkin lymphoma or other skin conditions.",
+      "Radiation therapy is being refined: thin‑film dosimetry makes dose checks faster and more accurate, and low‑dose focal radiation can clear individual lesions with few side‑effects, though higher doses may still be needed to keep tumors from returning.",
+      "Research into the disease’s biology reveals that CTCL hijacks the immune system—shifting from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) environment—and that specific genetic changes (e.g., CCR4 and STAT3 mutations) drive resistance, pointing to future combination therapies that restore immune balance.",
+      "Practical cautions: children can present with unusual signs (like enlarged hands/feet) that mimic other disorders, and while drugs such as dupilumab for eczema do not appear to raise lymphoma risk, ongoing monitoring and clear communication with doctors remain essential."
     ],
-    "generated": "2026-08-31",
-    "n_papers": 67,
+    "generated": "2026-09-07",
+    "n_papers": 68,
     "by": "groq"
   }
 }
