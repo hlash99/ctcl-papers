@@ -129,6 +129,38 @@
       "first_seen": "2026-06-29"
     },
     {
+      "id": "MED:42363651",
+      "pmid": "42363651",
+      "doi": "10.1111/vde.70098",
+      "title": "Fluorescent Light Energy (FLE) as an Adjunctive Therapy in Canine Cutaneous Epitheliotropic Lymphoma (CTCL).",
+      "authors": "Nowell S, Fantini O, Roman A, Milley C, Watson J, Bauer C.",
+      "journal": "Veterinary dermatology",
+      "date": "2026-06-26",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42363651/",
+      "abstract": "BackgroundFluorescent light energy (FLE; Phovia, Vetoquinol) is a photobiomodulation therapy that promotes healing and reduces inflammation. Cutaneous epitheliotropic lymphoma (CTCL) is a neoplastic skin disease with limited treatment options. Although FLE is not considered genotoxic, its use in neoplastic conditions is off-label.HypothesisTo assess the safety and clinical effect of FLE as an adjunctive treatment for canine CTCL.AnimalsEight client-owned dogs were diagnosed with CTCL via biopsy analysis and immunohistochemical analysis.Materials and methodsEach dog had one CTCL lesion treated with FLE with a lesion serving as a vehicle-control. Treatments were administered weekly for 6 weeks, followed by 3 months follow-up. Focal nodular lesions were assessed weekly using Response Evaluation Criteria of Solid Tumours (RECIST), while diffuse lesions were evaluated using the Canine Epitheliotropic Lymphoma Extent and Severity Index (CELESI). Owner-perceived efficacy and quality of life were assessed using the Owner Global Assessment of Treatment Efficacy (OGATE) and a quality-of-life (QoL) survey.ResultsNo statistically significant differences in estimated marginal means were observed between sites at any time point (p > 0.05). Within-subject analyses suggested more favourable lesion progression at FLE-treated sites, and 75% of RECIST-evaluated FLE lesions maintained stable disease. Diffuse FLE-treated lesions demonstrated clinical severity reductions of ≤ 35.3%. Over 66% of owners rated treatment response as 'fair' to 'excellent' on the OGATE. One dog was withdrawn at Week 3 as a consequence of unrelated worsening.Conclusions and clinical relevanceFLE appears to be a safe adjunctive therapy for canine CTCL, although statistically significant treatment effects were not demonstrated.",
+      "summary": "The study tested whether weekly fluorescent light energy (a non‑drug light therapy that promotes healing) could safely improve skin lesions in eight dogs with cutaneous epitheliotropic lymphoma when added to their usual care. While the treated spots showed a trend toward slower tumor growth and most owners reported at least a fair benefit, the differences were not statistically significant, indicating the therapy appears safe but its effectiveness remains unproven.",
+      "summary_by": "groq",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "id": "MED:42334715",
+      "pmid": "42334715",
+      "doi": "10.1186/s41687-026-01131-z",
+      "title": "Assessing content validity of the functional assessment of cancer therapy-cutaneous T-cell lymphoma (FACT-CTCL): a qualitative study.",
+      "authors": "Raymundo C, Park JJS, Di M, Larocca C, Cella D, Shinohara MM.",
+      "journal": "Journal of patient-reported outcomes",
+      "date": "2026-06-23",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42334715/",
+      "abstract": "BackgroundCutaneous T-cell lymphomas (CTCLs) are a heterogeneous group of non-Hodgkin lymphomas characterized by neoplastic T cells in the skin. Common subtypes of CTCL are mycosis fungoides (MF) and Sézary syndrome (SS). Patients with MF/SS can experience significant symptoms that affect health-related quality of life (HRQoL). Although the Functional Assessment of Cancer Therapy-Cutaneous T-Cell Lymphoma (FACT-CTCL) was developed as a disease-specific patient-reported outcome measure (PROM) for MF/SS, qualitative evaluation of its content validity in the target population has not been assessed. We therefore evaluated the content validity of the FACT-CTCL in patients with MF/SS and clinicians with expertise in MF/SS.MethodsSemi-structured cognitive interviews of patients with a diagnosis of MF or SS, as well as healthcare providers with expertise in treating MF/SS were conducted in alignment with the Consensus-based Standards for the Selection of Health Measurement Instruments (COSMIN). Patients evaluated the relevance, comprehensibility, and comprehensiveness of the FACT-CTCL. Clinicians evaluated relevance and comprehensiveness.ResultsTwelve patients (9 MF, 3 SS) and eight clinician experts (3 oncologists, 4 dermatologists, 1 nurse practitioner) participated. The median age of patients was 68 years (range 36-77); six had early-stage (IA - IIA) disease and six had advanced-stage (IIB - IVB) disease. All items were deemed relevant by at least 95% of participants, and 44 of 47 items achieved 100% relevance across patients and clinicians. All items achieved at least 90% comprehensibility among patients, and 39 of 47 scored items were understood by all patients. All patients found the instructions and response options easy to understand, and all participants considered the instrument comprehensive.ConclusionsThe FACT-CTCL demonstrated strong content validity in this sample of patients with MF/SS and expert clinicians. These findings support further evaluation and use of the FACT-CTCL as a disease-specific HRQoL instrument in MF/SS, while additional study in larger and more diverse populations remains warranted.",
+      "summary": "Researchers interviewed people with mycosis fungoides or Sézary syndrome and their doctors to see whether the FACT‑CTCL questionnaire—designed to capture how the disease affects daily life—covers the right topics and is easy to understand. They found that almost every question was judged relevant, clear and comprehensive by both patients and clinicians. This supports using the FACT‑CTCL to measure quality‑of‑life impacts in CTCL, though larger studies are still needed.",
+      "summary_by": "groq",
+      "first_seen": "2026-09-14"
+    },
+    {
       "id": "MED:42274451",
       "pmid": "42274451",
       "doi": "10.1016/j.jid.2026.03.035",
@@ -1094,20 +1126,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 68,
-    "new_this_run": 1
+    "total": 70,
+    "new_this_run": 2
   },
-  "updated": "2026-09-07T18:15:21Z",
+  "updated": "2026-09-14T18:39:12Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like the toxin‑linked antibody against a common T‑cell receptor (Vβ2) and the engineered toxin denileukin diftitox—are showing real tumor shrinkage in patients whose disease has returned, offering hope beyond traditional chemotherapy.",
-      "Advanced lab tests, especially the TRBC1 staining and sophisticated DNA sequencing, are becoming reliable ways to confirm a CTCL diagnosis and to track how the cancer evolves, which can prevent misdiagnoses such as mistaking it for Hodgkin lymphoma or other skin conditions.",
-      "Radiation therapy is being refined: thin‑film dosimetry makes dose checks faster and more accurate, and low‑dose focal radiation can clear individual lesions with few side‑effects, though higher doses may still be needed to keep tumors from returning.",
-      "Research into the disease’s biology reveals that CTCL hijacks the immune system—shifting from a tumor‑fighting (TH1) to a tumor‑tolerant (TH2) environment—and that specific genetic changes (e.g., CCR4 and STAT3 mutations) drive resistance, pointing to future combination therapies that restore immune balance.",
-      "Practical cautions: children can present with unusual signs (like enlarged hands/feet) that mimic other disorders, and while drugs such as dupilumab for eczema do not appear to raise lymphoma risk, ongoing monitoring and clear communication with doctors remain essential."
+      "New targeted drugs—like a toxin‑linked immune signal (denileukin diftitox) and a T‑cell receptor‑specific antibody‑drug conjugate—are showing real tumor shrinkage while sparing most normal cells, offering hope for patients whose disease has returned after standard therapy.",
+      "Less‑intensive radiation (short, low‑dose schedules) can still clear individual skin lesions with few side effects, though the spots may come back, so doctors balance convenience against durability of response.",
+      "Advanced lab tools such as TRBC1 staining and single‑cell RNA profiling are improving how quickly and accurately doctors can confirm CTCL and tell aggressive disease from harmless mimics, leading to more precise treatment choices.",
+      "Research confirms that common skin‑related drugs like dupilumab do not raise CTCL risk in children, but ongoing vigilance and thorough skin checks remain essential when symptoms change.",
+      "Patient‑focused resources—from easy‑read educational guides to validated quality‑of‑life questionnaires—are being refined to help people understand their disease, track symptoms, and communicate better with their care team."
     ],
-    "generated": "2026-09-07",
-    "n_papers": 68,
+    "generated": "2026-09-14",
+    "n_papers": 70,
     "by": "groq"
   }
 }
