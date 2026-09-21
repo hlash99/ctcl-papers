@@ -65,6 +65,22 @@
       "first_seen": "2026-09-07"
     },
     {
+      "id": "MED:42758883",
+      "pmid": "42758883",
+      "doi": "10.1097/dad.0000000000003387",
+      "title": "Persistent Agmination of Lymphomatoid Papulosis with Features of Lymphomatoid Papulosis in Both the Regressing Papular Component and the Persistent Patch: A Case Report and Review of the Literature.",
+      "authors": "Spajic A, Geskin LJ, Magro CM.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-07-13",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42758883/",
+      "abstract": "Persistent agmination of lymphomatoid papulosis (PALP) is a rare, anatomically localized variant of lymphomatoid papulosis (LYP) characterized by clustered papules superimposed on a chronic persistent patch or plaque which resembles cutaneous T-cell lymphoma. The histologic patterns may be variable, and differentiation from early-stage cutaneous T-cell lymphoma (CTCL), particularly unilesional mycosis fungoides (MF), can be challenging. We report an 18-year-old woman with a longstanding CD8-positive T-cell dyscrasia, initially diagnosed at age 10 as Type B LYP showing folliculocentricity. She experienced a recurrence at age 14, and 3 years later she developed a persistent, localized patch on the thigh with superimposed papules which exhibited a waxing and waning course. Histologic examination of both the persistent patch and episodic papular component revealed a very similar morphology which was the one manifesting an overlapping morphology of Type B LYP and pityriasis lichenoides chronica (PLC); there was follicular involvement similar to the earlier 2016 biopsy. PALP is a very rare variant of LYP with most of the reported cases describing the persistent patch as having features of cutaneous T-cell lymphoma, typically mycosis fungoides. We describe a patient with PALP where both the episodic papules and the persistent patch showed a similar histomorphology which in turn mirrored the previous pathology from 2016 that was characteristic for LYP clinically and was biopsy proven folliculotropic Type B LYP. Two other cases of PALP showing a persistent patch with classic features of LYP have been previously published. Hence, there is a subset of PALP where the persistent lesion is compatible with LYP as opposed to being one of lymphoma. The persistence of LYP challenges this conceptualization of LYP as a lymphoproliferative disorder where complete regression is a requisite.",
+      "summary": "Researchers described a rare skin condition where clusters of small bumps (papules) sit on a long‑lasting patch that looks like a type of skin T‑cell lymphoma. In an 18‑year‑old woman, both the bumps and the patch showed the same tissue pattern typical of lymphomatoid papulosis, not cancer, suggesting that this variant can persist without turning into lymphoma. This case highlights that some persistent lesions previously thought to be early lymphoma may actually be a benign, long‑standing form of the disease.",
+      "summary_by": "groq",
+      "first_seen": "2026-09-21"
+    },
+    {
       "id": "MED:42384055",
       "pmid": "42384055",
       "doi": "10.1007/s00105-026-05719-w",
@@ -1126,20 +1142,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 70,
-    "new_this_run": 2
+    "total": 71,
+    "new_this_run": 1
   },
-  "updated": "2026-09-14T18:39:12Z",
+  "updated": "2026-09-21T18:43:02Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like a toxin‑linked immune signal (denileukin diftitox) and a T‑cell receptor‑specific antibody‑drug conjugate—are showing real tumor shrinkage while sparing most normal cells, offering hope for patients whose disease has returned after standard therapy.",
-      "Less‑intensive radiation (short, low‑dose schedules) can still clear individual skin lesions with few side effects, though the spots may come back, so doctors balance convenience against durability of response.",
-      "Advanced lab tools such as TRBC1 staining and single‑cell RNA profiling are improving how quickly and accurately doctors can confirm CTCL and tell aggressive disease from harmless mimics, leading to more precise treatment choices.",
-      "Research confirms that common skin‑related drugs like dupilumab do not raise CTCL risk in children, but ongoing vigilance and thorough skin checks remain essential when symptoms change.",
-      "Patient‑focused resources—from easy‑read educational guides to validated quality‑of‑life questionnaires—are being refined to help people understand their disease, track symptoms, and communicate better with their care team."
+      "New targeted drugs—like a toxin‑linked immune signal (denileukin diftitox) and a Vβ2‑focused antibody‑drug conjugate—are showing real tumor shrinkage while sparing most normal cells, offering hope for patients whose disease has returned after standard therapy.",
+      "A simple lab stain called TRBC1 (plus a quantitative score) now helps pathologists tell cancerous T‑cell patches apart from ordinary eczema or inflammation, making biopsies faster and more reliable.",
+      "Radiation can be given in a much shorter, lower‑dose burst for individual skin lesions, shrinking tumors with few side effects, though the spots may need retreatment later; newer film‑based dose checks make this approach safer and quicker.",
+      "Scientists are learning that CTCL hijacks the immune system, shifting from a tumor‑fighting TH1 response to a weaker TH2 environment and involving skin‑resident microbes, which explains why the disease can hide and spread.",
+      "Because CTCL can look like other skin problems (e.g., severe eczema, acromegaly, Hodgkin‑type nodes), doctors stress repeated skin exams, detailed histories, and careful biopsy interpretation to avoid misdiagnosis and to catch aggressive disease early."
     ],
-    "generated": "2026-09-14",
-    "n_papers": 70,
+    "generated": "2026-09-21",
+    "n_papers": 71,
     "by": "groq"
   }
 }
