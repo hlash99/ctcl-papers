@@ -1,6 +1,70 @@
 {
   "papers": [
     {
+      "id": "MED:42378251",
+      "pmid": "42378251",
+      "doi": "10.1182/blood.2025032507",
+      "title": "A single-cell atlas identifies oncogenic transcriptional programs and immune escape mechanisms in CTCL.",
+      "authors": "Wang C, Geng X, Abdelrahman S, Fu Y, Kady N, Rauf MA, Hristov A, Tejasvi T, Murga-Zamalloa C, Tsoi LC, Welch J, Fox J, Carty S, Gudjonsson JE, Wilcox RA.",
+      "journal": "Blood",
+      "date": "2026-10-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42378251/",
+      "abstract": "Primary cutaneous T-cell lymphomas (CTCL) are a heterogeneous group of extranodal non-Hodgkin lymphomas. Outcomes for patients with advanced-stage disease are suboptimal, because few complete and durable responses are achieved with currently available therapeutic agents. However, improved understanding of oncogenic transcriptional programs in malignant T cells and their engagement with the tumor microenvironment (TME) may unveil therapeutic vulnerabilities. Therefore, we have compiled the largest available single-cell RNA-sequencing CTCL atlas that includes >2 million skin and blood cells from 116 individual patients. We identified recurrent transcriptional programs in malignant T cells, a subset of which are associated with GATA binding protein 3-dependent transcriptional programs, especially in the setting of large cell transformation and advanced-stage disease. Many of the transcriptional programs identified are therapeutically targetable with clinically available agents, including HDAC, XPO1, CDK9, JAK/CSF1R, and IKZF1/IKZF3 antagonists. The CTCL TME is dominated by infiltrating and exhausted effector and cytotoxic T cells that are restrained by a robust infiltrate of regulatory T cells, transcriptionally polarized monocytes/macrophages, and cancer-associated fibroblasts. Collectively, these findings have significant implications for the rational design of combinatorial strategies targeting immune checkpoints, including programmed cell death protein 1. We have identified transcriptional programs, driven by oncogenic transcription factors, and constituents of the TME as therapeutic vulnerabilities in CTCL, and hope that the CTCL atlas constructed will provide a valuable resource for future studies exploiting these therapeutic vulnerabilities.",
+      "summary": "Researchers built the biggest single‑cell map of skin and blood cells from 116 CTCL patients, revealing that malignant T cells repeatedly use certain gene‑control programs—especially those driven by a factor called GATA‑3—in aggressive disease. Many of these programs can be hit with existing drugs (like HDAC, JAK or CDK9 inhibitors), and the tumor environment is packed with exhausted immune cells kept in check by regulatory T cells, altered macrophages and fibroblasts, suggesting that combining immune‑checkpoint blockers (e.g., PD‑1 inhibitors) with those drugs could improve treatment.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "id": "MED:42805618",
+      "pmid": "42805618",
+      "doi": "10.1136/bcr-2026-272281",
+      "title": "Cutaneous T-cell lymphoma emerging during long-term dupilumab therapy in a patient with longstanding atopic diathesis: diagnostic challenges and mechanistic considerations.",
+      "authors": "Mills S, Geist R, Daniels P, Crane J.",
+      "journal": "BMJ case reports",
+      "date": "2026-09-28",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42805618/",
+      "abstract": "Atopic dermatitis and cutaneous T-cell lymphoma can overlap both clinically and histopathologically, potentially delaying recognition of early disease. We report a case of a woman in her 40s with longstanding atopic diathesis who developed patch-stage mycosis fungoides after more than 5 years of stability on dupilumab. Earlier biopsies showed spongiotic dermatitis without evidence of a lymphoproliferative disorder. She later presented with a rapidly progressive, intensely pruritic eruption of erythematous scaly plaques with near-erythroderma, morphologically distinct from her prior dermatitis. Repeat biopsy revealed an epidermotropic atypical lymphoid infiltrate consistent with mycosis fungoides. This case highlights the importance of reassessment in patients with presumed atopic dermatitis who develop atypical features, rapid progression or diminished response to therapy. It also raises the possibility that dupilumab may unmask previously unrecognised cutaneous T-cell lymphoma in some patients and highlights the need for further study of interleukin-4 and interleukin-13 pathway modulation.",
+      "summary": "Researchers described a woman in her 40s with a long history of eczema who, after more than five years on dupilumab (a drug that blocks certain allergy‑related signals), developed a type of skin lymphoma called mycosis fungoides that was initially missed because her skin looked like eczema. When her rash suddenly worsened and became very itchy, a new biopsy showed cancerous T‑cells in the skin, prompting a change in diagnosis and treatment. The case suggests that dupilumab might sometimes reveal hidden skin lymphomas, so doctors should re‑evaluate patients whose eczema changes or stops responding to therapy.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "id": "MED:42794964",
+      "pmid": "42794964",
+      "doi": "10.3390/cancers18182998",
+      "title": "Non-Invasive Skin Imaging Techniques for Diagnosing and Monitoring Mycosis Fungoides: A Comprehensive Review.",
+      "authors": "İsmail Mendi B, İşibol C, Sayegh A, Mendi BAR, Atak MF, Farabi B.",
+      "journal": "Cancers",
+      "date": "2026-09-16",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42794964/",
+      "abstract": "Mycosis fungoides, the most common primary cutaneous T-cell lymphoma, presents notable diagnostic challenges. In its early stages, it may resemble inflammatory dermatoses both clinically and histologically, causing delays in diagnosis. These factors can lead to treatment delays, allowing the disease to progress and adversely affecting the patient's quality of life. To address this issue, the use of skin imaging techniques like dermoscopy, reflectance confocal microscopy, optical coherence tomography, and high-frequency ultrasound has increased in recent years. These techniques assist in diagnosis and treatment monitoring, reducing unnecessary biopsies by guiding accurate sampling from the most relevant sites and improving staging accuracy. This review provides a thorough overview of non-invasive skin imaging methods employed in the diagnosis and management of mycosis fungoides.",
+      "summary": "The review looks at how non‑invasive skin imaging tools—such as dermoscopy (magnified visual inspection), reflectance confocal microscopy (cell‑level imaging), optical coherence tomography (cross‑sectional scans), and high‑frequency ultrasound—can help doctors spot and track mycosis fungoides, the most common cutaneous T‑cell lymphoma, without needing many biopsies. It finds that these techniques improve early detection, guide more accurate sampling, and allow better monitoring of disease stage, potentially speeding up treatment and improving patients’ quality of life.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "id": "MED:42771558",
+      "pmid": "42771558",
+      "doi": "10.5281/zenodo.21462693",
+      "title": "Mycosis fungoides in a Mexican pediatric series: Clinical, immunophenotypic, and therapeutic features.",
+      "authors": "Godínez-Chaparro JA, Cortes-Hernández A.",
+      "journal": "Revista medica del Instituto Mexicano del Seguro Social",
+      "date": "2026-09-02",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42771558/",
+      "abstract": "BackgroundMycosis fungoides (MF) is a primary cutaneous lymphoma that in pediatric patients is frequently misdiagnosed as a benign dermatosis. Studies in Mexican children are limited.ObjectiveTo describe the clinical, immunophenotypic, and therapeutic characteristics of MF in a Mexican pediatric series.Material and methodsIt was conducted a cross-sectional study between 2017-2025 at a hospital in Mexico City, which included 17 pediatric patients younger than 18 years of both sexes with a diagnosis of MF.ResultsThey were 13 males and 4 females, with a mean age at diagnosis of 11.9 ± 2.8 years and a median disease duration of 3 years; 52.9% of patients were referred with a diagnosis of atopic dermatitis. The most frequent clinical variant was hypopigmented (64.7%). All cases were classified as stage IB. Diagnosis required a median of 2 biopsies, with delays of up to 12 months (range 3-24). All cases showed epidermotropism with CD3 and CD4 positivity (100%), and 88.2% showed CD8 positivity. All patients received topical corticosteroids; 3 received phototherapy, 3 methotrexate, and 3 photopheresis. The classic form of MF was associated with the presence of erythematous patches and erythematous scaly plaques, as well as, in some cases, with the use of methotrexate and phototherapy.ConclusionsPediatric MF poses a diagnostic challenge due to its clinical similarity to common dermatoses. Although prognosis is generally favorable, its recurrence requires prolonged follow-up.",
+      "summary": "Researchers looked at 17 Mexican children with mycosis fungoides, a rare skin lymphoma often mistaken for eczema, and found that most presented with light‑colored patches and took up to two skin biopsies and a year to diagnose. The tumors showed typical immune‑cell markers (CD3, CD4, and often CD8), and treatment with steroid creams, light therapy, methotrexate, or photopheresis was generally effective, though the disease can come back and needs long‑term monitoring.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-05"
+    },
+    {
       "id": "MED:42665902",
       "pmid": "42665902",
       "doi": "10.1002/acm2.70774",
@@ -143,6 +207,22 @@
       "summary": "Researchers created an antibody‑drug conjugate (a toxin‑linked antibody) that homes in on a specific version of the T‑cell receptor called Vβ2, which is shared by the malignant T cells in many cutaneous T‑cell lymphoma patients. In cell cultures, mouse tumors, and samples from patients, this Vβ2‑targeted drug killed the cancer cells while leaving most normal T cells untouched. The work suggests a new, more precise way to treat advanced CTCL by exploiting the tumor’s unique receptor.",
       "summary_by": "groq",
       "first_seen": "2026-06-29"
+    },
+    {
+      "id": "MED:42378328",
+      "pmid": "42378328",
+      "doi": "10.1080/07357907.2026.2675664",
+      "title": "Analysis of Second Primary Tumours in Cutaneous Lymphoma Populations.",
+      "authors": "Zou S, Yao R, Yang X, Kou E, Huang S, Zhu H, Wang L, Gu J, Zhu Y.",
+      "journal": "Cancer investigation",
+      "date": "2026-06-30",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42378328/",
+      "abstract": "The elevated incidence of second primary tumors (SPTs) has been reported in certain subtypes of cutaneous T-cell lymphomas (CTCLs) and cutaneous B-cell lymphomas (CBCLs), but remains unclear for overall primary cutaneous lymphomas (PCLs). Using Surveillance, Epidemiology and End Results (SEER) data, we analyzed 20,970 patients with PCLs and evaluated standardized incidence ratios (SIRs) and survival outcomes of SPTs stratified by lymphoma subtype (indolent vs. aggressive). A total of 2,589 SPTs were identified (SIR = 1.40, 95% CI 1.35-1.45), with significantly elevated risks across sex, ethnicity, stage, latency, year of diagnosis, and treatment. Both indolent and aggressive CTCLs were associated with increased SPT risk, with SIRs of 1.27 (1.16-1.39) and 1.38 (1.11-1.69), respectively. Lymphatic and hematopoietic malignancies predominated in indolent CTCLs, along with thyroid cancer, whereas aggressive CTCLs were mainly associated with extranodal non-Hodgkin lymphoma and myeloma. Increased SPT incidence was also observed in indolent and aggressive CBCLs (SIR = 1.49 and 1.38), with indolent CBCLs showing a broad SPT spectrum including lung cancer and cutaneous melanoma. Patients younger than 30 years, with stage I disease or aggressive PCLs, had decreased age-adjusted overall and disease-specific survival, indicating a need for more intensive surveillance.",
+      "summary": "Researchers examined over 20,000 people with skin‑origin lymphomas and found they are about 40 % more likely than the general population to develop a second, unrelated cancer, with both slow‑growing and aggressive forms showing elevated risk. The types of second cancers differ: the indolent T‑cell lymphomas often precede other blood cancers and thyroid cancer, while the aggressive forms are linked to other lymphomas and myeloma, and similar patterns appear in B‑cell skin lymphomas. Younger patients and those with early‑stage disease had poorer overall survival, suggesting doctors should monitor them more closely for additional tumors.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-05"
     },
     {
       "id": "MED:42363651",
@@ -1142,20 +1222,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 71,
-    "new_this_run": 1
+    "total": 76,
+    "new_this_run": 5
   },
-  "updated": "2026-09-21T18:43:02Z",
+  "updated": "2026-10-05T21:12:34Z",
   "overview": {
     "bullets": [
-      "New targeted drugs—like a toxin‑linked immune signal (denileukin diftitox) and a Vβ2‑focused antibody‑drug conjugate—are showing real tumor shrinkage while sparing most normal cells, offering hope for patients whose disease has returned after standard therapy.",
-      "A simple lab stain called TRBC1 (plus a quantitative score) now helps pathologists tell cancerous T‑cell patches apart from ordinary eczema or inflammation, making biopsies faster and more reliable.",
-      "Radiation can be given in a much shorter, lower‑dose burst for individual skin lesions, shrinking tumors with few side effects, though the spots may need retreatment later; newer film‑based dose checks make this approach safer and quicker.",
-      "Scientists are learning that CTCL hijacks the immune system, shifting from a tumor‑fighting TH1 response to a weaker TH2 environment and involving skin‑resident microbes, which explains why the disease can hide and spread.",
-      "Because CTCL can look like other skin problems (e.g., severe eczema, acromegaly, Hodgkin‑type nodes), doctors stress repeated skin exams, detailed histories, and careful biopsy interpretation to avoid misdiagnosis and to catch aggressive disease early."
+      "New single‑cell studies reveal that aggressive CTCL cells rely on a few key gene programs (like GATA‑3) that can be hit with existing drugs such as HDAC, JAK or CDK9 inhibitors, offering hope for more targeted medicines.",
+      "Non‑invasive skin imaging tools (dermoscopy, confocal microscopy, OCT, ultrasound) are becoming reliable ways to spot and follow mycosis fungoides, reducing the need for repeated painful biopsies.",
+      "Long‑term use of immune‑modulating drugs such as dupilumab may mask or trigger CTCL, so worsening rashes or new itch should prompt a fresh skin biopsy even if eczema seems likely.",
+      "Patients with CTCL have a higher chance of developing a second, unrelated cancer, so regular screening for other malignancies is an important part of long‑term care.",
+      "Patient‑focused outcome measures like the FACT‑CTCL questionnaire are now validated, helping doctors track how the disease and its treatments truly affect daily life."
     ],
-    "generated": "2026-09-21",
-    "n_papers": 71,
+    "generated": "2026-10-05",
+    "n_papers": 76,
     "by": "groq"
   }
 }
