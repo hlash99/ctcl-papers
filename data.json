@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42846829",
+      "pmid": "42846829",
+      "doi": null,
+      "title": "Non-epitheliotropic cutaneous T-cell lymphoma in a 5-week-old golden retriever puppy.",
+      "authors": "Krauter C, Roy G, Chuback C, Koziy R, Fernandez NJ.",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "date": "2026-10-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42846829/",
+      "abstract": "A 5-week-old male golden retriever puppy was presented with multiple, rapidly progressive skin masses. One of the masses had been present since birth; the duration of the other 2 masses was unknown. Fine-needle aspiration cytology of the lesions revealed a monomorphic population of round cells, raising suspicion for a round cell neoplasm. Two representative masses were submitted for histologic examination and immunohistochemical analysis. Histologically, the neoplasm was composed of dense, non-epitheliotropic infiltrates of atypical lymphoid cells within the dermis and subcutis. Immunophenotyping confirmed a T-cell origin, establishing a diagnosis of non-epitheliotropic cutaneous T-cell lymphoma. In the postoperative period, the puppy's health declined and humane euthanasia was elected. A postmortem examination did not occur, precluding assessment for systemic involvement. To the authors' knowledge this is the first case of non-epitheliotropic cutaneous T-cell lymphoma in a dog of this age documented in the veterinary literature. This report underscores the importance of including cutaneous lymphoma in the differential diagnosis of rapidly progressive skin masses in a dog, irrespective of age, and highlights the utility of histopathology and immunohistochemistry for achieving a diagnosis. Key clinical message: Lymphoma can occur in dogs of any age and should not be excluded as a differential diagnosis, even in very young puppies.",
+      "summary": "Researchers examined a 5‑week‑old golden retriever puppy with fast‑growing skin tumors and, using tissue microscopy and special staining, identified the growths as a rare type of skin‑based T‑cell lymphoma that does not involve the hair follicles. This is the first reported case of this lymphoma in such a young dog, showing that even very young puppies can develop cutaneous lymphoma and that detailed lab tests are essential for accurate diagnosis.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-19"
+    },
+    {
       "id": "MED:42378251",
       "pmid": "42378251",
       "doi": "10.1182/blood.2025032507",
@@ -145,6 +161,22 @@
       "first_seen": "2026-09-21"
     },
     {
+      "id": "MED:42868297",
+      "pmid": "42868297",
+      "doi": "10.12788/cutis.1415",
+      "title": "Age- and Sex-Related Differences in Primary Cutaneous Lymphoma.",
+      "authors": "Herrera-Ocampo M, Santamaría-Domínguez DG, Villanueva-Acosta C, Cortázar-Azuaje AM, Vega-Memije E, Lacy-Niebla RM, Toussaint-Caire S, Sáez-de-Ocariz M, García-Romero MT.",
+      "journal": "Cutis",
+      "date": "2026-07-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42868297/",
+      "abstract": "Few studies have directly compared primary cutaneous lymphomas (PCLs) in pediatric and adult populations. In this retrospective observational study, we evaluated the clinical characteristics, subtypes, treatment patterns, and outcomes of PCLs in 54 children and 104 adults evaluated at 2 tertiary institutions between January 1, 1999, and December 31, 2019. Statistical analysis was performed using χ2 and Mann-Whitney U tests. Our findings indicated that the time to diagnosis was shorter in children vs adults. Mycosis fungoides (MF) was the most common diagnosis, most often manifesting as erythematous plaques, with frequent lower-extremity involvement. Key differences between groups included a higher frequency of MF in adults, whereas chronic active Epstein-Barr virus (EBV)-associated lymphoproliferative disease occurred exclusively in children; pediatric patients more often presented with hypopigmented lesions, and systemic therapies were used only in children.",
+      "summary": "The study compared skin‑based lymphomas in children versus adults, looking at who gets which type, how they’re treated, and how they do. It found that children are diagnosed faster, more often have a rare EBV‑linked disease and receive systemic drugs, while adults more commonly have mycosis fungoides (a type of cutaneous T‑cell lymphoma) that shows up as red plaques, especially on the legs; kids more often show lighter‑colored patches.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-19"
+    },
+    {
       "id": "MED:42384055",
       "pmid": "42384055",
       "doi": "10.1007/s00105-026-05719-w",
@@ -255,6 +287,22 @@
       "summary": "Researchers interviewed people with mycosis fungoides or Sézary syndrome and their doctors to see whether the FACT‑CTCL questionnaire—designed to capture how the disease affects daily life—covers the right topics and is easy to understand. They found that almost every question was judged relevant, clear and comprehensive by both patients and clinicians. This supports using the FACT‑CTCL to measure quality‑of‑life impacts in CTCL, though larger studies are still needed.",
       "summary_by": "groq",
       "first_seen": "2026-09-14"
+    },
+    {
+      "id": "MED:42273924",
+      "pmid": "42273924",
+      "doi": "10.1111/ijd.70532",
+      "title": "Prognostic Value of Skin Lesion Characteristics in Subcutaneous Panniculitis-Like T-Cell Lymphoma: A Retrospective Cohort Study Assessing the Applicability of T Category of the TNM Classification for Primary Cutaneous Lymphomas Other Than Mycosis Fungoides and Sézary Syndrome.",
+      "authors": "Choi ME, Jung JM, Jeon SH, Won CH, Chang SE, Lee MW, Lee WJ.",
+      "journal": "International journal of dermatology",
+      "date": "2026-06-11",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42273924/",
+      "abstract": "BackgroundSubcutaneous panniculitis-like T-cell lymphoma (SPTL) is a rare form of cutaneous lymphoma characterized by neoplastic T-cell infiltration of subcutaneous tissue, clinically mimicking panniculitis. This study aimed to evaluate the applicability and prognostic value of the T component of the Tumor-Node-Metastasis (TNM) classification system, as well as the prognostic significance of skin lesion characteristics in patients with SPTL.MethodsClinical characteristics and survival outcomes of patients with SPTL treated at a Korean academic medical center were retrospectively reviewed to assess the prognostic significance of TNM T staging and skin lesion features.ResultsAmong 43 patients with SPTL, nine had concurrent hemophagocytic lymphohistiocytosis (HLH). Higher T categories were associated with an increased likelihood of HLH. Although overall survival (OS) did not differ significantly across T categories, higher T stage and presence of lipoatrophy correlated with poorer relapse-free survival (RFS). Of all clinical variables, only HLH was significantly associated with reduced OS. Decreased RFS was associated with lipoatrophy, HLH, and visceral or nodal involvement. Multivariable analysis identified T3 stage and HLH as independent prognostic factors of RFS.ConclusionsPatients with SPTL presenting with extensive skin involvement (T3) have a higher risk of disease relapses and are more likely to develop HLH.",
+      "summary": "The study looked at whether the size and spread of skin lesions (the “T” part of the cancer staging system) can predict outcomes in patients with subcutaneous panniculitis‑like T‑cell lymphoma, a rare skin lymphoma that often looks like an inflammation of the fat layer. It found that people whose disease involves large, extensive skin areas (T3) are more likely to have disease relapses and to develop a serious immune complication called hemophagocytic lymphohistiocytosis (HLH), which also shortens survival. In contrast, the overall survival did not differ much by T stage alone, but both extensive skin involvement and HLH were linked to a higher chance of the cancer coming back.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-19"
     },
     {
       "id": "MED:42274451",
@@ -1222,20 +1270,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 76,
-    "new_this_run": 0
+    "total": 79,
+    "new_this_run": 3
   },
-  "updated": "2026-10-12T21:44:23Z",
+  "updated": "2026-10-19T19:20:12Z",
   "overview": {
     "bullets": [
-      "New single‑cell studies reveal that aggressive CTCL cells rely on a few key gene programs (like GATA‑3) that can be hit with existing drugs such as HDAC, JAK or CDK9 inhibitors, offering hope for more targeted medicines.",
+      "New single‑cell studies map the exact gene programs that drive aggressive CTCL and point to existing drugs (like HDAC, JAK and CDK9 inhibitors) that could be repurposed, giving hope for more targeted therapies.",
       "Non‑invasive skin imaging tools (dermoscopy, confocal microscopy, OCT, ultrasound) are becoming reliable ways to spot and follow mycosis fungoides, reducing the need for repeated painful biopsies.",
-      "Long‑term use of immune‑modulating drugs such as dupilumab may mask or trigger CTCL, so worsening rashes or new itch should prompt a fresh skin biopsy even if eczema seems likely.",
-      "Patients with CTCL have a higher chance of developing a second, unrelated cancer, so regular screening for other malignancies is an important part of long‑term care.",
-      "Patient‑focused outcome measures like the FACT‑CTCL questionnaire are now validated, helping doctors track how the disease and its treatments truly affect daily life."
+      "Long‑term use of immune‑modulating eczema drugs such as dupilumab can mask early CTCL signs, so worsening rashes or new itching should prompt a fresh skin biopsy.",
+      "Patients with CTCL have a higher chance (about 40 %) of developing a second, unrelated cancer, so regular screening for other cancers remains important.",
+      "Real‑world data show that older treatments like denileukin diftitox and newer approaches such as Vβ2‑targeted antibody‑drug conjugates can shrink tumors in some patients, but response rates vary and close monitoring for side effects is essential."
     ],
-    "generated": "2026-10-05",
-    "n_papers": 76,
+    "generated": "2026-10-19",
+    "n_papers": 79,
     "by": "groq"
   }
 }
