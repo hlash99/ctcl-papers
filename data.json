@@ -97,6 +97,22 @@
       "first_seen": "2026-08-31"
     },
     {
+      "id": "MED:42595015",
+      "pmid": "42595015",
+      "doi": "10.1016/j.modpat.2026.101054",
+      "title": "Real-World Experience With TRBC1 Immunohistochemistry Across Cutaneous T-Cell Lymphoma Subtypes: A Large Cohort Study.",
+      "authors": "Erem AS, Pepin N, Sacknovitz Y, Kent JA, Tolu SS, Enore M, Pro B, Albitar M, Husain S, Larocca C, Feldman TA, DeSimone JA, Geskin LJ, Gru AA.",
+      "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+      "date": "2026-08-14",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42595015/",
+      "abstract": "T-cell receptor β-chain constant region 1 (TRBC1) immunohistochemistry identifies clonal αβ T-cell populations on tissue sections, but its real-world performance across cutaneous T-cell lymphoma (CTCL) and related infiltrates is uncharacterized. The analytic cohort comprised 665 biopsies (566 patients) with paired T-cell receptor (TCR) clonality testing, classified clinicopathologically as mycosis fungoides (MF; MF-Patch, MF-Plaque, MF-Tumor, and MF-Folliculotropic); MF or Sézary syndrome; primary cutaneous small or medium T-cell lymphoproliferative disorders (LPDs); other CTCL-cutaneous LPDs; or reactive. At the primary 85% threshold, TRBC1 IHC achieved 85.8% sensitivity (337/393), 79.8% specificity (217/272), 86.0% positive and 79.5% negative predictive value, and 83.3% accuracy. Among adequately represented subtypes, MF-Patch had the lowest sensitivity (84.2%). Three-reader agreement (Fleiss κ = 0.943) fell to κ = 0.776 in 176 reflexed biopsies, with disagreement concentrated on MF-Patch and CD30-positive LPDs. Monotypic TRBC1 predicted neoplasia, with odds rising with infiltrate density: MF-Patch (odds ratio, 5.41), MF-Plaque (10.40), MF/Sézary syndrome with MF-Tumor (15.19), and CTCL-cutaneous LPD (18.16). Polytypic TRBC1 was associated with reactive disease (odds ratio, 53.65), effectively excluded clonality (negative likelihood ratio, 0.18), and was uniformly observed in an independent 270-biopsy reactive cohort. For observer-independent validation, digital image analysis-derived TRBC1 quantification (QuPath) was applied to a stratified random subset of 250 biopsies representative of the cohort's tumor-burden distribution. The digital read-tracked molecular clonality (85.1% sensitivity, 80.1% specificity against TCR; area under the curve, 0.842) agreed with the dermatopathologist's manual read in 87.6% of cases (κ = 0.752), with the data-derived cutoff matching the prespecified 85% threshold value. Discordance was directional for both manual scoring and digital quantification: in MF-Patch, 25 of 38 (65.8%) and 12 of 17 (70.6%) cases were polytypic with monoclonal TCR (false-negative-dominant); in reactive biopsies, 34 of 45 (75.6%) and 19 of 20 (95%) were monotypic with polyclonal TCR (false-positive-dominant). These findings support a TRBC1-first approach, reserving reflex TCR testing for borderline expression or clinicopathologic discordance, preserving diagnostic accuracy while reducing molecular testing and reimbursement-based costs.",
+      "summary": "Researchers looked at how well a lab stain called TRBC1, which spots a single type of T‑cell receptor on skin biopsy slides, can tell whether a skin T‑cell lymphoma is truly cancerous or just a harmless reaction. In a large real‑world series of 665 samples, the test correctly identified cancer about 86 % of the time and non‑cancer about 80 % of the time, especially when the abnormal cells were numerous, and it could be read reliably by both pathologists and computer software. The authors suggest using TRBC1 as the first test and only doing more expensive genetic testing when the results are unclear, which could keep diagnoses accurate while cutting costs.",
+      "summary_by": "groq",
+      "first_seen": "2026-10-26"
+    },
+    {
       "id": "MED:42587213",
       "pmid": "42587213",
       "doi": "10.1007/s12308-026-00706-5",
@@ -1270,20 +1286,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 79,
-    "new_this_run": 3
+    "total": 80,
+    "new_this_run": 1
   },
-  "updated": "2026-10-19T19:20:12Z",
+  "updated": "2026-10-26T19:20:24Z",
   "overview": {
     "bullets": [
-      "New single‑cell studies map the exact gene programs that drive aggressive CTCL and point to existing drugs (like HDAC, JAK and CDK9 inhibitors) that could be repurposed, giving hope for more targeted therapies.",
-      "Non‑invasive skin imaging tools (dermoscopy, confocal microscopy, OCT, ultrasound) are becoming reliable ways to spot and follow mycosis fungoides, reducing the need for repeated painful biopsies.",
-      "Long‑term use of immune‑modulating eczema drugs such as dupilumab can mask early CTCL signs, so worsening rashes or new itching should prompt a fresh skin biopsy.",
-      "Patients with CTCL have a higher chance (about 40 %) of developing a second, unrelated cancer, so regular screening for other cancers remains important.",
-      "Real‑world data show that older treatments like denileukin diftitox and newer approaches such as Vβ2‑targeted antibody‑drug conjugates can shrink tumors in some patients, but response rates vary and close monitoring for side effects is essential."
+      "New lab tests and skin‑imaging tools (like a special stain called TRBC1 and painless scans such as dermoscopy or confocal microscopy) are making it easier and faster to tell CTCL apart from eczema or other rashes, so patients can get the right treatment sooner.",
+      "Big‑picture studies of individual cancer cells have uncovered common gene programs that drive aggressive CTCL, and many of these can be hit with drugs already approved for other cancers (such as HDAC, JAK or CDK9 inhibitors), opening the door to more targeted, less‑toxic therapies.",
+      "A novel antibody‑drug conjugate that seeks out a specific T‑cell receptor (Vβ2) can kill the cancer cells while sparing most normal immune cells, showing promise as a next‑generation treatment that may work when standard drugs fail.",
+      "Real‑world data on older medicines like denileukin diftitox confirm they still shrink tumors in a modest share of patients, giving doctors another option for disease that has come back after other treatments.",
+      "People with CTCL have a higher chance (about 40 % more) of developing a second, unrelated cancer, so regular screening for other cancers becomes an important part of long‑term care."
     ],
-    "generated": "2026-10-19",
-    "n_papers": 79,
+    "generated": "2026-10-26",
+    "n_papers": 80,
     "by": "groq"
   }
 }
