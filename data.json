@@ -1,6 +1,22 @@
 {
   "papers": [
     {
+      "id": "MED:42957219",
+      "pmid": "42957219",
+      "doi": "10.21873/invivo.14500",
+      "title": "FoxP3+ Regulatory T-Cells in Canine Cutaneous Lymphoma and Their Role in Immune Modulation.",
+      "authors": "Semolin LMS, Anai LA, Jark PC, Munhoz TD, Cruvinel GG, Bitencourt RC, DA Rosa Sobreira MF, Camplesi AC, Leitão JR, Santana AE, Alves CEF.",
+      "journal": "In vivo (Athens, Greece)",
+      "date": "2026-11-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42957219/",
+      "abstract": "Background/aimRegulatory T cells (Tregs) are immunosuppressive lymphocytes that maintain immune homeostasis but may also facilitate tumor immune evasion. Their role in canine cutaneous lymphoma (CCL) remains insufficiently understood. We hypothesized that dogs with CCL would exhibit increased Treg levels in both peripheral blood and tumor tissue, thereby contributing to local and systemic immune modulation. Our objective was to evaluate Treg levels in blood and skin of dogs with CCL compared with healthy controls.Materials and methodsTwenty-four dogs were enrolled: 12 with T-cell cutaneous lymphoma confirmed by histopathology and immunohistochemistry and 12 clinically healthy controls, recruited from a veterinary teaching hospital population. In this prospective study, circulating Tregs were quantified by flow cytometry, and FoxP3+ cells in skin were evaluated by immunohistochemistry. Statistical analyses included t-tests, non-parametric tests, and Kaplan-Meier survival analysis.ResultsDogs with CCL had significantly higher circulating Tregs than controls (10.84±1.18% vs. 5.67±0.89%, p=0.0021). FoxP3+ cells were detected exclusively in neoplastic skin (mean, 8.27±5.71%), with no labeling in healthy skin (p=0.0007). No significant differences were observed between epitheliotropic and non-epitheliotropic subtypes. Treg levels and the Treg/CD8+ ratio were not associated with survival outcomes (p>0.20).ConclusionDogs with CCL demonstrated increased Tregs in both peripheral blood and intratumorally, suggesting a role of these cells in CCL-associated immunomodulation. Although Treg levels were not prognostic in this cohort, their accumulation highlights potential therapeutic targets in veterinary oncology.",
+      "summary": "The study measured a type of immune‑suppressing cell called regulatory T‑cells (Tregs) in the blood and skin of dogs with cutaneous T‑cell lymphoma and compared them to healthy dogs. Dogs with the cancer had about twice as many Tregs circulating in their blood and in the tumor tissue, indicating these cells may help the tumor evade the immune system, though their numbers didn’t predict how long the dogs survived. This suggests that targeting Tregs could be a future treatment strategy in veterinary lymphoma.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-02"
+    },
+    {
       "id": "MED:42846829",
       "pmid": "42846829",
       "doi": null,
@@ -1286,20 +1302,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 80,
+    "total": 81,
     "new_this_run": 1
   },
-  "updated": "2026-10-26T19:20:24Z",
+  "updated": "2026-11-02T22:19:15Z",
   "overview": {
     "bullets": [
-      "New lab tests and skin‑imaging tools (like a special stain called TRBC1 and painless scans such as dermoscopy or confocal microscopy) are making it easier and faster to tell CTCL apart from eczema or other rashes, so patients can get the right treatment sooner.",
-      "Big‑picture studies of individual cancer cells have uncovered common gene programs that drive aggressive CTCL, and many of these can be hit with drugs already approved for other cancers (such as HDAC, JAK or CDK9 inhibitors), opening the door to more targeted, less‑toxic therapies.",
-      "A novel antibody‑drug conjugate that seeks out a specific T‑cell receptor (Vβ2) can kill the cancer cells while sparing most normal immune cells, showing promise as a next‑generation treatment that may work when standard drugs fail.",
-      "Real‑world data on older medicines like denileukin diftitox confirm they still shrink tumors in a modest share of patients, giving doctors another option for disease that has come back after other treatments.",
-      "People with CTCL have a higher chance (about 40 % more) of developing a second, unrelated cancer, so regular screening for other cancers becomes an important part of long‑term care."
+      "New single‑cell studies reveal that aggressive CTCL tumors rely on specific gene programs (like GATA‑3) that can be hit with existing drugs such as HDAC, JAK or CDK9 inhibitors, offering hope for more targeted medicines.",
+      "Non‑invasive skin imaging tools (dermoscopy, confocal microscopy, OCT, ultrasound) are becoming reliable ways to spot and follow mycosis fungoides, reducing the need for repeated biopsies.",
+      "A simple lab stain called TRBC1 improves the accuracy of biopsy diagnosis, helping doctors tell cancer from harmless skin inflammation earlier and more confidently.",
+      "Real‑world data show that older therapies (denileukin diftitox) still shrink tumors in a minority of patients, while novel antibody‑drug conjugates targeting a specific T‑cell receptor (Vβ2) can kill cancer cells while sparing normal immune cells.",
+      "Patients on long‑term immune‑modulating drugs like dupilumab should be monitored closely, because skin rashes that look like eczema can sometimes hide emerging CTCL, and a fresh biopsy is essential when symptoms change abruptly."
     ],
-    "generated": "2026-10-26",
-    "n_papers": 80,
+    "generated": "2026-11-02",
+    "n_papers": 81,
     "by": "groq"
   }
 }
