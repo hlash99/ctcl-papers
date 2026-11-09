@@ -145,6 +145,22 @@
       "first_seen": "2026-08-17"
     },
     {
+      "id": "MED:42567485",
+      "pmid": "42567485",
+      "doi": "10.1016/j.jaci.2026.07.019",
+      "title": "Tape-strip transcriptomics identify immune signatures in cutaneous T-cell lymphoma distinct from benign inflammatory skin diseases.",
+      "authors": "Fleischli A, Bar J, Manson M, Ng BD, Meledathu S, Burnett A, Chefitz G, Estrada YD, Gour D, Cices A, Correa da Rosa J, Brunner PM, Guttman-Yassky E.",
+      "journal": "The Journal of allergy and clinical immunology",
+      "date": "2026-08-07",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42567485/",
+      "abstract": "BackgroundPrimary cutaneous T-cell lymphomas (CTCL), particularly in their early stages, frequently present with clinical and histopathologic features that overlap with atopic dermatitis (AD) and psoriasis, contributing to diagnostic delay and ineffective, or even deleterious, treatment approaches. Minimally invasive molecular tests capable of distinguishing CTCL from benign inflammatory dermatoses are thus urgently needed.ObjectivesWe sought to determine whether tape-strip transcriptomics can detect disease-specific signatures distinguishing early-stage CTCL from AD, psoriasis, and healthy control (HC) skin.MethodsBulk RNA sequencing was performed on lesional and nonlesional tape strips from skin of patients with mycosis fungoides (MF; n = 18), AD (n = 36), psoriasis (n = 32), and HC (n = 30).ResultsPrincipal component analysis revealed distinct clustering of MF, AD, and psoriasis lesional skin relative to HC. MF displayed a mixed immune profile, contrasting with the strong TH2 and TH17/TH22 immune polarization of AD and psoriasis, respectively. Upregulated MF genes were involved in immune checkpoint regulation (CTLA4, ICOS), lymphoid trafficking (CCR7, CCR8), antigen presentation (HLA-DRA, LAMP3), T-cell survival (TNFSF13B, BIRC3), metabolism (BCAT1, ENPP4, LIPA), and cell structure and homeostasis (CLIC2, DOCK10, EPB41L3, MCOLN2, MS4A14, S100B). We identified a 5-marker gene classifier (including IL36A) that accurately distinguished MF from both AD and psoriasis, which was validated in an independent dataset.ConclusionsBy capturing MF-specific signatures that are distinct from AD and psoriasis, tape stripping has the potential to serve as a diagnostic tool to help differentiate MF from its nonmalignant mimickers.",
+      "summary": "Researchers used a simple, non‑invasive tape‑strip test to collect skin cells and read their gene activity, comparing early‑stage mycosis fungoides (a type of cutaneous T‑cell lymphoma) with atopic dermatitis, psoriasis and healthy skin. They found a distinct set of immune‑related genes in the lymphoma that differed from the strong TH2 pattern in eczema and the TH17/TH22 pattern in psoriasis, and identified a five‑gene signature that could reliably tell the lymphoma apart from these benign conditions. This suggests tape‑strip gene profiling could become a quick diagnostic tool to avoid misdiagnosis and inappropriate treatment.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-09"
+    },
+    {
       "id": "MED:42605024",
       "pmid": "42605024",
       "doi": "10.1002/cnr2.70641",
@@ -559,6 +575,22 @@
       "summary": "Researchers reported a 55‑year‑old woman with lupus who developed a skin rash that closely resembled cutaneous T‑cell lymphoma after taking the antibiotic trimethoprim‑sulfamethoxazole. Detailed tissue analysis showed the eruption was a drug‑induced cutaneous pseudolymphoma—a harmless, reactive condition that mimics lymphoma rather than a true cancer. The case highlights that this common medication can trigger lymphoma‑like skin changes, underscoring the importance of careful diagnostic evaluation.",
       "summary_by": "groq",
       "first_seen": "2026-06-29"
+    },
+    {
+      "id": "MED:42019629",
+      "pmid": "42019629",
+      "doi": "10.1016/j.prro.2026.04.006",
+      "title": "Standard Versus Hypofractionated Low-Dose Total Skin Electron Therapy for Cutaneous T-Cell Lymphoma: A Single-Institution Retrospective Analysis.",
+      "authors": "Baron J, Chelius M, Cohen L, Perez CC, Riina M, Ramesh S, Tierney A, Elghawy O, Hossain NM, Rook A, Villasenor-Park J, Samimi S, Kim E, Hubbeling H, Plastaras JP, Barta SK, LaRiviere M.",
+      "journal": "Practical radiation oncology",
+      "date": "2026-04-20",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42019629/",
+      "abstract": "PurposeLow-dose total skin electron therapy (TSET) is an established treatment for diffuse cutaneous T-cell lymphoma. Although traditionally delivered using standard fractionation (STD-fx) schedules, hypofractionated (H-fx) regimens offer a practical, time-efficient alternative; however, comparative data remain limited. This study evaluated clinical responses, toxicity, and hematologic effects of H-fx versus STD-fx low-dose TSET.Methods and materialsWe retrospectively analyzed 121 courses of low-dose TSET (12 Gy total) delivered to 111 patients with cutaneous T-cell lymphoma from 2015 to 2023. STD-fx was defined as 12 Gy in 6 fractions; H-fx included regimens of 12 Gy in 3 or 4 fractions. Acute toxicities were graded per the Common Terminology Criteria for Adverse Events v5.0 and categorized as \"new or worsened\" from baseline. Hematologic toxicity was assessed through serial complete blood counts. Overall survival and progression-free survival were measured from TSET completion to event or last follow-up; survival comparisons between regimens were exploratory.ResultsOf 121 TSET courses, 104 (86%) were STD-fx and 17 (14%) were H-fx. Median follow-up was 21 months overall and was shorter in H-fx (8 vs 22 months; P ConclusionsH-fx low-dose TSET was feasible and demonstrated similar short-term response, acute toxicity, and hematologic effects as STD-fx, although long-term and comparative inferences are limited by the small H-fx cohort and short follow-up duration. In appropriately selected patients, abbreviated TSET regimens may be considered when shorter treatment courses are clinically indicated.",
+      "summary": "The study compared the usual schedule of low‑dose total skin electron therapy (12 Gy given in six daily treatments) with a shorter schedule (the same total dose given in three or four treatments) in patients with widespread cutaneous T‑cell lymphoma. It found that the abbreviated regimen was doable and produced similar short‑term tumor responses and side‑effects, including blood‑cell changes, although the number of patients and follow‑up time for the short schedule were limited. This suggests that, for selected patients, a quicker treatment course can be a safe alternative when a faster schedule is needed.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-09"
     },
     {
       "id": "MED:41967816",
@@ -1302,20 +1334,20 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 81,
-    "new_this_run": 1
+    "total": 83,
+    "new_this_run": 2
   },
-  "updated": "2026-11-02T22:19:15Z",
+  "updated": "2026-11-09T22:59:23Z",
   "overview": {
     "bullets": [
-      "New single‑cell studies reveal that aggressive CTCL tumors rely on specific gene programs (like GATA‑3) that can be hit with existing drugs such as HDAC, JAK or CDK9 inhibitors, offering hope for more targeted medicines.",
-      "Non‑invasive skin imaging tools (dermoscopy, confocal microscopy, OCT, ultrasound) are becoming reliable ways to spot and follow mycosis fungoides, reducing the need for repeated biopsies.",
-      "A simple lab stain called TRBC1 improves the accuracy of biopsy diagnosis, helping doctors tell cancer from harmless skin inflammation earlier and more confidently.",
-      "Real‑world data show that older therapies (denileukin diftitox) still shrink tumors in a minority of patients, while novel antibody‑drug conjugates targeting a specific T‑cell receptor (Vβ2) can kill cancer cells while sparing normal immune cells.",
-      "Patients on long‑term immune‑modulating drugs like dupilumab should be monitored closely, because skin rashes that look like eczema can sometimes hide emerging CTCL, and a fresh biopsy is essential when symptoms change abruptly."
+      "New drugs that target specific gene‑control pathways (like HDAC, JAK, CDK9 inhibitors) or a unique T‑cell receptor (the Vβ2‑linked antibody‑drug) are showing promise in shrinking tumors while sparing most normal immune cells.",
+      "Simple, non‑invasive tests—such as high‑resolution skin imaging and tape‑strip gene‑activity panels—are becoming reliable ways to spot mycosis fungoides early and to monitor it without repeated biopsies.",
+      "A detailed single‑cell map of patients’ skin and blood has revealed that the cancer often hides behind exhausted immune cells and increased regulatory T‑cells, explaining why the disease can evade treatment and pointing to new immune‑boosting strategies.",
+      "Long‑term use of eczema medicines like dupilumab can sometimes mask or even trigger cutaneous T‑cell lymphoma, so any sudden change in rash or itching should prompt a fresh skin biopsy.",
+      "Special lab stains (e.g., TRBC1) and careful genetic testing are improving doctors’ ability to tell true lymphoma from harmless skin inflammation, reducing misdiagnoses that can delay proper care."
     ],
-    "generated": "2026-11-02",
-    "n_papers": 81,
+    "generated": "2026-11-09",
+    "n_papers": 83,
     "by": "groq"
   }
 }
