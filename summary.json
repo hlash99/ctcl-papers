@@ -1,0 +1,3290 @@
+{
+  "title": "CTCL Literature Tracker",
+  "description": "Latest peer-reviewed papers and preprints on cutaneous T-cell lymphoma, auto-collected and summarized.",
+  "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
+  "source": "Europe PMC (PubMed / MEDLINE + preprints)",
+  "stats": {
+    "total": 371,
+    "new_this_run": 288,
+    "archived": 0,
+    "awaiting_summary": 0
+  },
+  "updated": "2026-11-10T00:03:36Z",
+  "overview": {
+    "bullets": [
+      "New lab stains (like TRBC1) and advanced imaging (ex‑vivo confocal microscopy) can spot early‑stage CTCL that standard DNA tests miss, helping doctors diagnose sooner and avoid mistaking it for eczema or infection.",
+      "Combination approaches—using skin‑directed therapies (phototherapy, topical chlormethine) together with systemic agents (retinoids, interferon‑α, stem‑cell transplant) and tailoring to where the disease lives (skin, blood, nodes)—are now the preferred way to treat advanced disease.",
+      "Molecular maps from single‑cell studies reveal distinct CTCL subtypes and pathways (e.g., GATA‑3, CD30, CCR4) that explain why some tumors become aggressive and point to existing drugs (HDAC, JAK, CDK9 inhibitors) that could be repurposed.",
+      "Early spread to lymph nodes or the brain, and loss of immune‑recognition markers (HLA loss) after transplant, signal a higher risk of rapid decline, so new symptoms should be investigated promptly and treatment plans adjusted."
+    ],
+    "generated": "2026-11-10",
+    "n_papers": 371,
+    "n_used": 30,
+    "by": "groq"
+  },
+  "coverage": {
+    "window_days": 200,
+    "from": "2026-04-24",
+    "core_hits": 287,
+    "mention_hits": 43,
+    "checked": "2026-11-10"
+  },
+  "papers": [
+    {
+      "title": "Spatial Clonal Discordance in Early Mycosis Fungoides Revealed by Compartment-specific TRBC1 Immunohistochemistry.",
+      "journal": "The American journal of surgical pathology",
+      "date": "2026-11-06",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The tumour microenvironment in mycosis fungoides - decoupling biological and clinical responses.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-11-06",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "CD200 Expression in Folliculotropic Mycosis Fungoides Emerging During Dupilumab Treatment.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-11-06",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Characterizing Real-World Cutaneous Toxicity of Pegylated Liposomal Doxorubicin Across Multiple Malignancies.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-11-05",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Management of advanced mycosis fungoides and Sézary Syndrome: International Recommendations for systemic treatments and allogeneic hematopoietic cell transplantation from the European Hematology Association, the EORTC Cutaneous Lymphoma Tumours Group, the International Society for Cutaneous Lymphoma, and the Lymphoma Working Party of the EBMT.",
+      "journal": "HemaSphere",
+      "date": "2026-11-05",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Routine Clinical Nemolizumab Use Before or After Cutaneous T-Cell Lymphoma Diagnosis.",
+      "journal": "JAMA dermatology",
+      "date": "2026-11-04",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Immune checkpoints inhibitors in the treatment of progressive multifocal leukoencephalopathy: A systematic review and meta-analysis.",
+      "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+      "date": "2026-11-04",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Successful treatment of refractory vesiculobullous mycosis fungoides with total skin electron beam therapy and gemcitabine.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-11-03",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Synergistic antibiotic activity and integrated genomic-metabolomic profiling of patch- and plaque-derived Staphylococcus aureus in mycosis fungoides.",
+      "journal": "Microbiology spectrum",
+      "date": "2026-11-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "CD39, CD73, and CD38 track tumor burden and reveal immune remodeling during mogamulizumab therapy in Sézary syndrome.",
+      "journal": "Journal for immunotherapy of cancer",
+      "date": "2026-11-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "FoxP3+ Regulatory T-Cells in Canine Cutaneous Lymphoma and Their Role in Immune Modulation.",
+      "journal": "In vivo (Athens, Greece)",
+      "date": "2026-11-01",
+      "first_seen": "2026-11-02",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Human leukocyte antigen loss as a mechanism of immune escape after allogeneic stem cell transplantation in a patient with mycosis fungoides.",
+      "journal": "Haematologica",
+      "date": "2026-10-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Targeted and Immune-Based Therapies in Cutaneous T-Cell Lymphomas: A Systematic Review and Meta-Analysis.",
+      "journal": "JAMA dermatology",
+      "date": "2026-10-28",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Characterising the genomic landscape of two clinical risk groups in CD30+ T-cell lymphoproliferative disorders with cutaneous involvement: a multi-institutional retrospective study.",
+      "journal": "EBioMedicine",
+      "date": "2026-10-27",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Serum Proteomic Profiling by Olink Reveal Identifies Stage-Dependent and Progression-Associated Biomarkers in Mycosis Fungoides.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-27",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Increased Risk of Subsequent Cancers in Patients With Sézary Syndrome.",
+      "journal": "American journal of hematology",
+      "date": "2026-10-26",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dynamic stratum corneum ceramide alterations reflect barrier dysfunction and clinical response to topical chlormethine treatment in early-stage mycosis fungoides.",
+      "journal": "International journal of pharmaceutics",
+      "date": "2026-10-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Large-scale integrated single-cell analysis reveals molecular subtypes and microenvironmental remodeling in cutaneous T cell lymphoma",
+      "journal": "",
+      "date": "2026-10-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Transformed mycosis fungoides: Biological heterogeneity, clinicopathological features, and prognostic determinants.",
+      "journal": "Blood reviews",
+      "date": "2026-10-23",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Lymphomatoid Papulosis-Like Lymphoid Reaction During Dupilumab Therapy for Atopic Dermatitis.",
+      "journal": "International journal of dermatology",
+      "date": "2026-10-23",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Treatment Lapses Impact Early-Stage Mycosis Fungoides Outcomes: A 14-Year Retrospective Cohort Study.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-23",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Multimodal Imaging-Assisted Diagnosis of a Rare Primary Cutaneous T-Cell Lymphoma Secondary to Imatinib plus Sintilimab in a Postoperative GIST Patient",
+      "journal": "",
+      "date": "2026-10-22",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mogamulizumab efficacy on the skin compartment of cutaneous T-cell lymphomas based on longitudinal analysis.",
+      "journal": "British journal of haematology",
+      "date": "2026-10-21",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The role of allogeneic hematopoietic stem cell transplantation in adults with mature T-cell lymphomas.",
+      "journal": "The Cochrane database of systematic reviews",
+      "date": "2026-10-21",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "When response lasts: ORR4 as an On-Treatment Prognostic Marker in Mogamulizumab-Treated Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-17",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Conjunctival involvement with corneal extension in pediatric mycosis fungoides. Surgical and immunomodulatory management.",
+      "journal": "Archivos de la Sociedad Espanola de Oftalmologia",
+      "date": "2026-10-17",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Folliculotropic mycosis fungoides presenting with acneiform lesions, comedones, and alopecia: A diagnostic challenge.",
+      "journal": "Actas dermo-sifiliograficas",
+      "date": "2026-10-16",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Proof-of-Concept Evaluation of T-Cell Receptor Beta Constant Region 1 and 2 Transcript in Situ Hybridization for Clonality Assessment in Mycosis Fungoides.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-10-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Combination Therapy with Mogamulizumab and Pegylated Liposomal Doxorubicin in Tumoral Advanced-Stage Mycosis Fungoides/Sézary Syndrome: A Two-Case Report.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Patient preferences and travel burden before radiotherapy for primary cutaneous lymphoma: baseline results from the S-MISR registry.",
+      "journal": "Strahlentherapie und Onkologie : Organ der Deutschen Rontgengesellschaft ... [et al]",
+      "date": "2026-10-14",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinical analysis of mycosis fungoides involving the central nervous system：a case report",
+      "journal": "",
+      "date": "2026-10-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "'The good cancer': communicating a hypopigmented mycosis fungoides diagnosis to families.",
+      "journal": "The Journal of dermatological treatment",
+      "date": "2026-10-12",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Inflammatory rheumatic diseases under mogamulizumab: a multicenter series of 11 cases.",
+      "journal": "Joint bone spine",
+      "date": "2026-10-10",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dupilumab-Associated Reversible Lymphoid Reaction Mimicking Mycosis Fungoides.",
+      "journal": "American journal of therapeutics",
+      "date": "2026-10-09",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Increased Risk of Post-Transplant T-Cell Lymphoproliferative Disorder Development in Solid Organ Transplant Recipients: A TriNetX Cohort Study.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-10-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous Lymphoma International Prognostic Index and Risk Stratification in Advanced Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "JAMA dermatology",
+      "date": "2026-10-07",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": true,
+      "backfill": true
+    },
+    {
+      "title": "Improved Risk Stratification in Advanced Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "JAMA dermatology",
+      "date": "2026-10-07",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Response to Vahabi et al, \"Expanding the Perspective on Cutaneous Malignancy in Systemic Sclerosis Transplant Recipients: Comment on Kanwar et al\".",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-10-06",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Erythrodermic Psoriasis With Anasarca and Lymphadenopathy Mimicking Lymphoma.",
+      "journal": "Cureus",
+      "date": "2026-10-06",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Response to Kanwar et al., \"Expanding the perspective on cutaneous malignancy in systemic sclerosis transplant recipients\".",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-10-05",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Systemic Retinoids in Cutaneous T-Cell Lymphoma: A Scoping Review of Clinical Use and Evidence Gaps.",
+      "journal": "Dermatology and therapy",
+      "date": "2026-10-03",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis Fungoides With γδ Immunophenotype.",
+      "journal": "JAMA dermatology",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pediatric Papular Mycosis Fungoides: An Uncommon Variant.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous T-cell lymphoma in the setting of NIPAL4-related nonsyndromic epidermal differentiation disorder: three cases.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Patient and care partner burden in cutaneous T-cell lymphoma using disease-specific measures of symptoms and health-related quality of life.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Management of extravasations of enfortumab vedotin and pembrolizumab: a case report and mini review of the current literature",
+      "journal": "Journal of cancer research and clinical oncology",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Non-epitheliotropic cutaneous T-cell lymphoma in a 5-week-old golden retriever puppy.",
+      "journal": "The Canadian veterinary journal = La revue veterinaire canadienne",
+      "date": "2026-10-01",
+      "first_seen": "2026-10-19",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "A single-cell atlas identifies oncogenic transcriptional programs and immune escape mechanisms in CTCL.",
+      "journal": "Blood",
+      "date": "2026-10-01",
+      "first_seen": "2026-10-05",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Case Report: Epitheliotropic cutaneous presentation of multicentric diffuse large B-cell lymphoma in a dog.",
+      "journal": "Frontiers in veterinary science",
+      "date": "2026-09-30",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "SkinNet-X: a task coupled feature interaction framework for joint skin lesion segmentation and classification.",
+      "journal": "Frontiers in artificial intelligence",
+      "date": "2026-09-30",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Immune-related adverse events with mogamulizumab in cutaneous T-cell lymphoma: A multicentre study.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-09-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Early Progression with Nodal Involvement Is a Predictor of Early Mortality in Mycosis Fungoides: A Retrospective, Registry-Based Cohort Study.",
+      "journal": "Current oncology (Toronto, Ont.)",
+      "date": "2026-09-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pediatric lymphomatoid papulosis: a broad clinicopathologic spectrum including rare variants in a single-center case series.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-09-29",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Graft-Versus-Tumour Effect Following Allogeneic Haematopoietic Stem Cell Transplantation in a Paediatric Patient With Mogamulizumab-Treated Primary Cutaneous Peripheral T-Cell Lymphoma.",
+      "journal": "EJHaem",
+      "date": "2026-09-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The Evolving Landscape of Extracorporeal Photopheresis in Immunotherapy: A Comprehensive Bibliometric and Topic Modeling Analysis (1995-2024).",
+      "journal": "Therapeutic apheresis and dialysis : official peer-reviewed journal of the International Society for Apheresis, the Japanese Society for Apheresis, the Japanese Society for Dialysis Therapy",
+      "date": "2026-09-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous T-cell lymphoma emerging during long-term dupilumab therapy in a patient with longstanding atopic diathesis: diagnostic challenges and mechanistic considerations.",
+      "journal": "BMJ case reports",
+      "date": "2026-09-28",
+      "first_seen": "2026-10-05",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Secondary syphilis in HIV with CD8-predominant epidermotropic infiltrate mimicking cutaneous T-cell lymphoma.",
+      "journal": "IDCases",
+      "date": "2026-09-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Reply to 'Caution in interpreting retrospective comparisons of acitretin and bexarotene in mycosis fungoides'.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-09-24",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "High-Resolution Ex Vivo Confocal Microscopy to Distinguish Cutaneous T-Cell Lymphoma from Inflammatory Mimickers.",
+      "journal": "Bioengineering (Basel, Switzerland)",
+      "date": "2026-09-24",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Gamma-Delta Phenotypic Evolution in Mycosis Fungoides With CD30-Positive Cutaneous Progression.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-09-23",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Sustained response (ORR4) as an on-treatment prognostic marker in mogamulizumab-treated mycosis fungoides and Sézary syndrome: the FIL-MOGA study.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-09-21",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary Cutaneous Lymphomas and Lymphoproliferative Disorders: Current Insights for Classification and Management.",
+      "journal": "Cancers",
+      "date": "2026-09-19",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Erythematous Dorsal Plaques in 6 Patients With Advanced T-Cell Lymphoma: A Clinical Variant of Mogamulizumab-Associated Rash.",
+      "journal": "Actas dermo-sifiliograficas",
+      "date": "2026-09-18",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Non-Invasive Skin Imaging Techniques for Diagnosing and Monitoring Mycosis Fungoides: A Comprehensive Review.",
+      "journal": "Cancers",
+      "date": "2026-09-16",
+      "first_seen": "2026-10-05",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Oral Relapsing Lymphomatoid Papulosis: A Case Report.",
+      "journal": "Clinical case reports",
+      "date": "2026-09-15",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Aggressive Cytotoxic Lymphomas of the Auricle: An Under-recognized Presentation.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-09-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "New Annular, Indurated Plaques During Mogamulizumab Therapy in Cutaneous T-Cell Lymphoma: A Clinicopathologic Pitfall.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-09-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous T Cell Lymphoma: Targeting the Survival Network in Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "Cancers",
+      "date": "2026-09-13",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The Development of Non-Tuberculosis Mycobacterial Infections in Sézary Syndrome: A Case Report of Two Patients.",
+      "journal": "The Australasian journal of dermatology",
+      "date": "2026-09-12",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dietary Modulation of microRNAs as a Potential Nutritional Strategy in Inflammatory and Autoimmune Skin Diseases: A Narrative Review.",
+      "journal": "Cells",
+      "date": "2026-09-10",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Recurrent Primary Cutaneous Anaplastic Large Cell Lymphoma With T-Cell Receptor-ϒδ Phenotype and DUSP22-IRF4 Unbalanced Rearrangement: A Rare and Diagnostically Challenging Presentation.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-09-09",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pyrimidine- and furo[2,3-d]pyrimidine-isoxazole hybrids and their Re(i) tricarbonyl complexes with antiproliferative activity against hematological malignancies.",
+      "journal": "RSC medicinal chemistry",
+      "date": "2026-09-09",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Ropeginterferon alfa-2b in mycosis fungoides: A multicentre cohort.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-09-08",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Qualitative assessment of the content validity of pruritus patient-reported outcome measures in mycosis fungoides and Sézary syndrome.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-09-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Purple Blossoms.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "date": "2026-09-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary cutaneous lymphomas: diagnostic burden and determinants of diagnostic delay across the disease spectrum.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-09-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Durable immunovirological control after sequential mogamulizumab and tucidinostat in relapsed or refractory adult T-cell leukemia/lymphoma.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-09-08",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Adverse events associated with systemic cutaneous T-cell lymphoma therapies: a narrative review.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-09-07",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Extracorporeal photopheresis: a comprehensive review from a transfusion medicine perspective.",
+      "journal": "Hematology, transfusion and cell therapy",
+      "date": "2026-09-04",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Advanced-stage cutaneous T-cell lymphomas show distinct immune profiles in erythroderma vs. tumor lesions.",
+      "journal": "Journal of dermatological science",
+      "date": "2026-09-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "ESTRO consensus recommendations on total skin electron beam technique - Endorsed by ILROG.",
+      "journal": "Physics and imaging in radiation oncology",
+      "date": "2026-09-03",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Caution in Interpreting Retrospective Comparisons of Acitretin and Bexarotene in Mycosis Fungoides.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-09-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Ropeginterferon-α2b in mycosis fungoides and Sézary syndrome: Safety and efficacy in 41 patients.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-09-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Recent incidence trends for cutaneous T-cell lymphoma in the United States: A Surveillance, Epidemiology, and End Results database analysis, 2000-2022.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-09-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dupilumab-Associated Mycosis Fungoides: Unmasked, Direct Effect, or a Lymphoid Reaction?",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-09-02",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Concentration of mechlorethamine prescribing among a small number of specialists: Implications for access to cutaneous T-cell lymphoma care.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-09-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinicopathologic Characteristics, Treatment Outcomes of Pediatric Mycosis Fungoides in Turkey: A National Multicenter Retrospective Cohort.",
+      "journal": "Pediatric dermatology",
+      "date": "2026-09-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis fungoides in a Mexican pediatric series: Clinical, immunophenotypic, and therapeutic features.",
+      "journal": "Revista medica del Instituto Mexicano del Seguro Social",
+      "date": "2026-09-02",
+      "first_seen": "2026-10-05",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Real-World Experience With Mogamulizumab for Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "Clinical lymphoma, myeloma & leukemia",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A comparison of dermoscopic features of pigmented purpuric dermatoses and pigmented purpuric dermatosis-like mycosis fungoides.",
+      "journal": "Acta dermatovenerologica Alpina, Pannonica, et Adriatica",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Golidocitinib for Folliculotropic Mycosis Fungoides.",
+      "journal": "JAMA dermatology",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Topology and Quality of Life of Cutaneous T-Cell-Lymphomas: A Cross-sectional Study of 153 Patients.",
+      "journal": "Clinical and experimental dermatology",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Beyond the ceiling: A critical analysis of microRNA research in cutaneous T-cell lymphoma and a roadmap forward.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Guidelines on the Use of Therapeutic Apheresis in Clinical Practice-Evidence-Based Approach From the Writing Committee of the American Society for Apheresis: The Tenth Special Issue.",
+      "journal": "Journal of clinical apheresis",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Successful treatment of severe refractory chronic actinic dermatitis with upadacitinib: a case series of four patients.",
+      "journal": "Clinical and experimental dermatology",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Synthesis and Biological Evaluation of a Lipophilic Vorinostat Prodrug.",
+      "journal": "Chemistry & biodiversity",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Diagnosis-specific systemic inflammatory responses to narrowband UVB phototherapy: evidence from hemogram-derived biomarkers.",
+      "journal": "Acta dermatovenerologica Alpina, Pannonica, et Adriatica",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Topical Resiquimod Elicits Systemic Protection and Improves Anti-PD-1 Therapy in Melanoma via Priming of CD8+ T Cells.",
+      "journal": "Cancer immunology research",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis Fungoides with Large-Cell Transformation Metastatic to the Central Nervous System",
+      "journal": "",
+      "date": "2026-09-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinical in-vivo dosimetry for total skin electron therapy using gafchromic™ EBT4 film.",
+      "journal": "Journal of applied clinical medical physics",
+      "date": "2026-09-01",
+      "first_seen": "2026-08-31",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Primary Cutaneous Gamma-Delta T-Cell Lymphoma With Unusual Clinicopathological Characteristics: A Study of Three Patients With Molecular Characterization.",
+      "journal": "The Australasian journal of dermatology",
+      "date": "2026-08-31",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Immune Dysregulation, Compartment-Specific Biology, and Therapeutic Biomarkers in Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "Cells",
+      "date": "2026-08-30",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "WEE1 Inhibition as a Novel Therapeutic Strategy in Cutaneous T-Cell Lymphoma.",
+      "journal": "Cancers",
+      "date": "2026-08-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Squamous Cell Carcinoma Arising Within a Mycosis Fungoides Plaque: A Case Report.",
+      "journal": "Clinical, cosmetic and investigational dermatology",
+      "date": "2026-08-28",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pediatric Mycosis Fungoides and Hydroa Vacciniforme Lymphoproliferative Disorder.",
+      "journal": "Cancers",
+      "date": "2026-08-27",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous lymphomas - an update.",
+      "journal": "Histopathology",
+      "date": "2026-08-27",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Radiation-Induced Morphea of the Breast in a Patient with Pre-Existing Mycosis Fungoides: A Diagnostic Challenge.",
+      "journal": "Current oncology (Toronto, Ont.)",
+      "date": "2026-08-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Oral mycosis fungoides.",
+      "journal": "BMJ case reports",
+      "date": "2026-08-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Flow cytometry in atopic dermatitis patients on dupilumab: Unexpected detection of Sézary syndrome.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-08-25",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Real-World Effectiveness and Safety of Oral Alitretinoin in Chronic Hand Eczema with Exploratory Off-Label Indications: A 10-Year Single-Center Korean Study.",
+      "journal": "Medicina (Kaunas, Lithuania)",
+      "date": "2026-08-24",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Durable remission after allogeneic transplantation despite residual blood disease in Sézary syndrome.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-08-19",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Infectious risk during mogamulizumab therapy in mycosis fungoides and Sézary syndrome.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-08-19",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dermoscopic clues for differentiating mycosis fungoides palmaris et plantaris from palmoplantar eczema.",
+      "journal": "JAAD international",
+      "date": "2026-08-19",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Educational Case: Mycosis fungoides.",
+      "journal": "Academic pathology",
+      "date": "2026-08-17",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A case of ichthyosiform mycosis fungoides.",
+      "journal": "JAAD case reports",
+      "date": "2026-08-17",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pigmented purpuric dermatoses versus purpuric mycosis fungoides: red flags from a clinicopathologic case series.",
+      "journal": "Anais brasileiros de dermatologia",
+      "date": "2026-08-17",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A Six-year Response to Belinostat in a Highly Probable Case of Relapsed/Refractory MF/SS Initially Classified as PTCL-NOS: A Case Report.",
+      "journal": "OncoTargets and therapy",
+      "date": "2026-08-15",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Outcomes of brentuximab vedotin in cutaneous T-cell lymphoma: A Middle Eastern real-world study.",
+      "journal": "JAAD international",
+      "date": "2026-08-14",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Real-World Experience With TRBC1 Immunohistochemistry Across Cutaneous T-Cell Lymphoma Subtypes: A Large Cohort Study.",
+      "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+      "date": "2026-08-14",
+      "first_seen": "2026-10-26",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Comparative Outcomes of Single- and Split-Fraction Low-Dose Radiation in Mycosis Fungoides.",
+      "journal": "Advances in radiation oncology",
+      "date": "2026-08-13",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Morphologic mimicry of cutaneous T-cell lymphoma as classic Hodgkin lymphoma-a case report.",
+      "journal": "Journal of hematopathology",
+      "date": "2026-08-12",
+      "first_seen": "2026-08-17",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Real-world cardiovascular safety profile of bexarotene for the treatment of mycosis fungoides.",
+      "journal": "Clinical and experimental medicine",
+      "date": "2026-08-10",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Contralateral Cutaneous T-cell Lymphoma as a Mimicker of Multi-decade Atopic Dermatitis.",
+      "journal": "Cureus",
+      "date": "2026-08-10",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cancer-associated pruritus: Insights into its pathogenesis and management.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-08-10",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Diagnosis of mycosis fungoides following upadacitinib treatment.",
+      "journal": "JAAD case reports",
+      "date": "2026-08-07",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Activatable photoimmunotherapy enables spatiotemporal depletion of pathogenic cells in immune-driven disease and cancer.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-08-07",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Long Non-Coding RNAs and Circular RNAs in the Pathobiology of T-Cell Lymphoma.",
+      "journal": "Cancers",
+      "date": "2026-08-07",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Tape-strip transcriptomics identify immune signatures in cutaneous T-cell lymphoma distinct from benign inflammatory skin diseases.",
+      "journal": "The Journal of allergy and clinical immunology",
+      "date": "2026-08-07",
+      "first_seen": "2026-11-09",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Low-dose decitabine combined with camrelizumab for refractory/relapsed mycosis fungoides/Sézary syndrome: a retrospective exploratory study.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-08-06",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis Fungoides-Like Atopic Dermatitis Represents a Th22-Dominant Inflammatory Endotype.",
+      "journal": "Allergy",
+      "date": "2026-08-06",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Hypopigmented mycosis fungoides in children: Balancing detection and overdiagnosis.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-08-05",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Case Report: Probable CLIPPERS in a patient with cutaneous T-cell lymphoma in remission: 5-year follow-up.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-08-05",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Genomic and spatial transcriptomics identify fibroblast-associated microenvironment in early mycosis fungoides progression.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-08-04",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "[Gemcitabine-induced toxic epidermal necrolysis in a patient with mycosis fungoides].",
+      "journal": "Dermatologie (Heidelberg, Germany)",
+      "date": "2026-08-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "PD-1, PD-L1, and PD-L2 Immunoexpression in Mycosis Fungoides Biopsies.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-08-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary Cutaneous Anaplastic Large Cell Lymphoma in a Patient With Li Fraumeni Syndrome.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-08-03",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis fungoides in the setting of 9p minus syndrome.",
+      "journal": "JAAD case reports",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinicopathologic Features and Long-Term Outcomes of Adult Hypopigmented Mycosis Fungoides.",
+      "journal": "JAMA dermatology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous lymphomas reported following the use of dupilumab, nemolizumab, tralokinumab, or lebrikizumab: A case investigation based on JADER database and disproportionality analysis.",
+      "journal": "Intractable & rare diseases research",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Context, not class, may be the key signal in systemic Janus kinase inhibitor exposure in mycosis fungoides/Sézary syndrome.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Durable remission with no survival reduction after mogamulizumab discontinuation in Sézary syndrome.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Comment on 'Context, not class, may be the key signal in systemic Janus kinase inhibitor exposure in mycosis fungoides/Sézary syndrome': reply from authors.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous T-cell lymphoma and dupilumab for atopic dermatitis: Practical guidance for a clinical conundrum.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Folliculotropism in cutaneous T-cell lymphoma is associated with increased risk of skin-origin infection and distinct infection-mortality relationships.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "[Therapeutic apheresis in first-line treatment of hematological disorders - an evidence-based review].",
+      "journal": "Therapeutische Umschau. Revue therapeutique",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A 13-Year Review of Non-Diffuse Large B Cell Lymphomas of the Central Nervous System at a Tertiary Hospital: A Case Series Study.",
+      "journal": "Neuropathology : official journal of the Japanese Society of Neuropathology",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Erfolgreiche multimodale Therapie der CD30‐positiven follikulotropen Mycosis fungoides",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis fungoides palmaris et plantaris als Imitator einer palmoplantaren Pustulose – ein seltener Fallbericht",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-08-01",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Safety and Effectiveness of Denileukin Diftitox-cxdl in Patients With Relapsed/Refractory Peripheral T-Cell Lymphoma and Cutaneous T-Cell Lymphoma: An All-Case Post-Marketing Study in Japan.",
+      "journal": "Cancer reports (Hoboken, N.J.)",
+      "date": "2026-08-01",
+      "first_seen": "2026-08-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Serum periostin levels in mycosis fungoides: associations with clinical subtype and disease stage.",
+      "journal": "Dermatology reports",
+      "date": "2026-07-31",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dermoscopic Hallmarks of Lymphomatoid Papulosis: A Case Series of Five Histopathologically Proven Lesions.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-07-31",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Trichoscopy of Scalp Folliculotropic Mycosis Fungoides: A Review of the Literature.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-07-31",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis Fungoides Characterized by Palmar-Plantar Keratosis and Exudation.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-07-31",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Liquid biopsy in cutaneous oncology: Current practice and future directions.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-07-30",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Erythema multiforme-like drug eruption in a patient with mycosis fungoides on durvalumab and lenalidomide.",
+      "journal": "JAAD case reports",
+      "date": "2026-07-29",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Diffuse plane xanthoma.",
+      "journal": "Clinics in dermatology",
+      "date": "2026-07-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Successful use of nemolizumab for refractory pruritus in cutaneous T-cell lymphoma.",
+      "journal": "JAAD case reports",
+      "date": "2026-07-28",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Fungal Skin Infections in Cutaneous T-cell Lymphoma Patients under Mogamulizumab Treatment.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-07-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Risk of Lymphoma in Patients With Asthma Treated With Dupilumab Compared With Other Biologic Agents: A Retrospective Cohort Study.",
+      "journal": "Chest",
+      "date": "2026-07-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
+      "journal": "",
+      "date": "2026-07-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "GATA3-positivity and T follicular helper phenotype in transformed mycosis fungoides with leukemic involvement and prominent folliculotropism: a case report.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-07-27",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Efficacy, Safety, and Maintenance Use of Topical Bexarotene in Early-Stage Mycosis Fungoides: A Single-Center Retrospective Real-World Study.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-07-27",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "XPO1: From basic research to clinical treatment (Review).",
+      "journal": "Oncology reports",
+      "date": "2026-07-24",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Canine cutaneous lymphoma of large granular lymphocytes non-B, non-T natural killer immunophenotype with cardiac, gastric and hepatic involvement.",
+      "journal": "Brazilian journal of veterinary medicine",
+      "date": "2026-07-24",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Prescribing Biologic Immune-Modifying Therapies for Patients with a History of Cancer: A Cross-Specialty Review.",
+      "journal": "Current oncology (Toronto, Ont.)",
+      "date": "2026-07-24",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Final results of UK NCRI phase II trial of pembrolizumab and radiotherapy in cutaneous T cell lymphoma.",
+      "journal": "Haematologica",
+      "date": "2026-07-23",
+      "first_seen": "2026-11-10",
+      "kind": "trial",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Necrobiotic Xanthogranuloma (NXG): Dermoscopic and Reflectance Confocal Microscopic Findings and Review of Treatment with Intravenous Immunoglobulin (IVIG).",
+      "journal": "Dermatology and therapy",
+      "date": "2026-07-23",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cellular and molecular aberrations generating new immunotherapeutic approaches in mycosis fungoides and Sézary syndrome: a comprehensive review of literature.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-07-22",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Refractory Atopic Dermatitis Unmasking Mycosis Fungoides During Targeted Therapy.",
+      "journal": "The journal of allergy and clinical immunology. In practice",
+      "date": "2026-07-22",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dissecting Immune Determinants in Lesional Skin of Cutaneous T-Cell Lymphoma During Mogamulizumab Therapy.",
+      "journal": "Cancers",
+      "date": "2026-07-21",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": true,
+      "backfill": true
+    },
+    {
+      "title": "Genomic Diversity and Clinical Variability in Pediatric Primary Cutaneous Anaplastic Large Cell Lymphoma: A Case Series.",
+      "journal": "Pediatric blood & cancer",
+      "date": "2026-07-21",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinical heterogeneity of primary cutaneous γδ T-cell lymphoma: a 20-year single-institution experience.",
+      "journal": "Blood research",
+      "date": "2026-07-21",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Multicentric Reticulohistiocytosis Progressing to Erythroderma After Long-Term Disease Progression.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-07-21",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary Cutaneous Follicular Helper T-Cell Lymphoma: A Clinicopathological Study of Six Cases and Review of the Literature.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-07-21",
+      "first_seen": "2026-09-07",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Sézary Syndrome Biomarker, T Cell Transcription Factors and Cytokine Genes Provide Novel Insight into Response During Mogamulizumab Treatment.",
+      "journal": "Cancers",
+      "date": "2026-07-17",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "[Diagnostic approach to non-cutaneous T-cell lymphomas in 2025: What pitfalls and how should they be classified?]",
+      "journal": "Annales de pathologie",
+      "date": "2026-07-16",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Proteomics and transcriptomics reveal molecular subtypes and biomarkers of advanced cutaneous T-cell lymphoma.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Psychological Distress, Symptom Burden and Quality of Life in Patients with Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Persistent racial and socioeconomic inequities in mycosis fungoides survival: a population-based study.",
+      "journal": "Frontiers in public health",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Development of mogamulizumab-associated rash with granuloma annulare-like features in a patient with Sezary syndrome: A case report and review of the literature.",
+      "journal": "JAAD case reports",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Lymphomatoid papulosis: a practical review for pathologists.",
+      "journal": "Journal of pathology and translational medicine",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous Malignancies Metastatic to the Female Genital Tract and Pelvic Lymph Nodes: Analysis of Metastatic Patterns and Pathogenesis.",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-07-15",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Malignant T cells operate at the edge of redox tolerance and propagate oxidative stress in cutaneous T-cell lymphoma.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-07-13",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A digital polymerase chain reaction method targeting non-recombined T-cell receptor sequences aids in diagnosing primary cutaneous T-cell lymphomas.",
+      "journal": "Journal of Cancer",
+      "date": "2026-07-13",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Persistent Agmination of Lymphomatoid Papulosis with Features of Lymphomatoid Papulosis in Both the Regressing Papular Component and the Persistent Patch: A Case Report and Review of the Literature.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-07-13",
+      "first_seen": "2026-09-21",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous T-cell Lymphoma of the Mycosis Fungoides Variant: A Case Report.",
+      "journal": "Cureus",
+      "date": "2026-07-12",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Coexistence of Mycosis Fungoides and Hodgkin Lymphoma in a Pediatric Patient: A Report of a Rare Case.",
+      "journal": "Cureus",
+      "date": "2026-07-11",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "DRESS syndrome triggered by brentuximab vedotin in Sézary syndrome treated with mogamulizumab: a novel association.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-07-09",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Lichen Planus Follicularis Tumidus of the Vulva: A Case Report and Literature Review.",
+      "journal": "Case reports in pathology",
+      "date": "2026-07-09",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Localized radiation therapy provides more durable disease control than topical steroids in stage IA mycosis fungoides.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-07-07",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clonal evolution of mycosis fungoides into peripheral T-cell lymphoma: evidence from next-generation sequencing in two cases.",
+      "journal": "Annals of hematology",
+      "date": "2026-07-07",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Myxoid Variant of Primary Cutaneous Anaplastic Large Cell Lymphoma Mimicking Soft Tissue Sarcoma: Diagnostic Pitfalls and Literature Review.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-07-06",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Fibroblast-Derived Small Extracellular Vesicles Promote M2 Macrophage Polarization and PD-L1 Upregulation in Mycosis Fungoides.",
+      "journal": "Cancers",
+      "date": "2026-07-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cellular interaction of mycosis fungoides tumor cells changes from cytotoxic CD8+ T cells in plaques to B cells in tumors.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-07-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The different face of skin-rash induced by brentuximab vedotin.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-07-02",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Established and emerging prognostic factors in mycosis fungoides and Sézary syndrome.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-07-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Feasibility study: Use of an optical scanning system to obtain 3D body surface images suitable for total skin electron therapy treatment dosimetry.",
+      "journal": "Journal of applied clinical medical physics",
+      "date": "2026-07-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Exploring the Impact of Phototherapy on Cardiovascular Events and Survival in Cutaneous T-Cell Lymphoma.",
+      "journal": "Photodermatology, photoimmunology & photomedicine",
+      "date": "2026-07-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The prognostic impact of prior atopic dermatitis on cutaneous T-cell lymphoma: a single-centre retrospective cohort study.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-07-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Beyond polarization: a receptor-centered framework for macrophage function and therapy in skin diseases.",
+      "journal": "Clinical and experimental medicine",
+      "date": "2026-07-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Age- and Sex-Related Differences in Primary Cutaneous Lymphoma.",
+      "journal": "Cutis",
+      "date": "2026-07-01",
+      "first_seen": "2026-10-19",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "[Erythroderma: etiology, diagnosis, and management-an overview].",
+      "journal": "Dermatologie (Heidelberg, Germany)",
+      "date": "2026-07-01",
+      "first_seen": "2026-08-10",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "LyP vs advanced-stage CTCLs: single-cell profiling reveals markers of self-limited vs aggressive disease behavior.",
+      "journal": "Blood advances",
+      "date": "2026-07-01",
+      "first_seen": "2026-07-27",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Pediatric Acral Site Cutaneous T-Cell Lymphoma Imitating Acromegaly.",
+      "journal": "Pediatrics",
+      "date": "2026-07-01",
+      "first_seen": "2026-07-05",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "TCRVβ-targeting antibody-drug conjugates as a novel strategy to eliminate malignant T cells in T cell cancers.",
+      "journal": "Blood advances",
+      "date": "2026-07-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Pagetoid reticulosis (Woringer-Kolopp disease) mimicking eczema: a case report with immunophenotypic analysis and literature review.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-06-30",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "GZ21T as an emerging topical dermatologic therapy: A literature review.",
+      "journal": "Dermatology online journal",
+      "date": "2026-06-30",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Analysis of Second Primary Tumours in Cutaneous Lymphoma Populations.",
+      "journal": "Cancer investigation",
+      "date": "2026-06-30",
+      "first_seen": "2026-10-05",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Psychological Resilience and Quality of Life in Mycosis Fungoides Patients: A BIO-MUSE Study.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-06-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Chronic eczematous eruptions of aging: a clinical practice review.",
+      "journal": "Annals of translational medicine",
+      "date": "2026-06-29",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Effects of Phototherapy on Sleep, Fatigue and Quality of Life in Dermatology Patients: A Pilot Study.",
+      "journal": "Sisli Etfal Hastanesi tip bulteni",
+      "date": "2026-06-29",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Overlapping Hyperpigmented and Poikilodermatous Mycosis Fungoides.",
+      "journal": "Case reports in dermatological medicine",
+      "date": "2026-06-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Fingolimod-Associated Lymphomatoid Papulosis.",
+      "journal": "Actas dermo-sifiliograficas",
+      "date": "2026-06-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Fluorescent Light Energy (FLE) as an Adjunctive Therapy in Canine Cutaneous Epitheliotropic Lymphoma (CTCL).",
+      "journal": "Veterinary dermatology",
+      "date": "2026-06-26",
+      "first_seen": "2026-09-14",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "IL4Rα blockade inhibits proliferation of malignant lymphocytes and the immunosuppressive tumor microenvironment of mycosis fungoides.",
+      "journal": "Journal for immunotherapy of cancer",
+      "date": "2026-06-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Nemolizumab for Pruritus Control in Cutaneous T-Cell Lymphoma: A Case Series.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-06-24",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis Fungoides with Concurrent Squamous Cell Carcinoma in a Young Patient: A Rare Case.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-06-24",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Sézary Syndrome: Survival Trends, Racial Disparities, and Limited Prognostic Value of Routine Registry Variables.",
+      "journal": "EJHaem",
+      "date": "2026-06-24",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Assessing content validity of the functional assessment of cancer therapy-cutaneous T-cell lymphoma (FACT-CTCL): a qualitative study.",
+      "journal": "Journal of patient-reported outcomes",
+      "date": "2026-06-23",
+      "first_seen": "2026-09-14",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Response to [CTCL During Immunomodulatory Treatment: Diagnostic Gaps and the Importance of Distinguishing Unmasking From True Onset].",
+      "journal": "The Journal of dermatology",
+      "date": "2026-06-22",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Narrowband UVB Phototherapy in Dermatology: GEF-CILAD 2026 Update.",
+      "journal": "Actas dermo-sifiliograficas",
+      "date": "2026-06-20",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Case series of mycosis fungoides with clinical features suggestive of seborrheic dermatitis.",
+      "journal": "JAAD case reports",
+      "date": "2026-06-19",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Ultrasound as a robust tool for lymph node staging in cutaneous T-cell lymphoma.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-06-18",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Rare case of CD20-positive primary cutaneous T-cell lymphoma, NOS, with an aggressive clinical course.",
+      "journal": "Journal of clinical pathology",
+      "date": "2026-06-18",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Venous and arterial thrombosis following extracorporeal photopheresis: A descriptive cohort study using a federated electronic health record network.",
+      "journal": "Transfusion",
+      "date": "2026-06-18",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "IL4I1+ macrophage accumulation in advanced cutaneous T-cell lymphomas suggests a role in tumor immune escape.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-06-17",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mogamulizumab as Bridge to Thiotepa-Based Allogeneic Haematopoietic Stem Cell Transplantation in Sézary Syndrome: A Single-Centre Experience.",
+      "journal": "EJHaem",
+      "date": "2026-06-16",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Sustained remission for mycosis fungoides following duvelisib and mogamulizumab.",
+      "journal": "JAAD case reports",
+      "date": "2026-06-15",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis fungoides and Leser-Trélat sign.",
+      "journal": "Italian journal of dermatology and venereology",
+      "date": "2026-06-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Comparison of narrowband ultraviolet B with psoralen plus ultraviolet A phototherapy for patients with early-stage mycosis fungoides: a systematic review and meta-analysis.",
+      "journal": "Skin health and disease",
+      "date": "2026-06-15",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "JAAD Game Changer: Risk of venous thromboembolism in patients with mycosis fungoides and parapsoriasis: a Danish nationwide population-based cohort study.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-06-15",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "CTCL During Immunomodulatory Treatment: Diagnostic Gaps and the Importance of Distinguishing Unmasking From True Onset: Comment on \"Mycosis Fungoides Following IL-17 Inhibitor Treatment: A Case Series of Five Patients\".",
+      "journal": "The Journal of dermatology",
+      "date": "2026-06-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Folliculotropic Mycosis Fungoides with a T-Follicular Helper Cell Phenotype.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-06-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Photoprotective practices in patients with mycosis fungoides: a questionnaire-based survey study.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-06-14",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Diagnostic Utility of Serum Immunoglobulin E (IgE) and Eosinophils Levels in Differentiating Cutaneous T Cell Lymphoma from Atopic Dermatitis: A Retrospective Review",
+      "journal": "",
+      "date": "2026-06-14",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Brentuximab vedotin in cutaneous T-Cell lymphoma: emerging evidence and therapeutic insights for CD30-negative and CD30-low disease.",
+      "journal": "Cancer treatment and research communications",
+      "date": "2026-06-12",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Current state of medical care for patients with mycosis fungoides and Sézary syndrome at a German university hospital - a cross-sectional study.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-06-11",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clonal expansion of CAR-T cells harboring lentivector integration in the PLAAT4 gene following anti-CD19 CAR T-cell therapy in a context of cutaneous T-cell lymphoma.",
+      "journal": "Haematologica",
+      "date": "2026-06-11",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Prognostic Value of Skin Lesion Characteristics in Subcutaneous Panniculitis-Like T-Cell Lymphoma: A Retrospective Cohort Study Assessing the Applicability of T Category of the TNM Classification for Primary Cutaneous Lymphomas Other Than Mycosis Fungoides and Sézary Syndrome.",
+      "journal": "International journal of dermatology",
+      "date": "2026-06-11",
+      "first_seen": "2026-10-19",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Treatment utilization and outcomes in patients with mycosis fungoides and Sézary syndrome receiving mogamulizumab in community and academic practice in the United States clinical practice.",
+      "journal": "Leukemia & lymphoma",
+      "date": "2026-06-10",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Granulomatous cutaneous T-cell lymphoma in a patient with atage IVB of mycosis fungoides: a case report and literature review.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-06-10",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Serum proteomic and single-cell transcriptomic profiling reveals immunoproteomic features distinguishing early-stage mycosis fungoides from atopic dermatitis.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-06-10",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Nivolumab-Associated Cardiac Manifestation of Cutaneous T-Cell Lymphoma in a Patient With Concurrent Renal Cell Carcinoma.",
+      "journal": "Mayo Clinic proceedings. Innovations, quality & outcomes",
+      "date": "2026-06-10",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A real-world pharmacovigilance study of romidepsin based on FDA adverse event reporting system database.",
+      "journal": "Frontiers in oncology",
+      "date": "2026-06-10",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pathogenesis of cutaneous T-cell lymphoma: Malignant inflammation, immune reprogramming, and microenvironmental drivers.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-06-10",
+      "first_seen": "2026-08-10",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Subcutaneous Panniculitis-Like T-cell Lymphoma With Scalp Involvement: A Diagnostic Challenge With Lupus Panniculitis.",
+      "journal": "Cureus",
+      "date": "2026-06-09",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Narrowband ultraviolet B and psoralen plus ultraviolet A phototherapy treatment for mycosis fungoides: a 17-year retrospective cohort study in a university teaching hospital, 2007-24.",
+      "journal": "Skin health and disease",
+      "date": "2026-06-09",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Hypopigmented Mycosis Fungoides With Childhood-Onset and Middle-Aged Onset: Two Case Reports Focusing on the Cutaneous Immune Microenvironment.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-06-08",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Follicular Mucinosis Associated with Adult T-Cell Leukemia-Lymphoma.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-06-08",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Challenges of chimerism analysis using Next-Generation Sequencing in a patient with complex chromosomal alterations.",
+      "journal": "Human immunology",
+      "date": "2026-06-08",
+      "first_seen": "2026-07-27",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Global skin cancer burden and United States mortality trends in younger adults (Aged 20-44 Years): An analysis of the Global Burden of Disease Study 2021 and CDC WONDER Databases.",
+      "journal": "JID innovations : skin science from molecules to population health",
+      "date": "2026-06-04",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The dual burden of a rare cancer: psychosocial impact of disease symptoms and unmet care needs in cutaneous T-cell lymphoma.",
+      "journal": "Frontiers in psychology",
+      "date": "2026-06-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Comment on \"Cutaneous T-cell lymphoma: Consensus on diagnosis and management in Taiwan\".",
+      "journal": "Journal of the Formosan Medical Association = Taiwan yi zhi",
+      "date": "2026-06-03",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "High-throughput, multiplex immunofluorescence for the computer-automated immunophenotyping of Mycosis Fungoides.",
+      "journal": "JID innovations : skin science from molecules to population health",
+      "date": "2026-06-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Vesicular mycosis fungoides: a rare disease with diagnostic dilemmas.",
+      "journal": "Italian journal of dermatology and venereology",
+      "date": "2026-06-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The immune ensemble behind mogamulizumab-associated rash.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-06-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Artificial intelligence (AI)-assisted diagnosis of skin diseases: From image classification to dermatology-specific multimodal clinical reasoning.",
+      "journal": "Global health & medicine",
+      "date": "2026-06-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Safety of Dupilumab and Risk of Cutaneous T-Cell Lymphoma in Pediatric Patients With Atopic Dermatitis: A Data-Driven Guide to Counseling Patients and Families.",
+      "journal": "Pediatric dermatology",
+      "date": "2026-05-31",
+      "first_seen": "2026-08-03",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Initial preclinical investigation of aclarubicin treatment in primary cutaneous T-cell lymphoma cells.",
+      "journal": "JID innovations : skin science from molecules to population health",
+      "date": "2026-05-30",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous Hematologic Neoplasms in Children: Overview and Update.",
+      "journal": "Dermatopathology (Basel, Switzerland)",
+      "date": "2026-05-29",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "TRBC1 Immunohistochemistry Utilization in Formalin-fixed Paraffin-embedded Tissue as an Adjunct to T-cell Clonality Testing in the Assessment of Cutaneous Lymphoproliferative Disorders.",
+      "journal": "The American journal of surgical pathology",
+      "date": "2026-05-29",
+      "first_seen": "2026-08-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous Lymphomas and Lymphoproliferative Disorders Associated With SARS-CoV-2 Vaccination: A Systematic Review.",
+      "journal": "Journal of skin cancer",
+      "date": "2026-05-28",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Secondary T-cell lymphomas after chimeric antigen receptor T-cell therapy in dermatology.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-05-28",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Inflammatory and Infectious Cutaneous Entities Resembling Cutaneous T-Cell Lymphoma (CTCL): An Integrated Clinicopathological Review.",
+      "journal": "Dermatopathology (Basel, Switzerland)",
+      "date": "2026-05-27",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Angiocentric Variant of Primary Cutaneous CD30-Positive Anaplastic Large Cell Lymphoma: A Case Report and Literature Review.",
+      "journal": "Cureus",
+      "date": "2026-05-27",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The Oncology: Disease Modifying Anti-Rheumatic Drug Interface: A Cross-Specialty Review",
+      "journal": "",
+      "date": "2026-05-27",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Post-solid organ transplant cutaneous T-cell lymphoma: A systematic review of the literature.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-05-26",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Early mycosis fungoides: Integrating clinical, histopathological and molecular insights to improve diagnosis and risk stratification.",
+      "journal": "Revista espanola de patologia : publicacion oficial de la Sociedad Espanola de Anatomia Patologica y de la Sociedad Espanola de Citologia",
+      "date": "2026-05-26",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Modified Goeckerman therapy for chronic skin diseases in a resource-limited setting: A case series from Kenya.",
+      "journal": "JAAD case reports",
+      "date": "2026-05-26",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Sensitivity of circulating tumor DNA in advanced mycosis fungoides: A retrospective case series.",
+      "journal": "JAAD international",
+      "date": "2026-05-25",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Cutaneous T-cell lymphoma tumors undergoing radiotherapy demonstrate immune shifts from malignant inflammation to wound healing and suggest markers of treatment durability.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-05-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Utility of combined CD39/CD73/CD38 expression for the detection of malignant T cells in Sézary syndrome.",
+      "journal": "British journal of haematology",
+      "date": "2026-05-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dose-de-escalated focal radiotherapy for primary cutaneous T-cell lymphoma: a lesion-based retrospective cohort study.",
+      "journal": "Acta oncologica (Stockholm, Sweden)",
+      "date": "2026-05-25",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Paraneoplastic Papuloerythroderma of Ofuji Masquerading as Worsening Psoriasis.",
+      "journal": "Psoriasis (Auckland, N.Z.)",
+      "date": "2026-05-22",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dermoscopic and Reflectance Confocal Microscopic Features of a Primary Cutaneous Anaplastic Large Cell Lymphoma (C-ALCL) of the Eyelid: A Case Report with Histopathologic Correlation.",
+      "journal": "Reports (MDPI)",
+      "date": "2026-05-21",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary cutaneous lymphomas in children: a single-center retrospective analysis and narrative review of the literature.",
+      "journal": "Italian journal of dermatology and venereology",
+      "date": "2026-05-21",
+      "first_seen": "2026-08-31",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Incidence rates of non-Hodgkin lymphoma subtypes among Black Africans with and without HIV in South Africa: a national registry-based study.",
+      "journal": "The Lancet regional health. Africa",
+      "date": "2026-05-19",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "New or exacerbated atypical head and neck lesions as sentinel clinical features of dupilumab-associated cutaneous T-cell lymphoma.",
+      "journal": "The Journal of allergy and clinical immunology",
+      "date": "2026-05-18",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Psoriasis in skin of color: clinical presentation, diagnostic challenges, and therapeutic considerations.",
+      "journal": "Anais brasileiros de dermatologia",
+      "date": "2026-05-18",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Epidemiological, Clinical, and Histopathological Features of Pediatric Pityriasis Lichenoides: A Retrospective Cohort With Long-Term Follow-Up.",
+      "journal": "Pediatric dermatology",
+      "date": "2026-05-18",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A scRNA-seq atlas of chronic inflammatory skin diseases",
+      "journal": "",
+      "date": "2026-05-18",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Sleep quality in patients with mycosis fungoides and its relationship with dermatology-specific quality of life.",
+      "journal": "Clinics in dermatology",
+      "date": "2026-05-16",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinical-pathological diagnostic concordance in inflammatory dermatoses: a single-center retrospective analysis.",
+      "journal": "Cutaneous and ocular toxicology",
+      "date": "2026-05-16",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary Cutaneous CD4⁺ Small/Medium T-cell Lymphoproliferative Disorder With T-cell Receptor (TCR) Clonality: The Importance of Clinical Context in Management.",
+      "journal": "Cureus",
+      "date": "2026-05-15",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mogamulizumab for adult T-cell leukemia/lymphoma: a literature review.",
+      "journal": "Translational cancer research",
+      "date": "2026-05-14",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Evaluating T-cell clonality in skin using a quantitative TRBC1 clonality score.",
+      "journal": "The Journal of investigative dermatology",
+      "date": "2026-05-14",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Liquid biopsy for molecular profiling in cutaneous T-cell lymphoma: a pilot feasibility study.",
+      "journal": "Blood neoplasia",
+      "date": "2026-05-13",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Reduced-Dose Total Skin Electron Beam Radiation Therapy in Mycosis Fungoides and Sézary Syndrome: Systematic Review and Meta-Analysis.",
+      "journal": "International journal of radiation oncology, biology, physics",
+      "date": "2026-05-12",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": true,
+      "backfill": true
+    },
+    {
+      "title": "Efficacy and safety of mogamulizumab in Sézary syndrome with concomitant Crohn's disease.",
+      "journal": "Dermatology reports",
+      "date": "2026-05-12",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary Cutaneous Anaplastic Large Cell Lymphoma: A Review of Diagnosis and Treatment for the General Oncologist.",
+      "journal": "Cancers",
+      "date": "2026-05-12",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Epigenetic dysregulation in mycosis fungoides and sézary syndrome.",
+      "journal": "Frontiers in cell and developmental biology",
+      "date": "2026-05-11",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "[Successful checkpoint inhibition plus extracorporeal photopheresis in patients with metastatic melanoma and advanced Sézary syndrome].",
+      "journal": "Dermatologie (Heidelberg, Germany)",
+      "date": "2026-05-11",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Denileukin diftitox (Lymphir) for cutaneous T-cell lymphoma.",
+      "journal": "The Medical letter on drugs and therapeutics",
+      "date": "2026-05-11",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Development and evaluation of a systematic educational intervention for cutaneous lymphoma patients: A pilot study.",
+      "journal": "Patient education and counseling",
+      "date": "2026-05-09",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Oral mucosal involvement in mycosis fungoides.",
+      "journal": "Dermatology online journal",
+      "date": "2026-05-08",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "EZH2 Upregulation Reflects Proliferation and Disease Stage in Mycosis Fungoides.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-05-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "CADM1 and TIAM1 Expressions in Mycosis Fungoides: Diagnostic Significance and Association With Histopathological Parameters.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-05-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Misnomers in Dermatology and Other Medical Specialties-How to Deal with Science Fiction?",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-05-08",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "The development and preliminary validation of the CTCL-PRO-20: a novel quality of life survey for patients with cutaneous T-cell lymphoma.",
+      "journal": "Haematologica",
+      "date": "2026-05-07",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Multimodal artificial intelligence and the persistent challenge of early mycosis fungoides diagnosis.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-05-07",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Decoding GPCR signaling reprogramming in cancer: molecular mechanisms and therapeutic implications.",
+      "journal": "Molecular medicine (Cambridge, Mass.)",
+      "date": "2026-05-06",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Case Report: Beyond conventional diagnostics: mNGS support in a complex immunocompromised patient diagnosis.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-05-05",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Immunohistochemical Evaluation of GATA3 Expression in Patch-Stage Mycosis Fungoides (MF) Compared With Benign Inflammatory Dermatoses (BID).",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-05-04",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Immunohistochemistry Revealed Distinct IL-36γ Localization Among Different Skin Diseases.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-05-03",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Mycosis fungoides/Sézary syndrome and systemic Janus kinase inhibitors: a real-world retrospective study on behalf of the EORTC CLTG.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Dose-stratified analysis of acitretin vs. bexarotene in mycosis fungoides: a retrospective cohort study.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Beyond Histopathology: Single-Cell Genomics Illuminates the Immune-Stromal Crosstalk Distinguishing Early-Stage Mycosis Fungoides From Atopic Dermatitis.",
+      "journal": "Experimental dermatology",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Can we target CTCL clonal evolution and improve outcomes?",
+      "journal": "Blood",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "letter",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Atopic dermatitis reconsidered: Clinical mimics and diagnostic pearls.",
+      "journal": "Journal of the American Academy of Dermatology",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Neoplasm Adverse Events Associated With Anti-Type 2 Biologics: An FAERS Database Pharmacovigilance Analysis Study.",
+      "journal": "Cancer medicine",
+      "date": "2026-05-01",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Development and validation of a prognostic nomogram for overall survival in patients with primary cutaneous T-cell lymphoma: A SEER-based study.",
+      "journal": "Medicine",
+      "date": "2026-05-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Multiomic study of cutaneous T-cell lymphoma reveals single-cell clonal evolution in progression and therapy resistance.",
+      "journal": "Blood",
+      "date": "2026-05-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Primary Cutaneous Anaplastic Large Cell Lymphoma Mimicking Pyoderma Gangrenosum: An Atypical Presentation and Diagnostic Challenge.",
+      "journal": "Cureus",
+      "date": "2026-04-30",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Chidamide maintenance after allogeneic hematopoietic stem cell transplantation in mycosis fungoides: A case report.",
+      "journal": "Transplant immunology",
+      "date": "2026-04-30",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Convergent Oncostatin M and IL-31 Signaling in Chronic Pruritic Dermatoses: A Neuroimmune Janus Kinase-Signal Transducer and Activator of Transcription (JAK-STAT) Perspective.",
+      "journal": "Cureus",
+      "date": "2026-04-29",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Monoclonal Annular Lichenoid Dermatitis of Youth as a New Entity: A Case Report and Review of the Literature.",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-04-29",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Efficacy and Safety of Mogamulizumab for Cutaneous T-Cell Lymphomas: A Systematic Review and Meta-Analysis.",
+      "journal": "Clinical lymphoma, myeloma & leukemia",
+      "date": "2026-04-29",
+      "first_seen": "2026-07-05",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Revisiting the Origins of Cutaneous T-Cell Lymphoma: A Progenitor-Based Model.",
+      "journal": "Cancers",
+      "date": "2026-04-28",
+      "first_seen": "2026-11-10",
+      "kind": "review",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Pathway-Centric Comparative Molecular Profiling of Sézary Syndrome and Primary Cutaneous CD8+ Aggressive Epidermotropic Cytotoxic T-Cell Lymphoma via Conversational Artificial Intelligence.",
+      "journal": "Cancers",
+      "date": "2026-04-27",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Clinical features and outcomes of patients with non-erythrodermic mycosis fungoides with high blood tumor burden.",
+      "journal": "Blood neoplasia",
+      "date": "2026-04-25",
+      "first_seen": "2026-11-10",
+      "kind": "research",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "A rare case of granulomatous mycosis fungoides in the genital area.",
+      "journal": "JAAD case reports",
+      "date": "2026-04-24",
+      "first_seen": "2026-11-10",
+      "kind": "case",
+      "stanford": false,
+      "backfill": true
+    },
+    {
+      "title": "Primary cutaneous T-cell lymphoma (mycosis fungoides and Sézary syndrome): A practical compartment-based review.",
+      "journal": "Blood reviews",
+      "date": "2026-04-24",
+      "first_seen": "2026-08-31",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous Manifestation of Monomorphic Epitheliotropic Intestinal T-Cell Lymphoma: A Clue to A Gastrointestinal Malignancy.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-04-21",
+      "first_seen": "2026-08-10",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous T-Cell Lymphoma-Like Eruption from Trimethoprim-Sulfamethoxazole.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2026-04-21",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Standard Versus Hypofractionated Low-Dose Total Skin Electron Therapy for Cutaneous T-Cell Lymphoma: A Single-Institution Retrospective Analysis.",
+      "journal": "Practical radiation oncology",
+      "date": "2026-04-20",
+      "first_seen": "2026-11-09",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Dupilumab therapy in atopic dermatitis when cutaneous lymphoma is suspected: Consensus recommendations from the EORTC Cutaneous Lymphoma Tumour Group.",
+      "journal": "The Journal of allergy and clinical immunology",
+      "date": "2026-04-11",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Sanguinarine Induces ROS-Mediated Mitochondrial Dysfunction and Inhibits AKT/GSK3 Signaling to Potentiate Apoptotic Effects in Cutaneous T-Cell Lymphoma.",
+      "journal": "Phytotherapy research : PTR",
+      "date": "2026-04-06",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Pristimerin drives ROS-dependent apoptosis in cutaneous T-cell lymphoma via inhibition of the AKT-SKP2 axis.",
+      "journal": "Toxicology and applied pharmacology",
+      "date": "2026-04-03",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Emerging Therapeutic Strategies in Cutaneous T-Cell Lymphoma: A Comprehensive Review of Clinical Trials.",
+      "journal": "American journal of clinical dermatology",
+      "date": "2026-04-01",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Topical hypericin: a promising photodynamic therapy for early-stage cutaneous T-cell lymphoma.",
+      "journal": "Expert opinion on investigational drugs",
+      "date": "2026-03-19",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "IQDMA disrupts STAT5 nuclear transport through CDC42-PAK2 axis collapse in cutaneous T-cell lymphoma.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-03-17",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous T-cell lymphomas and dupilumab for atopic dermatitis: A systematic review and expert consensus.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2026-03-12",
+      "first_seen": "2026-08-03",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Current Understanding of Lymphoproliferative Disorders.",
+      "journal": "Dermatologic clinics",
+      "date": "2026-03-11",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Growing Evidence for Distinct Clinical Features and Early Diagnostic Age of Cutaneous T-Cell Lymphoma in Saudi Arabia: A Retrospective Study in a Tertiary Care Center.",
+      "journal": "Saudi medical journal",
+      "date": "2026-03-10",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Staphylococcus aureus Augments Epithelial Skin Barrier Damage Through T Cell Activation in Cutaneous T Cell Lymphoma.",
+      "journal": "Allergy",
+      "date": "2026-03-08",
+      "first_seen": "2026-07-13",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Safety of Concurrent Systemic Therapy and Total Skin Electron Therapy in Cutaneous T-Cell Lymphoma.",
+      "journal": "Clinical lymphoma, myeloma & leukemia",
+      "date": "2026-03-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "[Progression from primary cutaneous CD4+small/medium-sized T-cell lymphoproliferative disorder to peripheral T-cell lymphoma, not otherwise specified: report of a case].",
+      "journal": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
+      "date": "2026-03-01",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous T-Cell Lymphoma With Conjunctival T-Lymphocyte Infiltration in a Dog.",
+      "journal": "Veterinary ophthalmology",
+      "date": "2026-03-01",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Emerging epidemiological trends in primary cutaneous lymphomas: a population-based analysis.",
+      "journal": "Clinical and experimental dermatology",
+      "date": "2026-03-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Harnessing arginase 2-specific CD8+ T cells to target immunosuppressive cutaneous T-cell lymphoma.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-03-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Beyond CD30: Dual-Targeting of Malignant and Regulatory T Cells by Brentuximab Vedotin Remodels the Lymphoma Microenvironment and Overcomes Resistance via BCL2 Inhibition in Mycosis Fungoides.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "date": "2026-02-28",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Multiharmonic imaging-based automated recognition of cutaneous T-cell lymphoma.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-02-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Inducible Costimulator and Its Ligand Promote Proliferation and Migration of Tumor Cells in Cutaneous T-Cell Lymphoma.",
+      "journal": "International journal of molecular sciences",
+      "date": "2026-01-30",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Primary Cutaneous Peripheral T-Cell Lymphoma With TFH Phenotype With Divergent Clonal B- and Plasma-Cell Populations and DNMT3A Mutation.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2026-01-29",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Sézary syndrome arising from cutaneous epitheliotropic T-cell lymphoma, resembling human folliculotropic mycosis fungoides, in a dog.",
+      "journal": "Journal of comparative pathology",
+      "date": "2026-01-28",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Mycosis Fungoides Is a Proliferation of Multiple Mutational Subclones.",
+      "journal": "The Journal of dermatology",
+      "date": "2026-01-27",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Targeting FOXM1 regulates metabolic signatures through ROS-dependent JNK/Bmi1/Skp2 axis in human cutaneous T-cell lymphoma.",
+      "journal": "Cell death & disease",
+      "date": "2026-01-07",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous T-cell lymphoma in Kuwait: a retrospective analysis of treatment modalities and prognostic factors.",
+      "journal": "International journal of hematology",
+      "date": "2026-01-06",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Cutaneous epitheliotropic lymphoma with marked nuclear pleomorphism in a dog.",
+      "journal": "Journal of veterinary science",
+      "date": "2026-01-01",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "JAK2 Fusions in Adult Patients With Mycosis Fungoides and CD30 Lymphoproliferative Disorders.",
+      "journal": "JAMA dermatology",
+      "date": "2026-01-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "T-Cell Receptor Clonotypes and Aggressive Subtypes in Cutaneous T-Cell Lymphoma.",
+      "journal": "JAMA dermatology",
+      "date": "2026-01-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Clinical Implications of the Skin Microbiota in the Therapy of Cutaneous T Cell Lymphoma: A Scoping Review.",
+      "journal": "Dermatology and therapy",
+      "date": "2025-12-19",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Pediatric Primary Cutaneous CD8+ Aggressive Epidermotropic Cytotoxic T-Cell Lymphoma With Unusually Long Clinical Course.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2025-12-16",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Recent trends of incidence and mortality of cutaneous lymphomas in Germany.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2025-12-12",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "An Unusual Case of Primary Mucocutaneous Cytotoxic T-Cell Lymphoma With Epidermotropism and Phenotype Switch: Diagnostic and Molecular Insights.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2025-12-10",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "[Recent Research Advances in Classification and Treatment of Primary Cutaneous Lymphoma--Review].",
+      "journal": "Zhongguo shi yan xue ye xue za zhi",
+      "date": "2025-12-01",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "NF-κB Is a Potential Therapeutic Target for Histone Deacetylase Inhibitor-Resistant Cutaneous T-Cell Lymphoma.",
+      "journal": "Cancer science",
+      "date": "2025-11-14",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Suppressive effects on metastasis and tumor growth by the knockout of chemokine receptors in a canine cutaneous lymphoma model.",
+      "journal": "The Journal of veterinary medical science",
+      "date": "2025-11-11",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Japanese Dermatological Association Guidelines: Outlines of Japanese Guidelines for the Management of Primary Cutaneous Lymphomas 2025.",
+      "journal": "The Journal of dermatology",
+      "date": "2025-11-07",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "scRNA-Seq reveals anti-lymphoma immune responses in mogamulizumab-associated skin eruptions.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2025-11-06",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Primary Cutaneous Peripheral T-Cell Lymphoma With Follicular Helper T-Cell Phenotype.",
+      "journal": "Journal of cutaneous pathology",
+      "date": "2025-10-30",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Histopathologic Spectrum of Primary Cutaneous T-Cell Lymphomas: Insights From a Vietnamese Case Series.",
+      "journal": "The American Journal of dermatopathology",
+      "date": "2025-10-17",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Allogeneic haematopoietic cell transplant in cutaneous T-cell lymphomas: Recommendations from the EBMT PH&G Committee.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2025-10-01",
+      "first_seen": "2026-06-29",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "Brentuximab vedotin and radiotherapy for CD30-positive cutaneous T-cell lymphoma - a retrospective multicenter analysis.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2025-09-30",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Clinical, Histopathological and Molecular Characterisation of Canine Epitheliotropic Cutaneous T-Cell Lymphoma With Cytotoxic Interface Dermatitis: A Retrospective Case Series.",
+      "journal": "Veterinary dermatology",
+      "date": "2025-09-21",
+      "first_seen": "2026-06-29",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Bacterial skin colonization and systemic antibiotic treatment in patients with cutaneous T-cell lymphoma.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2025-09-19",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Skin manifestations uncover underlying Follicular helper T-cell lymphoma, angioimmunoblastic-type in an immunosuppressed patient.",
+      "journal": "Virchows Archiv : an international journal of pathology",
+      "date": "2025-09-03",
+      "first_seen": "2026-07-20",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Clinical and Prognostic Features of Erythrodermic Cutaneous T-Cell Lymphoma: A Retrospective Study of 35 Patients",
+      "journal": "Turkish journal of haematology : official journal of Turkish Society of Haematology",
+      "date": "2025-08-27",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "CRISPR-Cas9 screen reveals that inhibition of enhancer of zeste homolog 2 sensitizes malignant T cells to dimethyl-fumarate-induced cell death.",
+      "journal": "The FEBS journal",
+      "date": "2025-08-01",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Implementing total skin electron irradiation in radiotherapy: a structured change management approach.",
+      "journal": "Strahlentherapie und Onkologie : Organ der Deutschen Rontgengesellschaft ... [et al]",
+      "date": "2025-05-14",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Haematopoietic stem cell transplant in cutaneous T-cell lymphomas: A multicentre propensity-score matched study.",
+      "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+      "date": "2025-03-11",
+      "first_seen": "2026-06-29",
+      "kind": "research",
+      "stanford": false
+    }
+  ]
+}
