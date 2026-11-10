@@ -13,14 +13,25 @@ JSON file (`data.json`) that a scheduled GitHub Action keeps fresh.
 
 | Piece | What it does |
 |-------|--------------|
-| `scripts/fetch_papers.py` | Queries **Europe PMC** (PubMed/MEDLINE + preprints) for the newest CTCL-focused papers, de-dupes against `data.json`, summarizes each *new* one, and writes `data.json`. |
-| `data.json` | Single source of truth — the accumulating list of papers. |
+| `scripts/fetch_papers.py` | Reads **every** CTCL paper **Europe PMC** (PubMed/MEDLINE + preprints) lists for the last 120 days (cursor-paginated, not just a "top 50"), de-dupes against `data.json` + `archive.json`, tags each paper (trial / review / case / letter / research, Stanford-affiliated, veterinary), summarizes each *new* one, and writes `data.json`. |
+| `data.json` | The newest 400 papers. Older ones move to `archive.json` (loaded on demand by the page) — nothing is dropped. |
 | `index.html` | Zero-build page (vanilla JS) that renders `data.json` with search + filters. |
 | `.github/workflows/refresh.yml` | The "server side": runs **weekly**, commits `data.json` only when there are new papers. |
 
 The search scope is title/keyword/MeSH matching on *cutaneous T-cell lymphoma*,
 *mycosis fungoides*, *Sézary syndrome*, and *CTCL* — so results are about the
-disease, not papers that merely mention it in passing.
+disease. Papers that only name the disease in the abstract are kept too, flagged
+`"match": "mention"`.
+
+Every query clause is individually parenthesised. That matters: Europe PMC
+mis-parses a bare `A OR B OR MESH:"Lymphoma, T-Cell, Cutaneous"` chain (the
+comma), which made the original query silently return ~1 in 8 of the matching
+papers. The script now refuses to write if the window returns implausibly few
+hits, and the page shows a warning if the last refresh is more than 10 days old.
+
+Paper types come from PubMed publication types where MEDLINE has assigned them
+and from title wording otherwise, so a brand-new trial may show as "research"
+until it is indexed.
 
 ## Summaries
 

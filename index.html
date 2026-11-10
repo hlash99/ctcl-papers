@@ -55,6 +55,12 @@
   .badge{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;border-radius:20px;padding:2px 8px;border:1px solid}
   .badge.new{color:var(--new);border-color:var(--new)}
   .badge.pre{color:var(--pre);border-color:var(--pre)}
+  .badge.st{color:var(--accent);border-color:var(--accent)}
+  .badge.k{color:var(--muted);border-color:var(--line)}
+  .toolbar.t2{margin:8px 0 6px}
+  .more{display:block;width:100%;margin:14px 0;background:var(--surface);color:var(--accent);border:1px solid var(--line);
+    border-radius:10px;padding:11px;font-size:13.5px;cursor:pointer}
+  .stale{display:none;margin:14px 0 0;padding:9px 12px;border:1px solid var(--pre);border-radius:10px;color:var(--pre);font-size:13px}
   .summary{font-size:14.5px;margin:0 0 8px}
   .src{font-size:11px;color:var(--muted);margin-top:2px}
   details{margin-top:6px}
@@ -76,6 +82,7 @@
   <p class="sub" id="sub">Latest papers on cutaneous T-cell lymphoma — auto-collected &amp; summarized.</p>
 
   <div class="kpis" id="kpis"></div>
+  <div class="stale" id="stale"></div>
 
   <button id="tldrBtn" class="tldr-btn" style="display:none" aria-expanded="false">
     <span class="tldr-ic">✨</span> The big picture — plain-language takeaways
@@ -93,6 +100,17 @@
     </div>
   </div>
 
+  <div class="toolbar t2" id="tb2" style="display:none">
+    <div class="seg" id="kind">
+      <button data-k="all" class="on">Any type</button>
+      <button data-k="trial">Trials</button>
+      <button data-k="review">Reviews</button>
+      <button data-k="research">Research</button>
+      <button data-k="case">Cases</button>
+    </div>
+    <div class="seg" id="stan" style="display:none"><button data-s="1">Stanford</button></div>
+  </div>
+
   <div class="count" id="count"></div>
   <div id="list"><p class="sub" style="margin-top:30px">Loading papers…</p></div>
 
@@ -106,10 +124,15 @@ const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','
 function fmtDate(d){ if(!d) return ""; const [y,m,da]=d.split("-").map(Number);
   return MON[(m||1)-1] + (da?(" "+da):"") + " " + y; }
 
-let PAPERS = [], FILTER = "all", LATEST_RUN = null;
+let PAPERS = [], FILTER = "all", LATEST_RUN = null, KIND = "all", STAN = false, LIMIT = 60, ARCHIVED = 0;
+const KIND_LABEL = {trial:"Trial", review:"Review", case:"Case report", letter:"Letter"};
+// "New" = first seen on the latest refresh. Papers a catch-up run found late are not "new this week".
+const isNewP = p => p.first_seen===LATEST_RUN && !p.backfill;
 
 function matchesFilter(p){
-  if(FILTER==="new") return p.first_seen===LATEST_RUN;
+  if(KIND!=="all" && p.kind!==KIND) return false;
+  if(STAN && !p.stanford) return false;
+  if(FILTER==="new") return isNewP(p);
   if(FILTER==="peer") return !p.is_preprint;
   if(FILTER==="preprint") return p.is_preprint;
   return true;
@@ -124,12 +147,18 @@ function render(){
   const q = $("#q").value.trim().toLowerCase();
   const rows = PAPERS.filter(p => matchesFilter(p) && matchesQuery(p,q));
   $("#count").textContent = rows.length + " of " + PAPERS.length + " papers";
-  if(!rows.length){ $("#list").innerHTML = '<p class="sub" style="margin-top:24px">No papers match.</p>'; return; }
-  $("#list").innerHTML = rows.map(p => {
-    const isNew = p.first_seen===LATEST_RUN;
+  const older = ARCHIVED ? `<button class="more" onclick="loadArchive(this)">Load ${ARCHIVED} older papers from the archive</button>` : "";
+  if(!rows.length){ $("#list").innerHTML = '<p class="sub" style="margin-top:24px">No papers match.</p>' + older; return; }
+  const more = rows.length>LIMIT ? `<button class="more" onclick="LIMIT+=100;render()">Show more (${rows.length-LIMIT} more)</button>` : older;
+  $("#list").innerHTML = rows.slice(0,LIMIT).map(p => {
+    const isNew = isNewP(p);
     const badges =
       (isNew ? '<span class="badge new">New</span>' : '') +
-      (p.is_preprint ? '<span class="badge pre">Preprint</span>' : '');
+      (p.is_preprint ? '<span class="badge pre">Preprint</span>' : '') +
+      (p.stanford ? '<span class="badge st">Stanford</span>' : '') +
+      (KIND_LABEL[p.kind] ? '<span class="badge '+(p.kind==="trial"?"new":"k")+'">'+KIND_LABEL[p.kind]+'</span>' : '') +
+      (p.vet ? '<span class="badge k">Veterinary</span>' : '') +
+      (p.match==="mention" ? '<span class="badge k" title="CTCL is named in the abstract, not the title or keywords">Mention</span>' : '');
     const src = (p.summary_by && p.summary_by!=="abstract" && p.summary_by!=="none") ? "AI summary" :
                 p.summary_by==="abstract" ? "Abstract excerpt" : "";
     return `<div class="card">
@@ -144,7 +173,16 @@ function render(){
       ${p.abstract ? '<details><summary>Abstract</summary><div class="abstract">'+esc(p.abstract)+'</div></details>' : ''}
       ${p.authors ? '<div class="authors">'+esc(p.authors)+'</div>' : ''}
     </div>`;
-  }).join("");
+  }).join("") + more;
+}
+
+function loadArchive(btn){
+  btn.disabled = true; btn.textContent = "Loading archive…";
+  fetch("archive.json?_=" + Date.now()).then(r => r.json()).then(a => {
+    const have = new Set(PAPERS.map(p => p.id));
+    PAPERS = PAPERS.concat((a.papers||[]).filter(p => !have.has(p.id)));
+    ARCHIVED = 0; render();
+  }).catch(e => { btn.disabled = false; btn.textContent = "Archive failed to load — tap to retry"; });
 }
 
 fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
@@ -152,15 +190,25 @@ fetch("data.json?_=" + Date.now()).then(r => r.json()).then(d => {
   if(d.description) $("#sub").textContent = d.description;
   renderTldr(d.overview);
   LATEST_RUN = PAPERS.reduce((m,p) => (p.first_seen>m ? p.first_seen : m), "");
-  const newCount = PAPERS.filter(p => p.first_seen===LATEST_RUN).length;
+  const newCount = PAPERS.filter(isNewP).length;
+  const caught = PAPERS.filter(p => p.first_seen===LATEST_RUN && p.backfill).length;   // one-off catch-up finds
+  ARCHIVED = (d.stats && d.stats.archived) || 0;
+  if(PAPERS.some(p => p.kind)) $("#tb2").style.display = "";
+  if(PAPERS.some(p => p.stanford)) $("#stan").style.display = "";
+  const ageDays = d.updated ? (Date.now() - new Date(d.updated)) / 864e5 : 0;
+  if(ageDays > 10){ const el = $("#stale"); el.style.display = "block";
+    el.textContent = "Last successful refresh was " + Math.floor(ageDays) + " days ago — the weekly update may be failing, so recent papers could be missing."; }
+  const cov = d.coverage;
   const preCount = PAPERS.filter(p => p.is_preprint).length;
   $("#kpis").innerHTML =
     `<div class="kpi"><div class="v">${PAPERS.length}</div><div class="l">Papers tracked</div></div>
-     <div class="kpi"><div class="v">${newCount}</div><div class="l">New this run</div></div>
+     <div class="kpi"><div class="v">${newCount||caught}</div><div class="l">${!newCount&&caught?"Added by catch-up":"New this run"}</div></div>
      <div class="kpi"><div class="v">${preCount}</div><div class="l">Preprints</div></div>`;
   const updated = d.updated ? new Date(d.updated).toLocaleString() : "—";
   $("#foot").innerHTML =
     `Source: ${esc(d.source||"Europe PMC")} · query: ${esc(d.query_human||"CTCL")}<br>` +
+    (cov ? `Each refresh re-reads every match from the last ${cov.window_days} days: ${cov.core_hits} CTCL-focused + ${cov.mention_hits} abstract-only mentions${
+      d.stats&&d.stats.awaiting_summary ? " · "+d.stats.awaiting_summary+" awaiting an AI summary" : ""}<br>` : "") +
     `Updated ${esc(updated)} · refreshed weekly by GitHub Actions · ` +
     `<a href="https://hlash99.github.io/">hlash99 dashboard</a>`;
   render();
@@ -187,9 +235,11 @@ function renderTldr(server){
   const ov=currentOverview(SERVER_OV);
   if(!ov || !Array.isArray(ov.bullets) || !ov.bullets.length){ btn.style.display="none"; return; }
   const keySet=!!localStorage.getItem("anthropic_key");
-  const nNew=Math.max(0, PAPERS.length-(ov.n_papers||0));
+  // papers first seen after the synthesis was written (catch-up finds excluded)
+  const nNew=ov.generated ? PAPERS.filter(p=>(p.first_seen||"")>ov.generated && !p.backfill).length : 0;
+  const nUsed=ov.n_used || Math.min(18, ov.n_papers||PAPERS.length);   // older syntheses drew on 18
   panel.innerHTML = "<ul>"+ov.bullets.map(b=>`<li>${esc(b)}</li>`).join("")+"</ul>"+
-    `<div class="tldr-cap">Synthesis of the ${ov.n_papers||PAPERS.length} most recent papers${
+    `<div class="tldr-cap">Synthesis of the ${nUsed} most recent papers${
       ov.generated?" · "+fmtDate(ov.generated):""}${ov.by?" · "+esc(ov.by):""} · AI-generated, not medical advice.`+
     (nNew?` <b style="color:var(--accent)">${nNew} new since this summary.</b>`:"")+
     ` · <a class="tldr-act" onclick="regenTakeaways()">↻ regenerate</a>`+
@@ -260,10 +310,21 @@ async function regenTakeaways(){
   }catch(e){ if(cap) cap.innerHTML='<span class="err">Regenerate failed: '+esc(e.message||String(e))+'</span>'; }
 }
 
-$("#q").addEventListener("input", render);
+$("#q").addEventListener("input", () => { LIMIT = 60; render(); });
+$("#kind").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  KIND = b.dataset.k; LIMIT = 60;
+  [...$("#kind").children].forEach(x => x.classList.toggle("on", x===b));
+  render();
+});
+$("#stan").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  STAN = !STAN; LIMIT = 60; b.classList.toggle("on", STAN);
+  render();
+});
 $("#filter").addEventListener("click", e => {
   const b = e.target.closest("button"); if(!b) return;
-  FILTER = b.dataset.f;
+  FILTER = b.dataset.f; LIMIT = 60;
   [...$("#filter").children].forEach(x => x.classList.toggle("on", x===b));
   render();
 });

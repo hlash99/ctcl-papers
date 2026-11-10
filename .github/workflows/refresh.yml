@@ -1,6 +1,7 @@
 name: refresh
 
-# Weekly server-side poll of Europe PMC for the latest CTCL papers. Runs even
+# Weekly server-side read of Europe PMC: every CTCL paper from the last 120 days,
+# de-duped against data.json (so late-indexed papers are still caught). Runs even
 # when no one's computer is on, writes plain-language summaries + the takeaways
 # using whichever key is set — GROQ_API_KEY (free open-weights Llama, no card)
 # or ANTHROPIC_API_KEY (preferred if both); with neither, an abstract excerpt is
@@ -20,6 +21,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,8 +44,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet -- data.json; then
-            git add data.json
+          git add data.json
+          for f in archive.json summary.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          if ! git diff --cached --quiet; then
             git commit -m "ci: refresh CTCL papers $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           else
