@@ -9127,11 +9127,11 @@
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
     "total": 371,
-    "new_this_run": 288,
+    "new_this_run": 0,
     "archived": 0,
     "awaiting_summary": 0
   },
-  "updated": "2026-11-10T00:03:36Z",
+  "updated": "2026-11-10T00:28:10Z",
   "overview": {
     "bullets": [
       "New lab stains (like TRBC1) and advanced imaging (ex‑vivo confocal microscopy) can spot early‑stage CTCL that standard DNA tests miss, helping doctors diagnose sooner and avoid mistaking it for eczema or infection.",
@@ -9145,10 +9145,10 @@
     "by": "groq"
   },
   "coverage": {
-    "window_days": 200,
-    "from": "2026-04-24",
-    "core_hits": 287,
-    "mention_hits": 43,
+    "window_days": 120,
+    "from": "2026-07-13",
+    "core_hits": 170,
+    "mention_hits": 20,
     "checked": "2026-11-10"
   }
 }
