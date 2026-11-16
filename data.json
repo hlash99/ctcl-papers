@@ -1,6 +1,146 @@
 {
   "papers": [
     {
+      "id": "MED:43035576",
+      "pmid": "43035576",
+      "doi": "10.1111/ijd.70782",
+      "title": "Mogamulizumab-Associated SAPHO Syndrome: An Unexpected Adverse Event.",
+      "authors": "Porres López E, Hernández Madrid P, Alejo Fernández Baillo JL, Ortiz Romero P, Falkenhain López D.",
+      "journal": "International journal of dermatology",
+      "date": "2026-11-15",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43035576/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Letter",
+        "IM"
+      ],
+      "kind": "letter",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43023342",
+      "pmid": "43023342",
+      "doi": "10.1093/ced/llag466",
+      "title": "Diagnostic Value of T-Cell Receptor γ Gene Rearrangement Testing in Cutaneous T-Cell Lymphoma: A Large-Scale Retrospective Study.",
+      "authors": "Wu X, Zhang J, Shi R, Zhao X, Ruan Y, Xu H, Yuan Y, Chen L, Cao H, Quan C, Zhu W, Shuai C, Ge Q, Shen X, Zheng J, Xue F.",
+      "journal": "Clinical and experimental dermatology",
+      "date": "2026-11-13",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43023342/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43016385",
+      "pmid": "43016385",
+      "doi": "10.3324/haematol.2026.301825",
+      "title": "ICOS/ICOSL coexpression in Sézary syndrome reveals a potential tumorpromoting T-cell interaction.",
+      "authors": "Oumeslakht L, Ingen-Housz-Oro S, Decroos A, De Masson A, Ram-Wolff C, Bensussan A, Lechapt E, El Fatimy R, Giustiniani J, Ben Mkaddem S, Ortonne N.",
+      "journal": "Haematologica",
+      "date": "2026-11-12",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43016385/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43020330",
+      "pmid": "43020330",
+      "doi": "10.1016/j.jtct.2026.11.015",
+      "title": "Severe graft-versus-host disease and limited durable response with mogamulizumab for post-transplant relapse of adult T-cell leukemia/lymphoma.",
+      "authors": "Fujita S, Ito A, Akahoshi Y, Shibano I, Nakanishi Y, Suzuki H, Ishikawa R, Usui A, Hirakawa T, Takeda W, Watanabe M, Fukuda T.",
+      "journal": "Transplantation and cellular therapy",
+      "date": "2026-11-12",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020330/",
+      "abstract": "Background: The safety and efficacy of mogamulizumab (MOG) for post-transplant relapse of adult T-cell leukemia/lymphoma (ATL) remain uncertain. Objectives: We investigated the clinical outcomes of MOG therapy, with particular attention to graft-versus-host disease and antitumor efficacy, in patients with post-transplant relapsed ATL. Study design: We retrospectively analyzed consecutive patients who received MOG for post-transplant relapsed ATL at a single center. Results: Thirty-three consecutive patients received MOG for post-transplant relapsed ATL. The median interval from allo-HCT to MOG initiation was 104 days. The cumulative incidence of grade II-IV acute graft-versus-host disease (GVHD) by day 100 after MOG initiation was 55.8%, including grade III-IV acute GVHD in 34.2% of patients. Severe acute GVHD developed irrespective of the interval between transplantation and MOG initiation. Exploratory analyses identified unrelated peripheral blood stem cell transplantation and lower soluble interleukin-2 receptor levels at MOG initiation as factors associated with grade III-IV acute GVHD. The overall response rate was 61%, including complete remission in 39% of patients, with the highest response observed in peripheral blood disease. However, relapse or disease progression occurred in 15 of the 20 responders. The median overall survival (OS) from MOG initiation was 6.9 months, with 1- and 2-year OS rates of 40.6% and 21.9%, respectively. Conclusions: MOG demonstrated clinically meaningful short-term antitumor activity in patients with post-transplant relapsed ATL, particularly in peripheral blood disease, but was associated with a substantial risk of severe acute GVHD and limited durable disease control. Careful patient selection and rational sequential or combination treatment strategies are warranted to optimize MOG use after allo-HCT.",
+      "summary": "The study looked at how the antibody drug mogamulizumab works in patients whose adult T‑cell leukemia/lymphoma came back after a stem‑cell transplant. While about 60% of patients showed a tumor response (including 39% complete remission), most relapsed quickly and the median survival was only about seven months, and more than half developed serious graft‑versus‑host disease, a dangerous immune reaction. The authors conclude that mogamulizumab can shrink tumors short‑term but carries a high risk of severe side effects and limited long‑term benefit, so careful patient selection and combination strategies are needed.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43004205",
+      "pmid": "43004205",
+      "doi": "10.1080/10428194.2026.2715822",
+      "title": "Real-world evidence study of brentuximab vedotin retreatment in patients with cutaneous T-cell lymphoma in Europe.",
+      "authors": "Mitteldorf C, de Masson A, Beylot-Barry M, Gutierrez A, Muniesa C, Gonzalez Barca E, Dippel E, Wobser M, Zomas A, Stache V, Assaf C.",
+      "journal": "Leukemia & lymphoma",
+      "date": "2026-11-09",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43004205/",
+      "abstract": "In advanced cutaneous T-cell lymphoma (CTCL), allogeneic stem cell transplant is the only curative option, but many patients are ineligible and relapse after systemic therapy, requiring retreatment with prior therapies. Brentuximab vedotin (BV), an anti-CD30 monoclonal antibody drug conjugated with monomethyl auristatin E, is approved by the European Medicines Agency for adult patients with CD30+ CTCL after ≥1 prior systemic therapy. We present efficacy and safety findings of BV retreatment from a multi-center, retrospective real-world study of 26 patients with CTCL conducted in Europe (NCT05886478). Overall response rate was higher after first BV treatment versus BV retreatment (88.5% vs. 54.2%), but progression-free survival was longer after retreatment (9.8 months, 95% confidence interval [CI]: 5.1-11.1) versus first treatment (8.1 months, 95% CI: 6.7-11.0). Adverse events including peripheral neuropathy were more common at first treatment. These results suggest that BV retreatment is effective and generally well tolerated for patients with CTCL.",
+      "summary": "The study looked at how well patients with advanced cutaneous T‑cell lymphoma did when they were given a second round of brentuximab vedotin, a drug that targets a protein called CD30 on cancer cells. While the overall response rate was lower the second time (about half of patients responded versus nearly nine‑tenths the first time), the time before the disease got worse was actually a bit longer after retreatment (about 10 months). Side effects such as nerve damage were less common during the retreatment course, suggesting the drug can be reused safely in many cases.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43000779",
+      "pmid": "43000779",
+      "doi": "10.1111/ddg.70720",
+      "title": "Neurolymphomatosis in an Aggressive Epidermotropic CD8+ Cytotoxic T-Cell Lymphoma Arising During Follow-up of Mycosis Fungoides.",
+      "authors": "Şanlı H, Alizada MA, Saraç MT, Akkaya Z, Yüksel S, Küçük NÖ, Akay BN.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-11-08",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43000779/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "kind": "case",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:42989715",
       "pmid": "42989715",
       "doi": "10.1097/pas.0000000000002640",
@@ -64,7 +204,6 @@
       "summary_by": "groq",
       "first_seen": "2026-11-10",
       "pub_types": [
-        "IM",
         "Journal Article"
       ],
       "kind": "research",
@@ -174,6 +313,30 @@
       "backfill": true
     },
     {
+      "id": "MED:43026848",
+      "pmid": "43026848",
+      "doi": "10.3390/cancers18213527",
+      "title": "Cutaneous T-Cell Lymphoma and Cutaneous CAR-T Lymphoma in Patients with Other Malignancies.",
+      "authors": "Myers CS, Olsen EA, Cruz C, Kim EJ, Feldman T, Gru A, Geskin LJ.",
+      "journal": "Cancers",
+      "date": "2026-11-03",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43026848/",
+      "abstract": "Cutaneous T-cell lymphoma (CTCL) is a malignancy of skin-homing T cells associated with increased risk of second malignancies. CAR-T lymphoma is a mature T-cell malignancy arising in cancer patients treated with chimeric antigen receptor T-cell (CAR-T) therapy. Because of its frequent cutaneous involvement, CAR-T lymphoma can mimic CTCL, which in turn can resemble cutaneous sequelae of oncologic therapies. Careful evaluation of these entities in cancer patients is therefore essential, yet little guidance exists regarding optimal methods of screening, diagnosis, and treatment. Clinicians managing CTCL in cancer patients should consider how oncologic treatment toxicities may overlap with CTCL treatment toxicities or affect patients' risk for other skin cancers. Where possible, immune-boosting or at least immune-preserving treatments are preferred, with immune checkpoint inhibition emerging as an important option in selected patients. Patients with a history of CAR-T therapy and new, persistent skin findings should undergo careful work-up with molecular screening for lymphoproliferative processes. Presence of a CAR in lesional tissue can be suggestive but is not diagnostic of a CAR-T-associated malignancy. Treatment for any patient with a cutaneous T-cell or CAR-T lymphoma and a second cancer should be an interdisciplinary effort tailored to the patient's specific medical history and molecular profile. Further research is needed to establish better evidence-based guidelines for treatment of these patient populations.",
+      "summary": "The article explains that people with cutaneous T‑cell lymphoma (CTCL)—a cancer of skin‑dwelling immune cells—are at higher risk of developing other cancers, and that a new type of skin lymphoma can appear after patients receive CAR‑T cell therapy, often looking like CTCL. It advises doctors to use careful skin examinations and molecular tests to tell these conditions apart and to favor treatments that preserve or boost the immune system, such as immune‑checkpoint inhibitors, while coordinating care across specialties.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "kind": "review",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:42978287",
       "pmid": "42978287",
       "doi": "10.1111/ddg.70723",
@@ -272,6 +435,53 @@
       "match": "core"
     },
     {
+      "id": "MED:43027356",
+      "pmid": "43027356",
+      "doi": "10.3390/cells15211999",
+      "title": "Mogamulizumab Suppresses Induction of Myelin-Reactive Antibodies After Experimental Spinal Cord Injury.",
+      "authors": "Orlova DA, Chernov AS, Kazakov VA, Telegin GB, Belogurov AA, Kudriaeva AA.",
+      "journal": "Cells",
+      "date": "2026-10-31",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43027356/",
+      "abstract": "Traumatic spinal cord injury (SCI) is believed to increase the risk of autoimmune diseases, including the autoimmune demyelinating disease multiple sclerosis (MS), in humans. The adaptive immune response against one of the key MS autoantigens, myelin basic protein (MBP), is elevated in mice and persists in patients with SCI even 10 years after the initial injury. Here, we show that β1i-enriched immunoproteasomes and PA28β subunits are elevated as early as 12 h post-SCI in DA rats, and all proteasome catalytic immunosubunits are highly abundant in the injured spinal cord of DA and SD rats 7-14 days post-SCI; these changes may therefore represent a primary event of the adaptive myelin-reactive immune response. Mogamulizumab bound a recombinant rat CCR4 N-terminal extracellular fragment, albeit less strongly than the corresponding human fragment, and treatment was associated with weaker CCR4-associated immunoreactivity in peripheral blood leukocyte lysates. Plasma samples from rats with SCI treated with mogamulizumab were characterized by lower levels of antibodies to MBP compared with those from the non-treated group, and by day 60 of the experiment, this discrepancy reached statistical significance. Compared with non-treated animals, rats treated with mogamulizumab showed a significantly decreased glial scar size and total area of cyst-like cavities. Thus, mogamulizumab therapy not only improves the morphological features of the glial scar but also suppresses the autoimmune response against myelin, and may offer a complementary immunological strategy for spinal cord protection following injury.",
+      "summary": "The study tested whether the drug mogamulizumab, which blocks a immune‑cell receptor called CCR4, could dampen the harmful auto‑immune response that often follows a spinal‑cord injury. In rats with such injuries, mogamulizumab lowered the production of antibodies that attack myelin (the protective coating of nerve fibers) and led to smaller scar tissue and fewer fluid‑filled cavities in the spinal cord. These results suggest the drug might help protect the spinal cord by curbing the body’s own immune attack after injury.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43021965",
+      "pmid": "43021965",
+      "doi": "10.3389/fmed.2026.1981047",
+      "title": "Case Report: Multifocal primary cutaneous anaplastic large cell lymphoma with angioinvasive features in a child.",
+      "authors": "Guo S, Xie Y, Wang L.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-10-29",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43021965/",
+      "abstract": "Primary cutaneous anaplastic large cell lymphoma (C-ALCL) is the second most common cutaneous T-cell lymphoma after mycosis fungoides. It is rare in children and typically manifests as solitary or localized reddish-brown nodules or tumors. Histologically, it is characterized by a diffuse dermal infiltrate of medium-to-large atypical anaplastic cells. Despite the frequently alarming clinical and histologic presentation, the disease pursues an indolent course with a favorable prognosis. Herein, we report a case of C-ALCL in an 8-year-old boy presenting with multiple ulcers on the extremities, with the largest measuring 4 cm × 4 cm. Histopathological examination revealed an angiocentric and angiodestructive infiltrate composed of large atypical lymphoid cells. To our knowledge, this distinctive histopathological pattern has not previously been reported in pediatric C-ALCL and represents an important diagnostic pitfall because of its close resemblance to type E lymphomatoid papulosis and extranodal NK/T-cell lymphoma. The boy underwent surgical excision with no recurrence observed during the 10-month follow-up.",
+      "summary": "Researchers described an 8‑year‑old boy with a rare skin lymphoma that formed several ulcerated nodules, the biggest about the size of a small coin. The tumor cells were found to invade and destroy nearby blood vessels—a pattern not previously seen in children with this disease and one that can be mistaken for other serious skin cancers. After the lesions were surgically removed, the child remained cancer‑free for at least ten months.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "kind": "case",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:42952452",
       "pmid": "42952452",
       "doi": "10.3324/haematol.2026.302016",
@@ -336,6 +546,7 @@
       "first_seen": "2026-11-10",
       "pub_types": [
         "research-article",
+        "Multicenter Study",
         "Journal Article"
       ],
       "kind": "research",
@@ -441,6 +652,29 @@
       "backfill": true
     },
     {
+      "id": "MED:43026080",
+      "pmid": "43026080",
+      "doi": "10.1016/j.therap.2026.10.006",
+      "title": "Secondary cancer after CAR-T cell therapy: A French pharmacovigilance analysis.",
+      "authors": "Bassinet-Kiladjian L, Grandvuillemin A, Fresse A, Fulda V, Pinel S, Lebrun-Vignes B.",
+      "journal": "Therapie",
+      "date": "2026-10-23",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43026080/",
+      "abstract": "Aims: Cases of secondary cancers (SC) associated with Chimeric Antigen Receptor (CAR) T cell therapy have been reported in the literature prompting safety alerts from both the Food and Drug Administration and the European Medicines Agency after reports of T-cell lymphomas. Establishing causality between CAR-T therapy and SC in patients previously heavily treated for a hematological malignancy is challenging. To clarify this risk, we evaluated SC cases reported to Regional Pharmacovigilance Centers in France for patients with hematological malignancy treated with one of the six authorized CAR-T therapies. Methods: A query in the French Pharmacovigilance Database conducted on 01/24/2025 identified 20 SC cases with a suspected CAR-T specialty, representing 19 patients. Results: Most patients were male (63%), with a mean age of 65.2±6 years. Of these, 79% had received CAR-T treatment for B-cell lymphoma and 21% for myeloma. Only 3 of the currently available CAR-T therapies were reported as suspected drugs: tisagenlecleucel, axicabtagene ciloleucel and idecabtagene vicleucel. The mean interval between CAR-T administration and SC diagnosis was 11 months (median of 9.5 months). Of the 20 SC, 11 were secondary hemopathies (6 acute myeloid leukemias, 4 myelodysplasias, and one cutaneous T-cell lymphoma with CAR-T cells detected in the blood and skin). The remaining 9 cases were secondary solid tumors including 3 skin neoplasms, 2 colon adenocarcinomas, one breast cancer, one relapse of oral squamous cell cancer, one jejunal leiomyosarcoma, one manubrial bone sarcoma (the latter two in the same patient). Most patients had established risk factors for these cancers, making CAR-T causality difficult to assess, except for the cutaneous T-cell lymphoma. Conclusion: Continuous long-term monitoring is essential to further evaluate the benefit-risk profile of CAR-T therapies, especially in settings with poor prognosis.",
+      "summary": "Researchers looked at reports from French safety databases to see whether patients who received CAR‑T cell therapy for blood cancers later developed new cancers. Among 19 patients, about half of the secondary cancers were blood‑cell disorders and nine were solid tumors, including three skin cancers; one of those was a cutaneous T‑cell lymphoma that even showed CAR‑T cells in the skin. Because most patients already had other risk factors, the study concludes that long‑term monitoring is needed to determine if CAR‑T therapy truly raises the risk of new cancers.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "mention"
+    },
+    {
       "id": "MED:42928032",
       "pmid": "42928032",
       "doi": "10.1016/j.blre.2026.101439",
@@ -512,6 +746,29 @@
       "vet": false,
       "match": "core",
       "backfill": true
+    },
+    {
+      "id": "MED:43030370",
+      "pmid": "43030370",
+      "doi": "10.3390/jcm15218225",
+      "title": "Compartment-Specific Changes in SESN2 and NRF2 Expression Following Narrowband UVB Therapy in Early-Stage Mycosis Fungoides.",
+      "authors": "Özer İ, Demirtaş HU, Kılıç F, Kökbudak N, Temiz SA, Dursun R, Daye M.",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-10-22",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43030370/",
+      "abstract": "Background and Objectives: Mycosis fungoides (MF) is the most common primary cutaneous T-cell lymphoma, and oxidative stress within the tumor microenvironment may contribute to its pathogenesis and treatment response. Sestrin 2 (SESN2) and nuclear factor erythroid 2-related factor 2 (NRF2) are key regulators of cellular responses to oxidative stress. This study aimed to evaluate changes in epidermal and dermal SESN2 and NRF2 expression following narrowband ultraviolet B (NB-UVB) therapy in patients with early-stage MF. Materials and Methods: This retrospective observational study included 29 patients with stage IA-IIA MF treated with NB-UVB phototherapy. Paired skin biopsies obtained from the same anatomical site before treatment and after histopathological remission were evaluated immunohistochemically for epidermal and dermal SESN2 and NRF2 expression. Staining intensity, positivity, and H-scores were assessed semiquantitatively. Results: Following NB-UVB therapy, dermal NRF2 staining intensity, positivity, and H-score decreased significantly (all unadjusted p ≤ 0.002), and these differences remained significant after adjustment for multiple comparisons. Epidermal SESN2 positivity and H-score increased in the unadjusted analyses (p = 0.047 and p = 0.030, respectively), but these differences did not remain statistically significant after adjustment. No significant changes were observed in dermal SESN2 or epidermal NRF2 expression. Changes in SESN2 and NRF2 H-scores were not significantly associated with cumulative NB-UVB dose. No significant associations were identified between SESN2 or NRF2 expression parameters and time to histopathological remission. Conclusions: Histopathological remission following NB-UVB therapy in early-stage MF was associated with significantly reduced dermal NRF2 expression after adjustment for multiple comparisons, whereas no statistically significant changes were observed in epidermal NRF2 or epidermal and dermal SESN2 expression. Further studies are required to determine whether the reduction in dermal NRF2 reflects changes in the cellular composition of the infiltrate, altered expression within individual cells, or both.",
+      "summary": "The study looked at how a common light‑based treatment (narrowband UVB) changes two proteins that help cells cope with oxidative stress—SESN2 and NRF2—in the skin of patients with early‑stage mycosis fungoides, a type of cutaneous T‑cell lymphoma. After patients achieved remission, the amount of NRF2 in the deeper skin layer (dermis) dropped significantly, while the levels of the other protein (SESN2) and NRF2 in the outer layer (epidermis) did not change in a meaningful way. This suggests that successful UVB therapy may reduce oxidative‑stress signaling specifically in the dermal compartment, though more research is needed to understand why.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
     },
     {
       "id": "PPR:PPR1348134",
@@ -758,6 +1015,30 @@
       "vet": false,
       "match": "core",
       "backfill": true
+    },
+    {
+      "id": "MED:43023117",
+      "pmid": "43023117",
+      "doi": "10.7759/cureus.117866",
+      "title": "Topical Tacrolimus for Seborrhoeic Dermatitis: A Systematic Review of Efficacy and Indirect Malignancy Evidence.",
+      "authors": "Ojo EO, Oyibo ST, Orim I, Oke S, Bow A, Onobun DE.",
+      "journal": "Cureus",
+      "date": "2026-10-13",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43023117/",
+      "abstract": "Seborrhoeic dermatitis (SD) is a chronic inflammatory skin disorder. Topical corticosteroids are effective for flares, but repeated facial use may thin the skin and cause telangiectasia or steroid-related facial eruptions. Topical tacrolimus is approved for atopic dermatitis (AD) in US and UK product labeling and is used off-label for SD. Its steroid-sparing potential must therefore be considered alongside the US Food and Drug Administration (FDA) boxed warning concerning a theoretical malignancy risk. This systematic review evaluates the long-term efficacy, safety, and patient-reported outcomes associated with topical tacrolimus in SD, with particular focus on steroid-refractory and immunocompromised populations. Six databases were searched for English-language reports published from January 1, 2003, through June 5, 2025. Risk of bias was assessed using RoB 2, the Newcastle-Ottawa Scale (NOS), National Heart, Lung, and Blood Institute tools, or A MeaSurement Tool to Assess systematic Reviews (AMSTAR) 2 according to study design. Clinical and methodological heterogeneity precluded a defensible new meta-analysis, so results were synthesized narratively. Twenty-one reports were included: 8 direct SD reports, 10 indirect primary safety, pharmacokinetic, or skin structure reports, and 3 prior systematic reviews. Maintenance evidence was more consistent than induction evidence. In the largest SD maintenance trial, relapse occurred in 12 of 57 tacrolimus recipients and 23 of 57 ciclopiroxolamine recipients (hazard ratio (HR): 0.44, 95% confidence interval (CI): 0.22-0.89). Transient burning or tingling was the principal adverse effect. No included SD study was large or long enough to assess malignancy. In AD, the largest synthesis reported a tacrolimus-specific odds ratio for any cancer of 0.99 (95% credible interval: 0.89-1.09), although some observational cohorts reported cutaneous T-cell lymphoma (CTCL) signals. Protopathic bias, disease severity, and surveillance are plausible explanations but do not exclude a causal association. Topical tacrolimus appears useful for selected patients with facial SD, with the strongest direct evidence supporting twice-weekly maintenance after disease control. Long-term malignancy conclusions remain indirect for SD and should be communicated with appropriate uncertainty. Patient-preference and quality-of-life evidence is insufficient for firm conclusions.",
+      "summary": "The review looked at how well topical tacrolimus works for seborrhoeic dermatitis, especially as a steroid‑sparing option, and examined safety data that might hint at cancer risk. It found that twice‑weekly tacrolimus helped keep the rash under control better than a standard antifungal, with only mild burning or tingling as side effects, but the studies were too small and short to determine any real link to cancer. In broader atopic dermatitis research, overall cancer rates with tacrolimus were not increased, though a few observational reports have noted possible signals for cutaneous T‑cell lymphoma, leaving the risk uncertain.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-16",
+      "pub_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "kind": "review",
+      "stanford": false,
+      "vet": false,
+      "match": "mention"
     },
     {
       "id": "MED:42861834",
@@ -9126,29 +9407,30 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 371,
-    "new_this_run": 0,
+    "total": 383,
+    "new_this_run": 12,
     "archived": 0,
     "awaiting_summary": 0
   },
-  "updated": "2026-11-10T00:28:10Z",
+  "updated": "2026-11-16T22:53:44Z",
   "overview": {
     "bullets": [
-      "New lab stains (like TRBC1) and advanced imaging (ex‑vivo confocal microscopy) can spot early‑stage CTCL that standard DNA tests miss, helping doctors diagnose sooner and avoid mistaking it for eczema or infection.",
-      "Combination approaches—using skin‑directed therapies (phototherapy, topical chlormethine) together with systemic agents (retinoids, interferon‑α, stem‑cell transplant) and tailoring to where the disease lives (skin, blood, nodes)—are now the preferred way to treat advanced disease.",
-      "Molecular maps from single‑cell studies reveal distinct CTCL subtypes and pathways (e.g., GATA‑3, CD30, CCR4) that explain why some tumors become aggressive and point to existing drugs (HDAC, JAK, CDK9 inhibitors) that could be repurposed.",
-      "Early spread to lymph nodes or the brain, and loss of immune‑recognition markers (HLA loss) after transplant, signal a higher risk of rapid decline, so new symptoms should be investigated promptly and treatment plans adjusted."
+      "New targeted drugs like mogamulizumab and brentuximab vedotin can shrink tumors, but they may cause serious side effects such as graft‑versus‑host disease, joint inflammation, or immune‑related organ problems, so close monitoring is essential.",
+      "Doctors are improving diagnosis by adding special stains (TRBC1/2) and advanced imaging, which can catch early‑stage disease that DNA tests often miss.",
+      "Research shows the skin’s immune environment changes before visible improvement, meaning early treatment responses may look like side‑effects and need better lab markers to guide therapy decisions.",
+      "Large‑scale single‑cell and genomic studies have identified distinct molecular subtypes and pathways (e.g., GATA‑3, CD30, CD200) that could be matched to existing drugs, offering more personalized treatment options.",
+      "Early spread to lymph nodes or transformation to a large‑cell form predicts poorer outcomes, highlighting the importance of regular check‑ups and prompt escalation of therapy when disease progresses."
     ],
-    "generated": "2026-11-10",
-    "n_papers": 371,
+    "generated": "2026-11-16",
+    "n_papers": 383,
     "n_used": 30,
     "by": "groq"
   },
   "coverage": {
     "window_days": 120,
-    "from": "2026-07-13",
-    "core_hits": 170,
-    "mention_hits": 20,
-    "checked": "2026-11-10"
+    "from": "2026-07-19",
+    "core_hits": 169,
+    "mention_hits": 22,
+    "checked": "2026-11-16"
   }
 }

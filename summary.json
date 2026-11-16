@@ -4,32 +4,81 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 371,
-    "new_this_run": 0,
+    "total": 383,
+    "new_this_run": 12,
     "archived": 0,
     "awaiting_summary": 0
   },
-  "updated": "2026-11-10T00:28:10Z",
+  "updated": "2026-11-16T22:53:44Z",
   "overview": {
     "bullets": [
-      "New lab stains (like TRBC1) and advanced imaging (ex‑vivo confocal microscopy) can spot early‑stage CTCL that standard DNA tests miss, helping doctors diagnose sooner and avoid mistaking it for eczema or infection.",
-      "Combination approaches—using skin‑directed therapies (phototherapy, topical chlormethine) together with systemic agents (retinoids, interferon‑α, stem‑cell transplant) and tailoring to where the disease lives (skin, blood, nodes)—are now the preferred way to treat advanced disease.",
-      "Molecular maps from single‑cell studies reveal distinct CTCL subtypes and pathways (e.g., GATA‑3, CD30, CCR4) that explain why some tumors become aggressive and point to existing drugs (HDAC, JAK, CDK9 inhibitors) that could be repurposed.",
-      "Early spread to lymph nodes or the brain, and loss of immune‑recognition markers (HLA loss) after transplant, signal a higher risk of rapid decline, so new symptoms should be investigated promptly and treatment plans adjusted."
+      "New targeted drugs like mogamulizumab and brentuximab vedotin can shrink tumors, but they may cause serious side effects such as graft‑versus‑host disease, joint inflammation, or immune‑related organ problems, so close monitoring is essential.",
+      "Doctors are improving diagnosis by adding special stains (TRBC1/2) and advanced imaging, which can catch early‑stage disease that DNA tests often miss.",
+      "Research shows the skin’s immune environment changes before visible improvement, meaning early treatment responses may look like side‑effects and need better lab markers to guide therapy decisions.",
+      "Large‑scale single‑cell and genomic studies have identified distinct molecular subtypes and pathways (e.g., GATA‑3, CD30, CD200) that could be matched to existing drugs, offering more personalized treatment options.",
+      "Early spread to lymph nodes or transformation to a large‑cell form predicts poorer outcomes, highlighting the importance of regular check‑ups and prompt escalation of therapy when disease progresses."
     ],
-    "generated": "2026-11-10",
-    "n_papers": 371,
+    "generated": "2026-11-16",
+    "n_papers": 383,
     "n_used": 30,
     "by": "groq"
   },
   "coverage": {
     "window_days": 120,
-    "from": "2026-07-13",
-    "core_hits": 170,
-    "mention_hits": 20,
-    "checked": "2026-11-10"
+    "from": "2026-07-19",
+    "core_hits": 169,
+    "mention_hits": 22,
+    "checked": "2026-11-16"
   },
   "papers": [
+    {
+      "title": "Mogamulizumab-Associated SAPHO Syndrome: An Unexpected Adverse Event.",
+      "journal": "International journal of dermatology",
+      "date": "2026-11-15",
+      "first_seen": "2026-11-16",
+      "kind": "letter",
+      "stanford": false
+    },
+    {
+      "title": "Diagnostic Value of T-Cell Receptor γ Gene Rearrangement Testing in Cutaneous T-Cell Lymphoma: A Large-Scale Retrospective Study.",
+      "journal": "Clinical and experimental dermatology",
+      "date": "2026-11-13",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "ICOS/ICOSL coexpression in Sézary syndrome reveals a potential tumorpromoting T-cell interaction.",
+      "journal": "Haematologica",
+      "date": "2026-11-12",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Severe graft-versus-host disease and limited durable response with mogamulizumab for post-transplant relapse of adult T-cell leukemia/lymphoma.",
+      "journal": "Transplantation and cellular therapy",
+      "date": "2026-11-12",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Real-world evidence study of brentuximab vedotin retreatment in patients with cutaneous T-cell lymphoma in Europe.",
+      "journal": "Leukemia & lymphoma",
+      "date": "2026-11-09",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Neurolymphomatosis in an Aggressive Epidermotropic CD8+ Cytotoxic T-Cell Lymphoma Arising During Follow-up of Mycosis Fungoides.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-11-08",
+      "first_seen": "2026-11-16",
+      "kind": "case",
+      "stanford": false
+    },
     {
       "title": "Spatial Clonal Discordance in Early Mycosis Fungoides Revealed by Compartment-specific TRBC1 Immunohistochemistry.",
       "journal": "The American journal of surgical pathology",
@@ -94,6 +143,14 @@
       "backfill": true
     },
     {
+      "title": "Cutaneous T-Cell Lymphoma and Cutaneous CAR-T Lymphoma in Patients with Other Malignancies.",
+      "journal": "Cancers",
+      "date": "2026-11-03",
+      "first_seen": "2026-11-16",
+      "kind": "review",
+      "stanford": false
+    },
+    {
       "title": "Successful treatment of refractory vesiculobullous mycosis fungoides with total skin electron beam therapy and gemcitabine.",
       "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
       "date": "2026-11-03",
@@ -126,6 +183,22 @@
       "date": "2026-11-01",
       "first_seen": "2026-11-02",
       "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Mogamulizumab Suppresses Induction of Myelin-Reactive Antibodies After Experimental Spinal Cord Injury.",
+      "journal": "Cells",
+      "date": "2026-10-31",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Case Report: Multifocal primary cutaneous anaplastic large cell lymphoma with angioinvasive features in a child.",
+      "journal": "Frontiers in medicine",
+      "date": "2026-10-29",
+      "first_seen": "2026-11-16",
+      "kind": "case",
       "stanford": false
     },
     {
@@ -192,6 +265,14 @@
       "backfill": true
     },
     {
+      "title": "Secondary cancer after CAR-T cell therapy: A French pharmacovigilance analysis.",
+      "journal": "Therapie",
+      "date": "2026-10-23",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
       "title": "Transformed mycosis fungoides: Biological heterogeneity, clinicopathological features, and prognostic determinants.",
       "journal": "Blood reviews",
       "date": "2026-10-23",
@@ -217,6 +298,14 @@
       "kind": "research",
       "stanford": false,
       "backfill": true
+    },
+    {
+      "title": "Compartment-Specific Changes in SESN2 and NRF2 Expression Following Narrowband UVB Therapy in Early-Stage Mycosis Fungoides.",
+      "journal": "Journal of clinical medicine",
+      "date": "2026-10-22",
+      "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
     },
     {
       "title": "Multimodal Imaging-Assisted Diagnosis of a Rare Primary Cutaneous T-Cell Lymphoma Secondary to Imatinib plus Sintilimab in a Postoperative GIST Patient",
@@ -307,6 +396,14 @@
       "kind": "case",
       "stanford": false,
       "backfill": true
+    },
+    {
+      "title": "Topical Tacrolimus for Seborrhoeic Dermatitis: A Systematic Review of Efficacy and Indirect Malignancy Evidence.",
+      "journal": "Cureus",
+      "date": "2026-10-13",
+      "first_seen": "2026-11-16",
+      "kind": "review",
+      "stanford": false
     },
     {
       "title": "'The good cancer': communicating a hypopigmented mycosis fungoides diagnosis to families.",
