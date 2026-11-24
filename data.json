@@ -1,6 +1,147 @@
 {
   "papers": [
     {
+      "id": "MED:43067391",
+      "pmid": "43067391",
+      "doi": "10.1016/j.clindermatol.2026.11.035",
+      "title": "Paraneoplastic papuloerythroderma of Ofuji.",
+      "authors": "Kovacs LD, Minakawa S, Ferenczi K.",
+      "journal": "Clinics in dermatology",
+      "date": "2026-11-21",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43067391/",
+      "abstract": "Papuloerythroderma of Ofuji (PEO) is a rare skin disorder characterized by pruritic erythematous papules and plaques that spare the skin folds, a pattern known as the \"deck chair sign.\" PEO primarily affects elderly men, and it is often associated with a wide variety of visceral and hematologic malignancies and lymphomas. There is a particularly strong association between PEO and cutaneous T-cell lymphoma (CTCL). The diagnosis of paraneoplastic papuloerythroderma is challenging due to its rarity and overlapping features with other skin conditions, including CTCL. Patients diagnosed with PEO need a thorough workup, including oncologic evaluation with cancer screening, laboratory and imaging studies. Awareness and early recognition of PEO is critical for the prompt identification of underlying malignancies, which is vital for better patient outcomes. This review provides updates on the current understanding of paraneoplastic papuloerythroderma, with a primary focus on the clinical presentation, diagnosis, immunopathogenesis, and management of the condition.",
+      "summary": "The article reviews papuloerythroderma of Ofuji, a rare itchy rash that forms red bumps and plaques while sparing skin folds (the “deck‑chair sign”), and explains that it often signals an underlying cancer, especially cutaneous T‑cell lymphoma. It stresses that doctors must promptly investigate patients with this rash for hidden malignancies using labs, imaging and cancer screening, because early detection can improve outcomes. The review also updates how the condition looks, how it’s diagnosed, what immune mechanisms may drive it, and how it can be treated.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "IM",
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "mention"
+    },
+    {
+      "id": "MED:43056227",
+      "pmid": "43056227",
+      "doi": "10.1093/bjd/ljag505",
+      "title": "Multi-Omic Profiling for Molecular Diagnosis of Erythrodermic Skin Diseases.",
+      "authors": "Stadler PC, Mueller-Reif JB, Kerl-French K, Wallmann G, Diedrich L, Eicher L, Zwiebel M, Helbig D, Kempf W, Stadler R, Senner S, Neulinger-Munoz M, Mitwalli M, Boehm AS, Winkler M, Glatzel V, Frommherz LH, Leonhardt A, Aszodi-Pump N, Kendziora B, Fiocco Z, Oschmann A, Maurer M, Sander A, Leding J, Kupf I, Janjic N, Frey S, Czell S, Clanner-Engelshofen BM, Moellhoff N, Ferrer RA, Pfeiffer C, Summer B, Oppel EM, Lauffer F, Flaig MJ, Pumnea T, Satoh TK, Mann M, French LE, Nordmann TM.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-11-19",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43056227/",
+      "abstract": "Background: Erythroderma is one of the most challenging clinical scenarios in modern dermatology. It represents an acute, potentially life-threatening inflammatory condition characterised by erythema and scaling affecting more than 90% of the skin surface, with mortality rates up to 9%. Various underlying skin diseases cause erythroderma yet are difficult to distinguish clinically and histopathologically. This poses a major diagnostic challenge and delays targeted therapy, with potentially severe acute and long-term consequences. Objectives: To define disease-specific molecular programs in erythrodermic skin using integrated proteomics and transcriptomics, and to translate these into a diagnostic framework. Methods: Here we performed mass spectrometry (MS) - based proteomics and RNA sequencing on formalin-fixed, paraffin-embedded skin biopsies from 96 patients with erythroderma caused by pityriasis rubra pilaris (PRP, n=19), psoriasis (n=18), atopic dermatitis (AD, n=20), cutaneous T-cell lymphoma (CTCL, n=18), drug-induced maculopapular rash (MPR, n=21), and 20 healthy skin controls. Samples from four independent centers were included and MS-based proteomics was acquired on the Orbitrap Astral mass spectrometer. We performed multi-omic data integration through multi-omics factor analysis (MOFA), and disease classification was achieved using the adaptive machine-learning framework ADAPT-Mx, benchmarked against blinded clinico-histopathological assessment. Results: We quantified over 9,300 proteins and 17,200 protein-coding transcripts, revealing distinct molecular signatures for each disease. The proteome showed elevated expression of type-2 immunity-associated Charcot-Leyden crystal protein in AD, establishing a potential link between eosinophil-dominant inflammation and NLRP3 inflammasome activation. Transcriptomic analysis demonstrated selective upregulation of IL-17C in PRP, correlating strongly with IL-1 family cytokine expression. Notably, only a subset of PRP patients exhibited this signature, suggesting treatment-relevant disease endotypes. Multi-omic integration identified elevated expression of T-cell regulator RASAL3 in CTCL, not previously characterized in its pathogenesis. ADAPT-Mx, our machine-learning classifier, achieved 73.9% diagnostic accuracy in the held-out test cohort, outperforming conventional clinico-histopathological assessment (59.5%), with AUC values of 0.87-1.00 across disease entities. Conclusions: This study provides an integrated multi-omic framework for inflammatory skin diseases, combining RNA sequencing with large-scale MS-based proteomics. By enabling per-sample classification without imputation, our workflow offers proof of concept for multi-omic-driven diagnosis that can support clinical decision-making across inflammatory skin diseases.",
+      "summary": "The researchers used both protein‑level (mass‑spectrometry) and gene‑level (RNA sequencing) analyses of skin biopsies from patients with various causes of erythroderma, including cutaneous T‑cell lymphoma (CTCL). They discovered that CTCL skin uniquely over‑expressed a T‑cell regulator called RASAL3, a molecule not previously linked to the disease, and showed that a machine‑learning tool integrating these data could correctly identify the underlying condition about three‑quarters of the time—significantly better than standard pathology review. This suggests that multi‑omic profiling could help doctors more quickly and accurately diagnose CTCL when it presents as widespread skin redness.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "mention"
+    },
+    {
+      "id": "MED:43049689",
+      "pmid": "43049689",
+      "doi": "10.2340/actadv.v106.adv-2026-1012",
+      "title": "Quantitative Clonality Analysis of T-cell Receptor Rearrangement in Mogamulizumab-associated Rash.",
+      "authors": "Hansen-Abeck I, Menz A, Schneider SW, Stadler R, Booken N.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-11-18",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049689/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "brief-report",
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43046684",
+      "pmid": "43046684",
+      "doi": "10.1080/10428194.2026.2760718",
+      "title": "Role of ERK signaling in pristimerin-induced apoptosis and autophagy: involvement of ROS-dependent mechanisms in Cutaneous T-cell lymphoma.",
+      "authors": "Anver R, Khan AQ, Ahmad F, Habeeba U, Al-Tamimi M, Prabhu KS, Uddin S.",
+      "journal": "Leukemia & lymphoma",
+      "date": "2026-11-17",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43046684/",
+      "abstract": "This study investigates the role of ERK signaling in PS-induced apoptosis and autophagy. PS treatment activated MAP kinases in CTCL cells, with robust ERK activation contrasting with variable p38/JNK responses. Pharmacological ERK inhibition significantly reversed PS-mediated loss of viability, morphological and nuclear alterations, and apoptosis (PI/Annexin V). Mechanistically, ERK blockade suppressed PS-induced cleaved caspase-3, -8, -9, PARP, and γH2AX, confirming ERK drives proapoptotic cascades. PS also triggered autophagic flux, evidenced by increased LC3 and decreased Beclin1/p62, effects reversed by 3-methyladenine. ERK inhibition attenuated PS-induced MDC staining, indicating ERK-dependent autophagic cell death. Moreover, the ROS scavenger N-acetyl-L-cysteine inhibited both PS-induced ERK activation and apoptosis, positioning ROS upstream of ERK signaling. Altogether, these findings demonstrate that PS-mediates ERK-dependent proapoptotic and proautophagic signaling via ROS activity, suggesting ERK signaling as a key determinant of PS's anticancer activity in CTCL.",
+      "summary": "Researchers tested how the natural compound pristimerin kills cutaneous T‑cell lymphoma cells and found it works by generating reactive oxygen molecules (ROS) that switch on a signaling pathway called ERK. Blocking ERK stopped the drug‑induced cell death and the self‑destruction process called autophagy, showing that ERK activation is essential for pristimerin’s anticancer effect. This suggests targeting the ROS‑ERK axis could be a strategy for treating this skin lymphoma.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43042887",
+      "pmid": "43042887",
+      "doi": "10.1111/ddg.70572x",
+      "title": "Immune-related hepatobiliary adverse events associated with mogamulizumab: A case series and literature review.",
+      "authors": "Hansen-Abeck I, Hillen U, Wobser M, Mengoni M, Eisert L, Schneider SW, Booken N.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-11-17",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042887/",
+      "abstract": "Mogamulizumab is a monoclonal antibody targeting CC-chemokine receptor-4 that is approved as a second-line therapy for mycosis fungoides and Sézary syndrome. The most common adverse events include infusion-related reactions and mogamulizumab-associated rash. Conversely, solid organ involvement in immune-related adverse events has been limited to sporadic reports. Regarding mogamulizumab, hepatobiliary complications appear to occur predominantly alongside the reactivation of viral hepatitis. As management differs substantially from that of infectious hepatitis and immune-mediated adverse events involving solid organs are potentially life-threatening, their early recognition and attribution to mogamulizumab therapy are of high clinical importance. Treatment depends on severity, and interruption of therapy may be required. We report five cases of non-infectious hepatobiliary adverse events during mogamulizumab treatment and summarize the current state of the literature. The aim is to emphasize the importance of early recognition of immune-mediated toxicities affecting solid organs during mogamulizumab therapy in the management of patients with cutaneous lymphomas.",
+      "summary": "The authors looked at liver‑related side effects that can occur when patients with cutaneous T‑cell lymphoma are treated with mogamulizumab, a drug that targets a specific immune receptor (CCR‑4). They described five cases where the drug caused non‑infectious liver and bile‑duct problems, highlighting that these immune‑mediated toxicities can be serious and need to be recognized early so treatment can be adjusted or paused.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Review",
+        "Journal Article"
+      ],
+      "kind": "case",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "PPR:PPR1368416",
+      "pmid": null,
+      "doi": "10.21203/rs.3.rs-11562688/v1",
+      "title": "Chlormethine Treatment Effectively Targets the Tumor Microenvironment in Early-stage Mycosis Fungoides patients",
+      "authors": "Wind SS, Florquin MSC, Rijneveld R, Tomljanovic I, Grievink HW, Zoutman WH, Slieker RC, Merkus VA, Yavuz Y, Schaick Mv, Klarenbeek N, Kolk TN-vd, Jansen MA, Schrader AM, Jansen PM, de Miranda NF, Ijsselsteijn ME, Willemze R, Quint KD, Rissmann R, Vermeer MH.",
+      "journal": "",
+      "date": "2026-11-16",
+      "year": 2026,
+      "is_preprint": true,
+      "url": "https://doi.org/10.21203/rs.3.rs-11562688/v1",
+      "abstract": "Topical chlormethine is an established skin-directed therapy for early-stage mycosis fungoides (MF), yet treatment response is heterogeneous and treatment-associated dermatitis is common, suggesting incompletely defined mechanisms within the tumor microenvironment (TME). We investigated how chlormethine remodels the MF TME and which baseline features associate with clinical response. In an exploratory, prospective, open-label study, 21 early-stage MF patients applied chlormethine gel for 16 weeks; 17 were analyzed. At baseline, paired lesional and non-lesional suction blister fluid and biopsies were collected; the same lesion was resampled after treatment, and electively during dermatitis. Healthy controls (n=10) provided baseline samples. Immune profiling integrated flow cytometry, targeted proteomics, imaging mass cytometry and TCRβ sequencing to characterize cellular, proteomic, and clonal dynamics. Chlormethine induced heterogeneous clinical improvement at week 16, and dermatitis duration correlated with response magnitude. Baseline analyses identified an immune-reactive TME in responders, enriched for activated cytotoxic T cells in lesional versus non-lesional skin. Dermatitis samples demonstrated activated immune infiltrates and proteomic signatures of inflammatory cell recruitment, marking a treatment-associated immune-activation phase followed by clonal and inflammatory contraction—including reductions in dominant T-cell clones, aberrant T cells, regulatory T cells, and immunosuppressive mediators. Longitudinal analyses indicates coordinated modulation of interferon pathways, cytotoxic effector signatures, and checkpoint signaling, identifying cytotoxic interferon-associated immunity as a principal driver of response. These findings support a biphasic mechanism of action—direct tumor cytotoxicity and immune-mediated TME remodeling—and provide rationale for immune-based stratification in early-stage MF. This trial was registered at www.clinicaltrials.gov as #NCT05303480 and EudraCT as #2021-001576-41.",
+      "summary": "The study gave 21 patients with early‑stage mycosis fungoides a skin‑applied gel of chlormethine for 16 weeks and examined skin fluid and biopsy samples before, during, and after treatment. They found that patients whose tumors already had an active immune environment—especially more cytotoxic T cells—were more likely to improve, and the drug worked in two phases: first directly killing tumor cells, then triggering an immune‑driven reshaping of the surrounding tissue that later calmed down. This suggests that measuring immune activity in the skin could help predict who will respond best to chlormethine.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Preprint"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:43035576",
       "pmid": "43035576",
       "doi": "10.1111/ijd.70782",
@@ -16,8 +157,7 @@
       "summary_by": "none",
       "first_seen": "2026-11-16",
       "pub_types": [
-        "Letter",
-        "IM"
+        "Letter"
       ],
       "kind": "letter",
       "stanford": false,
@@ -328,6 +468,7 @@
       "summary_by": "groq",
       "first_seen": "2026-11-16",
       "pub_types": [
+        "review-article",
         "Review",
         "Journal Article"
       ],
@@ -360,6 +501,32 @@
       "vet": false,
       "match": "core",
       "backfill": true
+    },
+    {
+      "id": "MED:43041731",
+      "pmid": "43041731",
+      "doi": "10.3389/fimmu.2026.2008733",
+      "title": "Gut microbiome in cutaneous T-cell lymphoma: emerging insights into systemic immunity and the gut-skin-tumor axis.",
+      "authors": "Balachandar S, Xia SW, Hooper MJ, Guitart J, Burns MB, Zhou XA.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-11-02",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43041731/",
+      "abstract": "The gut microbiome is a critical regulator of systemic immunity that influences cancer development, therapeutic response, and immune homeostasis beyond the gastrointestinal tract. Although microbiome research has largely focused on solid tumors and immune checkpoint blockade, growing evidence indicates intestinal microorganisms also shape hematologic malignancies through effects on microbial metabolism, epithelial barrier integrity, immune cell differentiation, and inflammatory signaling. Cutaneous T-cell lymphoma (CTCL) represents a uniquely informative model to investigate these interactions: CTCL is characterized by chronic skin inflammation, progressive barrier dysfunction, systemic immune dysregulation, and skin microbial alterations, and can be longitudinally sampled via ready microbial reservoirs from tumors, blood, stool, and skin. Recent studies have demonstrated CTCL patients harbor gut microbiota with reduced diversity, depleted short-chain fatty acid (SCFA)-producing commensals, and altered microbial metabolic pathways. Associations between intestinal dysbiosis, disease severity, and therapeutic response have been made, alongside evidence linking skin microbial dysbiosis to malignant T-cell proliferation. These findings support a model in which intestinal and cutaneous microbial ecosystems cooperate to shape systemic antitumor immunity through a gut-skin-tumor axis. Microbial metabolites, including SCFAs and tryptophan-derived metabolites, may represent key mediators connecting gut dysbiosis with immune dysfunction and tumor progression. This review synthesizes current evidence regarding the gut microbiome in CTCL within the broader context of cancer immunology, hematologic malignancies, and the gut-skin axis. We discuss mechanisms linking intestinal dysbiosis with malignant T-cell biology, highlight opportunities for integrating microbiome research with multi-omic technologies, and propose future directions for microbiome-based biomarkers and therapeutic interventions to enhance antitumor immunity in CTCL.",
+      "summary": "Researchers reviewed evidence that people with cutaneous T‑cell lymphoma (CTCL) often have an imbalanced gut microbiome—fewer diverse bacteria and fewer microbes that make short‑chain fatty acids, which help regulate immunity. This gut dysbiosis appears linked to the skin’s own microbial changes, worsening immune dysfunction and tumor growth, suggesting that gut‑derived metabolites may drive disease severity and treatment response. The authors propose that analyzing and correcting these microbial imbalances could become a new way to monitor and treat CTCL.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Research Support, Non-U.S. Gov't",
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "kind": "review",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
     },
     {
       "id": "MED:42969511",
@@ -450,6 +617,76 @@
       "summary_by": "groq",
       "first_seen": "2026-11-16",
       "pub_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43063418",
+      "pmid": "43063418",
+      "doi": "10.5826/dpc.1604a7142",
+      "title": "Will Artificial Intelligence Crack the Diagnostic Code of Cutaneous T-Cell Lymphomas Amongst Community-Based Physicians?",
+      "authors": "Campbell BA, McCormack C, Porceddu SV, Thursky K, Prince HM.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43063418/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43063458",
+      "pmid": "43063458",
+      "doi": "10.5826/dpc.1604a6184",
+      "title": "Why Regular Thyroid Ultrasound Screening in Mycosis Fungoides Patients Should Not Be Recommended?",
+      "authors": "França NM, Barbara FN, Migowski A, Gonzaga Y.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43063458/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Letter"
+      ],
+      "kind": "letter",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43063419",
+      "pmid": "43063419",
+      "doi": "10.5826/dpc.1604a7034",
+      "title": "Sociodemographic and Facility Factors Associated with Stage I versus Stage IV Diagnosis in Mycosis Fungoides: An Ncdb Analysis.",
+      "authors": "Saglimbeni GS, Epino M, Kang P, Silberstein PT, Wu X.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43063419/",
+      "abstract": "Introduction: Mycosis fungoides (MF) is a rare primary cutaneous T-cell lymphoma defined by malignant proliferation of skin-homing CD4+ T cells. While early-stage MF carries excellent prognosis, diagnosis is often delayed due to resemblance to benign skin conditions. In contrast, stage IV has markedly poorer prognosis, with 5-year survival as low as 20-30%. Objective: To evaluate sociodemographic and facility characteristics associated with stage I versus stage IV MF diagnosis. Methods: Using the National Cancer Database, 5,624 patients with stage I or stage IV MF were analyzed by race, sex, facility type, age, ethnicity, insurance, income, education, rurality, geographic region, comorbidity score, and distance to treatment center. Multivariable logistic regression was used to estimate odds ratios (ORs) for factors associated with stage at diagnosis and mortality. The mortality analysis was restricted to 5,282 patients with known vital status. Results: Patients were predominantly White (75.1%), male (55.2%), and treated in academic facilities (79.1%). Stage IV patients, compared to stage I, were older (median 67 years vs. 62; OR = 1.03 per year increase), and more likely to be Black (1.63), Hispanic (1.72), Medicaid-insured (1.86), from lower-educational backgrounds, treated at non-academic facilities (1.37), comorbid with other conditions (2.05), and traveling farther for treatment (1.01 per mile; all p Conclusions: In MF, older age, Black race, and socioeconomic barriers were associated with stage IV diagnosis, and stage IV disease was associated with higher odds of mortality.",
+      "summary": "The study used a national cancer registry to see which patient and hospital factors were linked to being diagnosed at an early (stage I) versus advanced (stage IV) stage of mycosis fungoides, a skin‑based T‑cell lymphoma. It found that older age, Black or Hispanic race, Medicaid coverage, lower education, treatment at non‑academic centers, more other health problems, and longer travel distances were all associated with a higher chance of an advanced diagnosis, which in turn was tied to a greater risk of death.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
         "Journal Article"
       ],
       "kind": "research",
@@ -474,7 +711,8 @@
       "first_seen": "2026-11-16",
       "pub_types": [
         "Journal Article",
-        "Case Reports"
+        "Case Reports",
+        "case-report"
       ],
       "kind": "case",
       "stanford": false,
@@ -652,6 +890,54 @@
       "backfill": true
     },
     {
+      "id": "MED:43022250",
+      "pmid": "43022250",
+      "doi": "10.1016/j.tipsro.2026.100445",
+      "title": "Radiation-induced alopecia: A scoping review.",
+      "authors": "Leung SSN, Lo AWS, Wong C, Lai J, Kwan JYY, Lee SF, Chan AW, Wolf JR, van den Hurk C, Jones JM, Freites-Martinez A, Jefford M, Chan RJ, Salvestrini V, Chow E, Kagan S, Bonomo P, Wong HCY.",
+      "journal": "Technical innovations & patient support in radiation oncology",
+      "date": "2026-10-24",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43022250/",
+      "abstract": "Introduction: Radiation-induced alopecia (RIA) is a clinically important complication of scalp or intracranial radiotherapy (RT). Despite this, knowledge of its risk, mechanisms and management remains limited, and robust clinical guidelines or standardised prevention protocols are lacking. Methods: This review followed Joanna Briggs Institute methodology and PRISMA-ScR reporting guideline. Embase, MEDLINE, CENTRAL, and CINAHL were systematically searched from inception to 7th May 2026 for original human studies reporting RIA after RT. Records were screened in duplicate. Data were charted using standardised forms and synthesised descriptively across 5 domains: incidence and clinical presentation, mechanisms, health-related quality of life (HRQoL), risk reduction and management. Results: Fifty-six studies published between 1989 and 2025 met inclusion criteria, 22 (39.3%) were published from 2020 onwards, and most were small retrospective cohorts. Definitions of persistent RIA (pRIA), alopecia grading, scalp contouring, and dosimetric endpoints were heterogeneous. Across conventionally fractionated cohorts, pRIA was associated with scalp or hair-follicle dose metrics broadly in the mid-30- to low-40-Gy range, although reported parameters and thresholds varied. Scalp optimisation with modern RT techniques reduced selected scalp dose metrics, but clinical evidence of reduced pRIA was limited. HRQoL or psychosocial outcomes were reported in 11 studies and generally indicated heightened psychological distress with alopecia. Management evidence was sparse; minoxidil outcomes were variable, while surgical hair restoration offered promising but resource-intensive options. Conclusion: RIA is a dose-dependent toxicity of cranial RT with potentially important psychosocial consequences. Standardised definitions, scalp contouring guidance, outcome assessment, and prospective validation of clinically relevant dose constraints are needed. Future studies should include alopecia-specific patient-reported outcomes and evaluate preventive, therapeutic, and pragmatic implementation strategies.",
+      "summary": "The review looked at how often and how severely scalp radiation for brain or head‑neck cancers causes hair loss, finding that permanent alopecia tends to appear when the scalp receives about 30–40 Gy of radiation, though exact thresholds vary. Modern radiation techniques can lower scalp dose, but clear evidence that they reduce hair loss is still limited, and hair loss can cause significant psychological distress, with few proven treatments beyond variable results from minoxidil and costly hair‑restoration surgery.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "kind": "review",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
+      "id": "MED:43042888",
+      "pmid": "43042888",
+      "doi": "10.5858/arpa.2025-0639-oa",
+      "title": "TCRα Immunohistochemistry Improves α/β T-Cell Identification, Providing a Helpful Comparator for TRBC1 in Cutaneous T-Cell Lymphoma Except for CD3-Negative CD30-Positive Cutaneous Lymphoproliferative Disorders.",
+      "authors": "Li X, Nocco S, Do M, Jungbluth AA, Runge JS, Moy A, Pulitzer M.",
+      "journal": "Archives of pathology & laboratory medicine",
+      "date": "2026-10-23",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042888/",
+      "abstract": "Context.—: TRBC1 (T-cell receptor beta constant region 1) immunohistochemistry (IHC) on formalin-fixed, paraffin-embedded tissue of cutaneous T-cell lymphoma/cutaneous lymphoproliferative disorders (CTCL/CLPDs) requires baseline αβ T-cell receptor (TCR) labeling for clonality assessment. CD3 may be absent, particularly in primary cutaneous CD30+ lymphoproliferative disorders (pcCD30+LPDs), limiting its utility. TCRβ expression, occasionally reported in the absence of CD3, is unreliable. Objective.—: We hypothesized that TCRα IHC might identify αβ-TCR better than TCRβ in CD3-positive CTCL/CLPD. Furthermore, in CD3-negative pcCD30+LPDs, TCRα might assist with TRBC1-based clonality assessment. Design.—: We evaluated 28 clinicopathologically confirmed CD3+/αβ+/γδ-CTCL/CLPDs for TCRα and TCRβ (% and intensity, 0-3+). Next, 26 pcCD30+LPDs (11 lymphomatoid papulosis cases, 15 primary cutaneous anaplastic large cell lymphomas) were assessed for CD3, TCRα, TCRβ, TRBC1, and TCRδ. The percentage of TRBC1 for CD3, TCRα, and TCRβ was calculated. Clonality prediction was rendered by using cutoffs greater than 70% or less than 25%. Results.—: In CD3+CTCL/CLPD, at least 90%/3+ immunolabeling was observed in 79% (22 of 28) of cases for TCRα versus 7% (2 of 28) of cases for TCRβ. In pcCD30+LPD, strong/3+, diffuse labeling was seen in 73% (19 of 26) of cases with CD3, 85% (22 of 26) with TCRα, and 5% (1 of 21) with TCRβ. When TRBC1 was compared to CD3, TCRα, or TCRβ, 100% (19 of 19) of CD3 (diffuse-only), 96% (24 of 25) of TCRα, and 33% (7 of 21) of TCRβ labels showed monotypia by cutoffs. Additionally, 86% (6 of 7) of CD3-low cases demonstrated diffuse, strong TCRα, supporting TCR aberrancy, also suggested by 5 TRBC1-high/TCRβ-low and 8 TRBC1-low/TCRβ-low cases. Conclusions.—: TCRα IHC appears equivalent to CD3 for TRBC1 assessment in CD3+CTCL/CLPD and is more reliable for αβ T-cell detection versus TCRβ (BF-1). This may assist in the absence of γδ IHC. While TCRα should not be used as baseline for TRBC1 in CD3-loss CTCL/CLPD, it can support clonal aberrancy in these and in cases with suboptimally labeled or aberrant TCRβ.",
+      "summary": "The researchers tested whether staining for the T‑cell receptor α chain (TCRα) could more reliably identify normal αβ‑type T cells than the usual TCRβ stain, especially when the common T‑cell marker CD3 is missing in certain skin lymphomas. They found that TCRα highlighted the majority of cases (about 80‑85 %) while TCRβ did so in only a few, and that using TCRα together with the TRBC1 test gave a clear picture of whether the T‑cell population was clonal (cancerous) even in CD3‑negative, CD30‑positive lesions. This suggests TCRα staining is a useful tool for diagnosing and assessing cutaneous T‑cell lymphomas when traditional markers are absent or unreliable.",
+      "summary_by": "groq",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:43026080",
       "pmid": "43026080",
       "doi": "10.1016/j.therap.2026.10.006",
@@ -763,6 +1049,7 @@
       "summary_by": "groq",
       "first_seen": "2026-11-16",
       "pub_types": [
+        "research-article",
         "Journal Article"
       ],
       "kind": "research",
@@ -836,7 +1123,6 @@
       "pub_types": [
         "Meta-Analysis",
         "Systematic Review",
-        "Review",
         "Journal Article"
       ],
       "kind": "review",
@@ -1032,6 +1318,7 @@
       "summary_by": "groq",
       "first_seen": "2026-11-16",
       "pub_types": [
+        "review-article",
         "Review",
         "Journal Article"
       ],
@@ -1088,6 +1375,31 @@
       "vet": false,
       "match": "core",
       "backfill": true
+    },
+    {
+      "id": "MED:43060878",
+      "pmid": "43060878",
+      "doi": "10.1016/j.jdcr.2026.10.001",
+      "title": "Livedo racemosa within a presentation of mycosis fungoides.",
+      "authors": "Sanders M, Chang J, Hristov AC, Bresler SC, Runge JS, Tejasvi T.",
+      "journal": "JAAD case reports",
+      "date": "2026-10-09",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43060878/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article",
+        "Case Reports",
+        "case-report"
+      ],
+      "kind": "case",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
     },
     {
       "id": "MED:42850717",
@@ -1153,6 +1465,7 @@
       "summary_by": "groq",
       "first_seen": "2026-11-10",
       "pub_types": [
+        "Multicenter Study",
         "Journal Article"
       ],
       "kind": "research",
@@ -1177,9 +1490,10 @@
       "summary_by": "none",
       "first_seen": "2026-11-10",
       "pub_types": [
-        "Journal Article"
+        "Comment",
+        "Editorial"
       ],
-      "kind": "research",
+      "kind": "letter",
       "stanford": false,
       "vet": false,
       "match": "core",
@@ -1226,7 +1540,8 @@
       "first_seen": "2026-11-10",
       "pub_types": [
         "Journal Article",
-        "Case Reports"
+        "Case Reports",
+        "case-report"
       ],
       "kind": "case",
       "stanford": false,
@@ -1283,6 +1598,30 @@
       "vet": false,
       "match": "core",
       "backfill": true
+    },
+    {
+      "id": "PMC:PMC13777384",
+      "pmid": null,
+      "doi": null,
+      "title": "Dermoscopy of Poikilodermatous Plaque-Like Haemangioma",
+      "authors": "Fratton Z, Plozner N, Tulisso A, Bartalini P, Bortuzzo C, Errichetti E.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-01",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://europepmc.org/article/PMC/PMC13777384",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "kind": "research",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
     },
     {
       "id": "MED:42646904",
@@ -2734,6 +3073,30 @@
       "match": "mention"
     },
     {
+      "id": "MED:43048802",
+      "pmid": "43048802",
+      "doi": "10.25251/h7r4x8mv",
+      "title": "Squamous cell carcinoma arising in long-standing CD8+ CD56+ mycosis fungoides: A case report and literature review.",
+      "authors": "Halim PA, Wibawa LP, Sirait SP, Arisanty R.",
+      "journal": "Dermatology online journal",
+      "date": "2026-08-31",
+      "year": 2026,
+      "is_preprint": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43048802/",
+      "abstract": "",
+      "summary": "",
+      "summary_by": "none",
+      "first_seen": "2026-11-24",
+      "pub_types": [
+        "Journal Article",
+        "Case Reports"
+      ],
+      "kind": "case",
+      "stanford": false,
+      "vet": false,
+      "match": "core"
+    },
+    {
       "id": "MED:42675786",
       "pmid": "42675786",
       "doi": "10.1111/ajd.70204",
@@ -3595,6 +3958,7 @@
       "summary_by": "groq",
       "first_seen": "2026-11-10",
       "pub_types": [
+        "research-article",
         "Journal Article"
       ],
       "kind": "research",
@@ -9407,30 +9771,30 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 383,
-    "new_this_run": 12,
+    "total": 398,
+    "new_this_run": 15,
     "archived": 0,
     "awaiting_summary": 0
   },
-  "updated": "2026-11-16T22:53:44Z",
+  "updated": "2026-11-24T00:51:29Z",
   "overview": {
     "bullets": [
-      "New targeted drugs like mogamulizumab and brentuximab vedotin can shrink tumors, but they may cause serious side effects such as graft‑versus‑host disease, joint inflammation, or immune‑related organ problems, so close monitoring is essential.",
-      "Doctors are improving diagnosis by adding special stains (TRBC1/2) and advanced imaging, which can catch early‑stage disease that DNA tests often miss.",
-      "Research shows the skin’s immune environment changes before visible improvement, meaning early treatment responses may look like side‑effects and need better lab markers to guide therapy decisions.",
-      "Large‑scale single‑cell and genomic studies have identified distinct molecular subtypes and pathways (e.g., GATA‑3, CD30, CD200) that could be matched to existing drugs, offering more personalized treatment options.",
-      "Early spread to lymph nodes or transformation to a large‑cell form predicts poorer outcomes, highlighting the importance of regular check‑ups and prompt escalation of therapy when disease progresses."
+      "New targeted drugs like mogamulizumab, brentuximab vedotin, and topical chlormethine can shrink tumors, but they may cause serious side effects such as liver problems or graft‑versus‑host disease, so close monitoring is essential.",
+      "Doctors are getting better at spotting early disease using special stains (TRBC1, TCRα) and single‑cell analyses, which can catch cancers that standard DNA tests miss.",
+      "The skin’s immune environment and even the gut microbiome influence how well treatments work, suggesting that therapies that reshape these surroundings (e.g., phototherapy, interferon‑α) may improve outcomes.",
+      "When the disease returns after a transplant or a second round of therapy, response rates drop and survival is limited, highlighting the need for personalized treatment plans and early referral for stem‑cell transplant when appropriate.",
+      "Practical realities matter: many patients travel long distances for radiation, and quality‑of‑life concerns often outweigh pure survival goals, so treatment choices should balance effectiveness with convenience and personal priorities."
     ],
-    "generated": "2026-11-16",
-    "n_papers": 383,
+    "generated": "2026-11-24",
+    "n_papers": 398,
     "n_used": 30,
     "by": "groq"
   },
   "coverage": {
     "window_days": 120,
-    "from": "2026-07-19",
-    "core_hits": 169,
-    "mention_hits": 22,
-    "checked": "2026-11-16"
+    "from": "2026-07-27",
+    "core_hits": 175,
+    "mention_hits": 21,
+    "checked": "2026-11-24"
   }
 }

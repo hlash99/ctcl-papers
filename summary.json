@@ -4,33 +4,81 @@
   "query_human": "cutaneous T-cell lymphoma · mycosis fungoides · Sézary syndrome (CTCL)",
   "source": "Europe PMC (PubMed / MEDLINE + preprints)",
   "stats": {
-    "total": 383,
-    "new_this_run": 12,
+    "total": 398,
+    "new_this_run": 15,
     "archived": 0,
     "awaiting_summary": 0
   },
-  "updated": "2026-11-16T22:53:44Z",
+  "updated": "2026-11-24T00:51:29Z",
   "overview": {
     "bullets": [
-      "New targeted drugs like mogamulizumab and brentuximab vedotin can shrink tumors, but they may cause serious side effects such as graft‑versus‑host disease, joint inflammation, or immune‑related organ problems, so close monitoring is essential.",
-      "Doctors are improving diagnosis by adding special stains (TRBC1/2) and advanced imaging, which can catch early‑stage disease that DNA tests often miss.",
-      "Research shows the skin’s immune environment changes before visible improvement, meaning early treatment responses may look like side‑effects and need better lab markers to guide therapy decisions.",
-      "Large‑scale single‑cell and genomic studies have identified distinct molecular subtypes and pathways (e.g., GATA‑3, CD30, CD200) that could be matched to existing drugs, offering more personalized treatment options.",
-      "Early spread to lymph nodes or transformation to a large‑cell form predicts poorer outcomes, highlighting the importance of regular check‑ups and prompt escalation of therapy when disease progresses."
+      "New targeted drugs like mogamulizumab, brentuximab vedotin, and topical chlormethine can shrink tumors, but they may cause serious side effects such as liver problems or graft‑versus‑host disease, so close monitoring is essential.",
+      "Doctors are getting better at spotting early disease using special stains (TRBC1, TCRα) and single‑cell analyses, which can catch cancers that standard DNA tests miss.",
+      "The skin’s immune environment and even the gut microbiome influence how well treatments work, suggesting that therapies that reshape these surroundings (e.g., phototherapy, interferon‑α) may improve outcomes.",
+      "When the disease returns after a transplant or a second round of therapy, response rates drop and survival is limited, highlighting the need for personalized treatment plans and early referral for stem‑cell transplant when appropriate.",
+      "Practical realities matter: many patients travel long distances for radiation, and quality‑of‑life concerns often outweigh pure survival goals, so treatment choices should balance effectiveness with convenience and personal priorities."
     ],
-    "generated": "2026-11-16",
-    "n_papers": 383,
+    "generated": "2026-11-24",
+    "n_papers": 398,
     "n_used": 30,
     "by": "groq"
   },
   "coverage": {
     "window_days": 120,
-    "from": "2026-07-19",
-    "core_hits": 169,
-    "mention_hits": 22,
-    "checked": "2026-11-16"
+    "from": "2026-07-27",
+    "core_hits": 175,
+    "mention_hits": 21,
+    "checked": "2026-11-24"
   },
   "papers": [
+    {
+      "title": "Paraneoplastic papuloerythroderma of Ofuji.",
+      "journal": "Clinics in dermatology",
+      "date": "2026-11-21",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Multi-Omic Profiling for Molecular Diagnosis of Erythrodermic Skin Diseases.",
+      "journal": "The British journal of dermatology",
+      "date": "2026-11-19",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Quantitative Clonality Analysis of T-cell Receptor Rearrangement in Mogamulizumab-associated Rash.",
+      "journal": "Acta dermato-venereologica",
+      "date": "2026-11-18",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Role of ERK signaling in pristimerin-induced apoptosis and autophagy: involvement of ROS-dependent mechanisms in Cutaneous T-cell lymphoma.",
+      "journal": "Leukemia & lymphoma",
+      "date": "2026-11-17",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Immune-related hepatobiliary adverse events associated with mogamulizumab: A case series and literature review.",
+      "journal": "Journal der Deutschen Dermatologischen Gesellschaft = Journal of the German Society of Dermatology : JDDG",
+      "date": "2026-11-17",
+      "first_seen": "2026-11-24",
+      "kind": "case",
+      "stanford": false
+    },
+    {
+      "title": "Chlormethine Treatment Effectively Targets the Tumor Microenvironment in Early-stage Mycosis Fungoides patients",
+      "journal": "",
+      "date": "2026-11-16",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
     {
       "title": "Mogamulizumab-Associated SAPHO Syndrome: An Unexpected Adverse Event.",
       "journal": "International journal of dermatology",
@@ -160,6 +208,14 @@
       "backfill": true
     },
     {
+      "title": "Gut microbiome in cutaneous T-cell lymphoma: emerging insights into systemic immunity and the gut-skin-tumor axis.",
+      "journal": "Frontiers in immunology",
+      "date": "2026-11-02",
+      "first_seen": "2026-11-24",
+      "kind": "review",
+      "stanford": false
+    },
+    {
       "title": "Synergistic antibiotic activity and integrated genomic-metabolomic profiling of patch- and plaque-derived Staphylococcus aureus in mycosis fungoides.",
       "journal": "Microbiology spectrum",
       "date": "2026-11-02",
@@ -190,6 +246,30 @@
       "journal": "Cells",
       "date": "2026-10-31",
       "first_seen": "2026-11-16",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Will Artificial Intelligence Crack the Diagnostic Code of Cutaneous T-Cell Lymphomas Amongst Community-Based Physicians?",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Why Regular Thyroid Ultrasound Screening in Mycosis Fungoides Patients Should Not Be Recommended?",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "first_seen": "2026-11-24",
+      "kind": "letter",
+      "stanford": false
+    },
+    {
+      "title": "Sociodemographic and Facility Factors Associated with Stage I versus Stage IV Diagnosis in Mycosis Fungoides: An Ncdb Analysis.",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-29",
+      "first_seen": "2026-11-24",
       "kind": "research",
       "stanford": false
     },
@@ -263,6 +343,22 @@
       "kind": "research",
       "stanford": false,
       "backfill": true
+    },
+    {
+      "title": "Radiation-induced alopecia: A scoping review.",
+      "journal": "Technical innovations & patient support in radiation oncology",
+      "date": "2026-10-24",
+      "first_seen": "2026-11-24",
+      "kind": "review",
+      "stanford": false
+    },
+    {
+      "title": "TCRα Immunohistochemistry Improves α/β T-Cell Identification, Providing a Helpful Comparator for TRBC1 in Cutaneous T-Cell Lymphoma Except for CD3-Negative CD30-Positive Cutaneous Lymphoproliferative Disorders.",
+      "journal": "Archives of pathology & laboratory medicine",
+      "date": "2026-10-23",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
     },
     {
       "title": "Secondary cancer after CAR-T cell therapy: A French pharmacovigilance analysis.",
@@ -424,6 +520,14 @@
       "backfill": true
     },
     {
+      "title": "Livedo racemosa within a presentation of mycosis fungoides.",
+      "journal": "JAAD case reports",
+      "date": "2026-10-09",
+      "first_seen": "2026-11-24",
+      "kind": "case",
+      "stanford": false
+    },
+    {
       "title": "Dupilumab-Associated Reversible Lymphoid Reaction Mimicking Mycosis Fungoides.",
       "journal": "American journal of therapeutics",
       "date": "2026-10-09",
@@ -455,7 +559,7 @@
       "journal": "JAMA dermatology",
       "date": "2026-10-07",
       "first_seen": "2026-11-10",
-      "kind": "research",
+      "kind": "letter",
       "stanford": false,
       "backfill": true
     },
@@ -494,6 +598,14 @@
       "kind": "review",
       "stanford": false,
       "backfill": true
+    },
+    {
+      "title": "Dermoscopy of Poikilodermatous Plaque-Like Haemangioma",
+      "journal": "Dermatology practical & conceptual",
+      "date": "2026-10-01",
+      "first_seen": "2026-11-24",
+      "kind": "research",
+      "stanford": false
     },
     {
       "title": "Mycosis Fungoides With γδ Immunophenotype.",
@@ -1018,6 +1130,14 @@
       "date": "2026-09-01",
       "first_seen": "2026-08-31",
       "kind": "research",
+      "stanford": false
+    },
+    {
+      "title": "Squamous cell carcinoma arising in long-standing CD8+ CD56+ mycosis fungoides: A case report and literature review.",
+      "journal": "Dermatology online journal",
+      "date": "2026-08-31",
+      "first_seen": "2026-11-24",
+      "kind": "case",
       "stanford": false
     },
     {
